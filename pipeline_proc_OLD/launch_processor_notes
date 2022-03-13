@@ -1,0 +1,4 @@
+xrun -64bit -gui -access r src/processor.v \
+test/processor_tb.v extralib/gac_sram.v extralib/gac_syncram.v \
+extralib/and/gac_and_gate_32.v src/register_file.v extralib/mux/* \
+extralib/dec/* src/fake_control.v src/fake_control_alu.v

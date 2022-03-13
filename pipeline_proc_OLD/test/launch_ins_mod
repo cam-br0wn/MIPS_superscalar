@@ -1,0 +1,5 @@
+
+// dependencies and launch code for the instruction fetch module
+xrun -64bit -gui -access r src/ins_fetch.v 
+lib/ece361_alu_verilog/adder_32.v lib/u_verilog/Full_adder.v lib/and_gate.v 
+lib/or_gate.v lib/sram.v lib/xor_gate.v test/ins_fetch_tb.v -default_ext verilog

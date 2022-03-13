@@ -1,0 +1,45 @@
+xrun(64): 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	18.09-s011: Started on Mar 12, 2022 at 15:21:57 CST
+xrun
+	-64bit
+	-gui
+	-access r
+	test/icc_tb.v
+	icc.v
+file: icc.v
+	module worklib.icc:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		icc_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.icc:v <0x54948559>
+			streams:   1, words:   146
+		worklib.icc_tb:v <0x7ffaffc3>
+			streams:   1, words:  1692
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		            Instances  Unique
+		Modules:            2       2
+		Registers:          2       2
+		Vectored wires:     3       -
+		Initial blocks:     1       1
+		Cont. assignments:  1       1
+	Writing initial simulation snapshot: worklib.icc_tb:v
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /vol/cadence2018/XCELIUM1809/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm icc_tb.Instance0.ghr_7_0 icc_tb.Instance0.out_ icc_tb.Instance0.pc_9_2
+Created probe 1
+xcelium> run
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> ^C
+xcelium> exit
+TOOL:	xrun(64)	18.09-s011: Exiting on Mar 12, 2022 at 15:24:08 CST  (total: 00:02:11)

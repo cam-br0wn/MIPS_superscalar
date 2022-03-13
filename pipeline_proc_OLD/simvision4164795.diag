@@ -1,0 +1,102 @@
+*** Message Type: info ***
+When: Sat Dec 04 09:26:10 PM CST 2021
+SimVision started.
+Version: TOOL:  simvision(64)   18.09-s011
+User: gfa2226
+Host: clayface.ece.northwestern.edu
+Platform: Linux/x86_64/4.18.0-305.25.1.el8_4.x86_64
+Started: Sat Dec 04 09:26:10 PM CST 2021
+Command: /vol/cadence2018/XCELIUM1809/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:clayface.ece.northwestern.edu:58405 -64BIT -nocopyright
+Work Directory: /home/gfa2226/ce361/pipeline_proc
+ 
+*** Message Type: info ***
+When: Sat Dec 04 09:26:10 PM CST 2021
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Sat Dec 04 09:26:11 PM CST 2021
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Sat Dec 04 09:26:12 PM CST 2021
+Connect to Simulator
+      Design: worklib.p_processor_tb:v
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL:   xmsim(64)       18.09-s011
+        User: gfa2226
+        Host: clayface.ece.northwestern.edu
+Time Started: Sat Dec 04 09:26:10 PM CST 2021
+  Process ID: 4164492
+   Directory: /home/gfa2226/ce361/pipeline_proc
+     Command: xrun -64bit -gui -access r test/p_processor_tb.v extralib/and/gac_and_gate_32.v extralib/and/gac_and_gate_6in.v extralib/and/gac_and_gate.v extralib/dec/gac_dec_5.v extralib/dff/gac_dffr_a.v extralib/dff/gac_dffr.v extralib/dff/gac_dff.v extralib/ece361_alu_verilog/adder_32.v extralib/ece361_alu_verilog/ALUCU.v extralib/ece361_alu_verilog/ALU.v extralib/ece361_alu_verilog/and_gate_32.v extralib/ece361_alu_verilog/and_gate_n.v extralib/ece361_alu_verilog/and_gate.v extralib/ece361_alu_verilog/dec_n.v extralib/ece361_alu_verilog/full_adder_1bit.v extralib/ece361_alu_verilog/full_adder_32bit.v extralib/ece361_alu_verilog/Full_adder.v extralib/ece361_alu_verilog/mux_32to1.v extralib/ece361_alu_verilog/mux_32.v extralib/ece361_alu_verilog/mux8_1_1bit.v extralib/ece361_alu_verilog/mux8_1_32bit.v extralib/ece361_alu_verilog/mux_n.v extralib/ece361_alu_verilog/mux.v extralib/ece361_alu_verilog/nand_gate_32.v extralib/ece361_alu_verilog/nand_gate_n.v extralib/ece361_alu_verilog/nand_gate.v extralib/ece361_alu_verilog/nor_32bit.v extralib/ece361_alu_verilog/nor_gate_32.v extralib/ece361_alu_verilog/nor_gate_n.v extralib/ece361_alu_verilog/nor_gate.v extralib/ece361_alu_verilog/not_gate_32.v extralib/ece361_alu_verilog/not_gate_n.v extralib/ece361_alu_verilog/not_gate.v extralib/ece361_alu_verilog/or_gate_32.v extralib/ece361_alu_verilog/or_gate_n.v extralib/ece361_alu_verilog/or_gate.v extralib/ece361_alu_verilog/sll_32bit.v extralib/ece361_alu_verilog/SLT_signed.v extralib/ece361_alu_verilog/SLT.v extralib/ece361_alu_verilog/SUB_32bit.v extralib/ece361_alu_verilog/xnor_gate_32.v extralib/ece361_alu_verilog/xnor_gate_n.v extralib/ece361_alu_verilog/xnor_gate.v extralib/ece361_alu_verilog/xor_gate_32.v extralib/ece361_alu_verilog/xor_gate_n.v extralib/ece361_alu_verilog/xor_gate.v extralib/mux/gac_mux_11.v extralib/mux/gac_mux_32t1_32.v extralib/mux/gac_mux_32.v extralib/mux/gac_mux_5.v extralib/mux/gac_mux_8t1_32.v extralib/mux/gac_mux_8t1.v extralib/mux/gac_mux.v extralib/nand/gac_nand_gate_32.v extralib/nand/gac_nand_gate.v extralib/nor/gac_nor_gate_32.v extralib/nor/gac_nor_gate.v extralib/not/gac_not_gate_32.v extralib/not/gac_not_gate_6_BHV.v extralib/not/gac_not_gate.v extralib/or/gac_or_gate_32.v extralib/or/gac_or_gate_6in.v extralib/or/gac_or_gate.v extralib/xnor/gac_xnor_gate_32.v extralib/xnor/gac_xnor_gate.v extralib/xor/gac_xor_gate_32.v extralib/xor/gac_xor_gate.v src/alu_control_unit.v src/branch_unit.v src/control_unit.v src/fake_control_alu.v src/fake_control.v src/forward_unit.v src/hazard_detection.v src/ins_fetch.v src/pc_inc.v src/p_processor.v src/processor.v src/register_128.v src/register_171.v src/register_file.v src/register.v src/sign_ext.v
+
+ 
+*** Message Type: info ***
+When: Sat Dec 04 09:26:13 PM CST 2021
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Sat Dec 04 09:26:20 PM CST 2021
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Sat Dec 04 09:26:31 PM CST 2021
+Create schematic window: "Schematic Tracer 1"
+ 
+*** Message Type: error ***
+When: Sat Dec 04 09:26:48 PM CST 2021
+wrong # args: must be "callbindaction action down-x down-y up-x up-y wheeldelta ?oid?".
+wrong # args: must be "callbindaction action down-x down-y up-x up-y wheeldelta ?oid?".
+    while executing
+"runBusy {
+        #
+        # Execute the "do" script
+        #
+        set _buffer ""
+        uplevel $parts(redo)
+        set parts(redo) $_buffer
+
+..."
+    (object "::manager4" method "::undo::Manager::action" body line 65)
+    invoked from within
+"$_undo action "Zoom Out" {
+    do {
+           1-DO> set [itcl::scope _skipUndo] 1
+            1-DO> [itcl::code $this _getSchemState] =>OLDSTATE
+             1-DO> [itcl::code $this ..."
+    (object "::.schematicWindow0" method "::SchematicWindow::_propZoom" body line 3)
+    invoked from within
+"_propZoom $x $y $X $Y $Obj"
+    ("stroke-ne-1" arm line 2)
+    invoked from within
+"switch $T {
+     "ctrl-stroke-1"  {
+         #
+      # This is a control-drag, 
+     # Get the objects inside this rectangle.
+       #
+      set instList [$W pick..."
+    (object "::.schematicWindow0" method "::SchematicWindow::_bindCallBack" body line 4)
+    invoked from within
+"::.schematicWindow0 _bindCallBack .schematicWindow0.work.user.scrollframe.schematic.nlview stroke-ne-1 347 337 365 268 {net simulator::p_processor_tb,..."
+    (in namespace inscope "::SchematicWindow" script line 1)
+    invoked from within
+"namespace inscope ::SchematicWindow {::.schematicWindow0 _bindCallBack .schematicWindow0.work.user.scrollframe.schematic.nlview stroke-ne-1 347 337 36..."
+ 
+*** Message Type: info ***
+When: Sat Dec 04 09:29:24 PM CST 2021
+Delete schematic window: "Schematic Tracer 1"
+ 
+*** Message Type: info ***
+When: Sat Dec 04 09:29:26 PM CST 2021
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Sat Dec 04 09:29:26 PM CST 2021
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Sat Dec 04 09:29:28 PM CST 2021
+SimVision Exit.
+ 

@@ -1,0 +1,32 @@
+AD notes:
+Information about setting up control logic from a TT (appendix D from text, which is not in the print book): 
+https://www.cs.colostate.edu/~malaiya/470/Appendix-D.pdf
+
+I recommend we leave the control logic until last and then go through it.
+
+Appendix A has all of the opcodes spelled out for each of the instructions we need to implement.
+
+Figure 4.12 on p. 260 has a table with the control signals for most of the instructions we need, but some are missing.
+
+p. 253 has the diagram of the registers.
+Do we need to declare the clock as a register in Verilog?
+
+Pieces we have:
+Sign extender (done and checked)
+Single register (done and checked)
+ALU (badly documented one from class; also handles the addition for the PC, etc)
+Mux
+RAM (SRAM? DRAM?)
+D-flip-flops
+
+
+What we need to make:
+PC (just a single register)
+Register file (schematic on B-55, in progress)
+Data memory (from RAM)
+Instruction memory (from RAM)
+Control Circuit (recommend we do last)
+
+MIPS register file convention is on p. 105 in text
+The PC is just a register, and we have a working version. 
+
