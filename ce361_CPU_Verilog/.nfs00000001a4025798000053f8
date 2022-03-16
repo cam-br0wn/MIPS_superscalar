@@ -1,0 +1,334 @@
+xrun(64): 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	18.09-s011: Started on Nov 15, 2021 at 23:36:15 CST
+xrun
+	-64bit
+	-gui
+	-access r
+	./test/ifu_tb.v
+	-s
+Recompiling... reason: file './test/ifu_tb.v' is newer than expected.
+	expected: Mon Nov 15 23:34:56 2021
+	actual:   Mon Nov 15 23:36:04 2021
+file: ./test/ifu_tb.v
+        if (arst == 1'b1) q <= 0'b0;
+                               |
+xmvlog: *W,MAXBSZ (lib/dffr_a.v,12|31): zero width prefix to based number ignored [2.5(IEEE)].
+(`include file: lib/dffr_a.v line 12, `include file: cpu/ifu.v line 1, file: ./test/ifu_tb.v line 1)
+        1'h2 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,44|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 44, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'h3 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,45|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 45, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'h4 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,46|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 46, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'h5 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,47|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 47, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'h6 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,48|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 48, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'h7 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,49|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 49, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'h8 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,50|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 50, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'h9 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,51|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 51, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'ha : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,52|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 52, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'hb : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,53|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 53, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'hc : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,54|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 54, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'hd : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,55|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 55, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'he : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,56|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 56, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'hf : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,57|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 57, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'hA : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,58|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 58, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'hB : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,59|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 59, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'hC : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,60|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 60, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'hD : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,61|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 61, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'hE : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,62|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 62, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        1'hF : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,63|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 63, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        initiate();
+                 |
+xmvlog: *W,TMTPAR (extralib/sram2.v,171|17): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+(`include file: extralib/sram2.v line 171, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+        checkRAM();
+                 |
+xmvlog: *W,TMTPAR (extralib/sram2.v,176|17): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+(`include file: extralib/sram2.v line 176, `include file: cpu/ifu.v line 2, file: ./test/ifu_tb.v line 1)
+	module worklib.and_gate:v
+		errors: 0, warnings: 0
+module and_gate (x, y, z);
+              |
+xmvlog: *W,RECOME (lib/and_gate.v,1|14): recompiling design unit worklib.and_gate:v.
+	First compiled from line 1 of ece361_alu_verilog/and_gate.v.
+(`include file: lib/and_gate.v line 1, `include file: cpu/ifu.v line 4, file: ./test/ifu_tb.v line 1)
+	module worklib.and_gate:v
+		errors: 0, warnings: 1
+	module worklib.ifu_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		ifu_tb
+              Full_adder msb(.A(a[i]) , .B(b[i]) , .CIN(cout[i-1]) , .SUM(z[i]));
+                           |
+xmelab: *W,CUVWSP (./ece361_alu_verilog/adder_32.v,21|27): 1 output port was not connected:
+xmelab: (./ece361_alu_verilog/Full_adder.v,4): COUT
+
+    sram instr_mem(.cs(1) , .oe(1) , .we(0) , .addr({currpc, 2'b00}) , .din(0) , .dout(temp_instr));
+                       |
+xmelab: *W,CUVMPW (./cpu/ifu.v,45|23): port sizes differ in port connection (32/1).
+    sram instr_mem(.cs(1) , .oe(1) , .we(0) , .addr({currpc, 2'b00}) , .din(0) , .dout(temp_instr));
+                                |
+xmelab: *W,CUVMPW (./cpu/ifu.v,45|32): port sizes differ in port connection (32/1).
+    sram instr_mem(.cs(1) , .oe(1) , .we(0) , .addr({currpc, 2'b00}) , .din(0) , .dout(temp_instr));
+                                         |
+xmelab: *W,CUVMPW (./cpu/ifu.v,45|41): port sizes differ in port connection (32/1).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.and_gate:v <0x20236131>
+			streams:   0, words:     0
+		worklib.ifu_tb:v <0x2f74cacc>
+			streams:   6, words:  5427
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		               Instances  Unique
+		Modules:             426      13
+		Registers:            65      34
+		Scalar wires:        369       -
+		Expanded wires:      186       6
+		Vectored wires:       11       -
+		Always blocks:        35       4
+		Initial blocks:        9       9
+		Cont. assignments:     7      14
+		Pseudo assignments:    7       7
+	Writing initial simulation snapshot: worklib.ifu_tb:v
+xcelium> 
+xcelium> source /vol/cadence2018/XCELIUM1809/tools/xcelium/files/xmsimrc
+xcelium> 
+-------------------------------------
+Relinquished control to SimVision...
+# Restoring simulation environment...
+xcelium> input -quiet .reinvoke.sim
+xcelium> file delete .reinvoke.sim
+xcelium> run
+Now initializing sram
+Addr is written: 00400020
+Data is written: 20050001
+Addr is written: 00400024
+Data is written: 20060064
+Addr is written: 00400028
+Data is written: 20021000
+Addr is written: 0040002c
+Data is written: 00421400
+Addr is written: 00400030
+Data is written: 20470028
+Addr is written: 00400034
+Data is written: 8c430000
+Addr is written: 00400038
+Data is written: 00c3202a
+Addr is written: 0040003c
+Data is written: 10850002
+Addr is written: 00400040
+Data is written: 00c33022
+Addr is written: 00400044
+Data is written: ac400000
+Addr is written: 00400048
+Data is written: 20420004
+Addr is written: 0040004c
+Data is written: 1447fff9
+Addr is written: 00400050
+Data is written: ace60000
+Addr is written: 10000000
+Data is written: 0000000a
+Addr is written: 10000004
+Data is written: 00000009
+Addr is written: 10000008
+Data is written: 00000008
+Addr is written: 1000000c
+Data is written: 000002bc
+Addr is written: 10000010
+Data is written: 00000005
+Addr is written: 10000014
+Data is written: 00000006
+Addr is written: 10000018
+Data is written: 00000190
+Addr is written: 1000001c
+Data is written: 00000001
+Addr is written: 10000020
+Data is written: 00000002
+Addr is written: 10000024
+Data is written: 00000003
+Addr is checking: 00400020
+Data is checking: 20050001
+Addr is checking: 00400024
+Data is checking: 20060064
+Addr is checking: 00400028
+Data is checking: 20021000
+Addr is checking: 0040002c
+Data is checking: 00421400
+Addr is checking: 00400030
+Data is checking: 20470028
+Addr is checking: 00400034
+Data is checking: 8c430000
+Addr is checking: 00400038
+Data is checking: 00c3202a
+Addr is checking: 0040003c
+Data is checking: 10850002
+Addr is checking: 00400040
+Data is checking: 00c33022
+Addr is checking: 00400044
+Data is checking: ac400000
+Addr is checking: 00400048
+Data is checking: 20420004
+Addr is checking: 0040004c
+Data is checking: 1447fff9
+Addr is checking: 00400050
+Data is checking: ace60000
+Addr is checking: 10000000
+Data is checking: 0000000a
+Addr is checking: 10000004
+Data is checking: 00000009
+Addr is checking: 10000008
+Data is checking: 00000008
+Addr is checking: 1000000c
+Data is checking: 000002bc
+Addr is checking: 10000010
+Data is checking: 00000005
+Addr is checking: 10000014
+Data is checking: 00000006
+Addr is checking: 10000018
+Data is checking: 00000190
+Addr is checking: 1000001c
+Data is checking: 00000001
+Addr is checking: 10000020
+Data is checking: 00000002
+Addr is checking: 10000024
+Data is checking: 00000003
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Writing to dout:          x
+READ Addr FOUND!: 00400020
+Writing to dout:  537198593
+READ Addr FOUND!: 00400024
+Writing to dout:  537264228
+READ Addr FOUND!: 00400028
+Writing to dout:  537006080
+READ Addr FOUND!: 0040002c
+Writing to dout:    4330496
+READ Addr FOUND!: 00400030
+Writing to dout:  541524008
+READ Addr FOUND!: 00400034
+Writing to dout: 2353201152
+READ Addr FOUND!: 00400038
+Writing to dout:   12787754
+READ Addr FOUND!: 0040003c
+Writing to dout:  277151746
+READ Addr FOUND!: 00400048
+Writing to dout:  541196292
+READ Addr FOUND!: 0040004c
+Writing to dout:  340262905
+READ Addr FOUND!: 00400034
+Writing to dout: 2353201152
+READ Addr FOUND!: 00400038
+Writing to dout:   12787754
+Simulation stopped via $stop(1) at time 120 NS + 0
+xcelium> 
