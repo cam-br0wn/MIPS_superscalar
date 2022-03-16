@@ -1,0 +1,3858 @@
+xrun(64): 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	18.09-s011: Started on Nov 17, 2021 at 23:19:03 CST
+xrun
+	-64bit
+	-gui
+	-access r
+	test/cpu_tb.v
+	-s
+Recompiling... reason: file './test/cpu_tb.v' is newer than expected.
+	expected: Wed Nov 17 23:11:58 2021
+	actual:   Wed Nov 17 23:18:58 2021
+file: test/cpu_tb.v
+	module worklib.mux_n:v
+		errors: 0, warnings: 0
+	module worklib.mux_32:v
+		errors: 0, warnings: 0
+        1'h2 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,44|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 44, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'h3 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,45|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 45, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'h4 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,46|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 46, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'h5 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,47|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 47, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'h6 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,48|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 48, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'h7 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,49|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 49, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'h8 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,50|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 50, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'h9 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,51|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 51, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'ha : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,52|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 52, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'hb : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,53|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 53, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'hc : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,54|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 54, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'hd : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,55|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 55, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'he : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,56|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 56, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'hf : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,57|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 57, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'hA : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,58|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 58, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'hB : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,59|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 59, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'hC : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,60|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 60, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'hD : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,61|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 61, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'hE : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,62|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 62, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        1'hF : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/sram2.v,63|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/sram2.v line 63, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        initiate();
+                 |
+xmvlog: *W,TMTPAR (extralib/sram2.v,172|17): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+(`include file: extralib/sram2.v line 172, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+        checkRAM();
+                 |
+xmvlog: *W,TMTPAR (extralib/sram2.v,177|17): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+(`include file: extralib/sram2.v line 177, `include file: cpu/cpu.v line 3, file: test/cpu_tb.v line 1)
+	module worklib.sram:v
+		errors: 0, warnings: 22
+        1'h2 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,45|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 45, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'h3 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,46|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 46, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'h4 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,47|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 47, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'h5 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,48|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 48, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'h6 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,49|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 49, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'h7 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,50|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 50, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'h8 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,51|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 51, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'h9 : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,52|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 52, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'ha : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,53|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 53, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'hb : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,54|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 54, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'hc : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,55|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 55, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'hd : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,56|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 56, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'he : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,57|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 57, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'hf : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,58|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 58, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'hA : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,59|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 59, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'hB : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,60|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 60, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'hC : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,61|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 61, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'hD : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,62|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 62, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'hE : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,63|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 63, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        1'hF : hex = 1;
+           |
+xmvlog: *W,INTOVF (extralib/syncram2.v,64|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: extralib/syncram2.v line 64, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        initiate();
+                 |
+xmvlog: *W,TMTPAR (extralib/syncram2.v,172|17): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+(`include file: extralib/syncram2.v line 172, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+        checkRAM();
+                 |
+xmvlog: *W,TMTPAR (extralib/syncram2.v,177|17): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+(`include file: extralib/syncram2.v line 177, `include file: cpu/cpu.v line 4, file: test/cpu_tb.v line 1)
+	module worklib.not_gate:v
+		errors: 0, warnings: 0
+	module worklib.and_gate:v
+		errors: 0, warnings: 0
+module and_gate (x, y, z);
+              |
+xmvlog: *W,RECOME (./lib/and_gate.v,1|14): recompiling design unit worklib.and_gate:v.
+	First compiled from line 1 of lib/and_gate.v.
+(`include file: ./lib/and_gate.v line 1, `include file: extralib/and3to1.v line 1, `include file: extralib/and6to1.v line 2, `include file: cpu/control.v line 2, `include file: cpu/cpu.v line 5, file: test/cpu_tb.v line 1)
+	module worklib.and_gate:v
+		errors: 0, warnings: 1
+	module worklib.and3to1:v
+		errors: 0, warnings: 0
+	module worklib.or_gate:v
+		errors: 0, warnings: 0
+module or_gate (x, y, z);
+             |
+xmvlog: *W,RECOME (./lib/or_gate.v,1|13): recompiling design unit worklib.or_gate:v.
+	First compiled from line 1 of lib/or_gate.v.
+(`include file: ./lib/or_gate.v line 1, `include file: extralib/or3to1.v line 1, `include file: cpu/control.v line 4, `include file: cpu/cpu.v line 5, file: test/cpu_tb.v line 1)
+	module worklib.or_gate:v
+		errors: 0, warnings: 1
+	module worklib.or3to1:v
+		errors: 0, warnings: 0
+module mux_32 (sel, src0, src1, z);
+            |
+xmvlog: *W,RECOME (./extralib/mux_322.v,1|12): recompiling design unit worklib.mux_32:v.
+	First compiled from line 1 of extralib/mux_322.v.
+(`include file: ./extralib/mux_322.v line 1, `include file: cpu/extender.v line 1, `include file: cpu/cpu.v line 6, file: test/cpu_tb.v line 1)
+	module worklib.mux_32:v
+		errors: 0, warnings: 1
+	module worklib.extender:v
+		errors: 0, warnings: 0
+        if (arst == 1'b1) q <= 0'b0;
+                               |
+xmvlog: *W,MAXBSZ (lib/dffr_a.v,12|31): zero width prefix to based number ignored [2.5(IEEE)].
+(`include file: lib/dffr_a.v line 12, `include file: cpu/ifu.v line 1, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+module sram(cs,oe,we,addr,din,dout);
+          |
+xmvlog: *W,RECOME (./extralib/sram2.v,1|10): recompiling design unit worklib.sram:v.
+	First compiled from line 1 of extralib/sram2.v.
+(`include file: ./extralib/sram2.v line 1, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'h2 : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,44|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 44, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'h3 : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,45|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 45, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'h4 : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,46|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 46, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'h5 : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,47|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 47, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'h6 : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,48|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 48, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'h7 : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,49|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 49, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'h8 : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,50|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 50, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'h9 : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,51|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 51, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'ha : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,52|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 52, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'hb : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,53|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 53, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'hc : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,54|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 54, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'hd : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,55|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 55, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'he : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,56|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 56, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'hf : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,57|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 57, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'hA : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,58|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 58, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'hB : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,59|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 59, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'hC : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,60|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 60, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'hD : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,61|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 61, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'hE : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,62|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 62, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        1'hF : hex = 1;
+           |
+xmvlog: *W,INTOVF (./extralib/sram2.v,63|11): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+(`include file: ./extralib/sram2.v line 63, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        initiate();
+                 |
+xmvlog: *W,TMTPAR (./extralib/sram2.v,172|17): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+(`include file: ./extralib/sram2.v line 172, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+        checkRAM();
+                 |
+xmvlog: *W,TMTPAR (./extralib/sram2.v,177|17): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+(`include file: ./extralib/sram2.v line 177, `include file: cpu/ifu.v line 2, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+	module worklib.sram:v
+		errors: 0, warnings: 23
+module and_gate (x, y, z);
+              |
+xmvlog: *W,RECOME (./lib/and_gate.v,1|14): recompiling design unit worklib.and_gate:v.
+	First compiled from line 1 of lib/and_gate.v.
+(`include file: ./lib/and_gate.v line 1, `include file: cpu/ifu.v line 4, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+	module worklib.and_gate:v
+		errors: 0, warnings: 1
+module mux_n (sel, src0, src1, z);
+           |
+xmvlog: *W,RECOME (./extralib/mux_n2.v,1|11): recompiling design unit worklib.mux_n:v.
+	First compiled from line 1 of extralib/mux_n2.v.
+(`include file: ./extralib/mux_n2.v line 1, `include file: cpu/ifu.v line 5, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+	module worklib.mux_n:v
+		errors: 0, warnings: 1
+module mux_32 (sel, src0, src1, z);
+            |
+xmvlog: *W,RECOME (./extralib/mux_322.v,1|12): recompiling design unit worklib.mux_32:v.
+	First compiled from line 1 of extralib/mux_322.v.
+(`include file: ./extralib/mux_322.v line 1, `include file: ./cpu/extender.v line 1, `include file: cpu/ifu.v line 6, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+	module worklib.mux_32:v
+		errors: 0, warnings: 1
+module extender (x,ExtOp, z);
+              |
+xmvlog: *W,RECOME (./cpu/extender.v,2|14): recompiling design unit worklib.extender:v.
+	First compiled from line 2 of cpu/extender.v.
+(`include file: ./cpu/extender.v line 2, `include file: cpu/ifu.v line 6, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+	module worklib.extender:v
+		errors: 0, warnings: 1
+module not_gate (x, z);
+              |
+xmvlog: *W,RECOME (./lib/not_gate.v,1|14): recompiling design unit worklib.not_gate:v.
+	First compiled from line 1 of lib/not_gate.v.
+(`include file: ./lib/not_gate.v line 1, `include file: cpu/ifu.v line 7, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+	module worklib.not_gate:v
+		errors: 0, warnings: 1
+module and_gate (x, y, z);
+              |
+xmvlog: *W,RECOME (./lib/and_gate.v,1|14): recompiling design unit worklib.and_gate:v.
+	First compiled from line 1 of lib/and_gate.v.
+(`include file: ./lib/and_gate.v line 1, `include file: ./extralib/and3to1.v line 1, `include file: cpu/ifu.v line 9, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+	module worklib.and_gate:v
+		errors: 0, warnings: 1
+module and3to1 (w,x,y,z);
+             |
+xmvlog: *W,RECOME (./extralib/and3to1.v,2|13): recompiling design unit worklib.and3to1:v.
+	First compiled from line 2 of extralib/and3to1.v.
+(`include file: ./extralib/and3to1.v line 2, `include file: cpu/ifu.v line 9, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+	module worklib.and3to1:v
+		errors: 0, warnings: 1
+module or_gate (x, y, z);
+             |
+xmvlog: *W,RECOME (./lib/or_gate.v,1|13): recompiling design unit worklib.or_gate:v.
+	First compiled from line 1 of lib/or_gate.v.
+(`include file: ./lib/or_gate.v line 1, `include file: ./extralib/or3to1.v line 1, `include file: cpu/ifu.v line 10, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+	module worklib.or_gate:v
+		errors: 0, warnings: 1
+module or3to1 (w, x, y, z);
+            |
+xmvlog: *W,RECOME (./extralib/or3to1.v,2|12): recompiling design unit worklib.or3to1:v.
+	First compiled from line 2 of extralib/or3to1.v.
+(`include file: ./extralib/or3to1.v line 2, `include file: cpu/ifu.v line 10, `include file: cpu/cpu.v line 7, file: test/cpu_tb.v line 1)
+	module worklib.or3to1:v
+		errors: 0, warnings: 1
+module and_gate (x, y, z);
+              |
+xmvlog: *W,RECOME (./lib/and_gate.v,1|14): recompiling design unit worklib.and_gate:v.
+	First compiled from line 1 of lib/and_gate.v.
+(`include file: ./lib/and_gate.v line 1, `include file: ./extralib/and3to1.v line 1, `include file: cpu/reg_file.v line 2, `include file: cpu/cpu.v line 8, file: test/cpu_tb.v line 1)
+	module worklib.and_gate:v
+		errors: 0, warnings: 1
+module and3to1 (w,x,y,z);
+             |
+xmvlog: *W,RECOME (./extralib/and3to1.v,2|13): recompiling design unit worklib.and3to1:v.
+	First compiled from line 2 of extralib/and3to1.v.
+(`include file: ./extralib/and3to1.v line 2, `include file: cpu/reg_file.v line 2, `include file: cpu/cpu.v line 8, file: test/cpu_tb.v line 1)
+	module worklib.and3to1:v
+		errors: 0, warnings: 1
+module mux_32 (sel, src0, src1, z);
+            |
+xmvlog: *W,RECOME (./extralib/mux_322.v,1|12): recompiling design unit worklib.mux_32:v.
+	First compiled from line 1 of extralib/mux_322.v.
+(`include file: ./extralib/mux_322.v line 1, `include file: extralib/mux4to1_32.v line 1, `include file: extralib/mux16to1_32.v line 1, `include file: extralib/mux32to1_32.v line 1, `include file: cpu/reg_file.v line 3, `include file: cpu/cpu.v line 8, file: test/cpu_tb.v line 1)
+	module worklib.mux_32:v
+		errors: 0, warnings: 1
+	module worklib.cpu_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		syncram
+		cpu_tb
+              Full_adder msb(.A(a[i]) , .B(b[i]) , .CIN(cout[i-1]) , .SUM(z[i]));
+                           |
+xmelab: *W,CUVWSP (./ece361_alu_verilog/adder_32.v,20|27): 1 output port was not connected:
+xmelab: (/home/wsp5700/ce361/361-Project-One-Group-14/ce361_CPU_Verilog/ece361_alu_verilog/Full_adder.v,4): COUT
+
+    control mainctrl(.op(ctrlop), .RegDst(RegDst), .ALUSrc(ALUSrc), .MemtoReg(MemtoReg), .RegWrite(RegWrite), .MemWrite(MemWrite), .ExtOp(ExtOp), .Branch(Branch), .ALUop(ALUop));
+                              |
+xmelab: *W,CUVMPW (./cpu/cpu.v,39|30): port sizes differ in port connection (7/6).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mux_32:v <0x71e7ca2c>
+			streams:   2, words:   592
+		worklib.mux_32:v <0x1121d2e5>
+			streams:   2, words:   499
+		worklib.and3to1:v <0x0faea80f>
+			streams:   0, words:     0
+		worklib.mux_32:v <0x557f409e>
+			streams:   2, words:   565
+		worklib.mux_32:v <0x7db09662>
+			streams:   2, words:   499
+		worklib.mux_32:v <0x5b0fa21b>
+			streams:   2, words:   554
+		worklib.mux_n:v <0x762e4df9>
+			streams:   2, words:   579
+		worklib.mux_n:v <0x69c3aeff>
+			streams:   2, words:   483
+		worklib.or3to1:v <0x6861f798>
+			streams:   0, words:     0
+		worklib.and3to1:v <0x45905b9c>
+			streams:   0, words:     0
+		worklib.mux_32:v <0x59281cd0>
+			streams:   2, words:   472
+		worklib.extender:v <0x784bf01c>
+			streams:   3, words:   482
+		worklib.or_gate:v <0x31f080fc>
+			streams:   0, words:     0
+		worklib.and_gate:v <0x20236131>
+			streams:   0, words:     0
+		worklib.not_gate:v <0x242806a5>
+			streams:   0, words:     0
+		worklib.cpu_tb:v <0x757bb452>
+			streams:   5, words:  2519
+		worklib.cpu:v <0x5e0533b8>
+			streams:   4, words:   982
+		worklib.ifu:v <0x03d77f34>
+			streams:   6, words:  1334
+		worklib.sram:v <0x54ac8e9a>
+			streams:  13, words: 15790
+		worklib.mux_n:v <0x1fcb8fb3>
+			streams:   2, words:   507
+		worklib.sram:v <0x6f5c5c45>
+			streams:  13, words: 15886
+		worklib.mux_n:v <0x315cc466>
+			streams:   2, words:   615
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                Instances  Unique
+		Modules:             2885      41
+		Registers:           1228      56
+		Scalar wires:        2676       -
+		Expanded wires:       429      17
+		Vectored wires:       136       -
+		Always blocks:       1158       8
+		Initial blocks:        23      16
+		Cont. assignments:     65      63
+		Pseudo assignments:     6       6
+	Writing initial simulation snapshot: worklib.syncram:v
+xcelium> 
+xcelium> source /vol/cadence2018/XCELIUM1809/tools/xcelium/files/xmsimrc
+xcelium> 
+-------------------------------------
+Relinquished control to SimVision...
+# Restoring simulation environment...
+xcelium> input -quiet .reinvoke.sim
+xcelium> file delete .reinvoke.sim
+xcelium> run
+Now initializing sram
+Addr is written: 00400020
+Data is written: 20050001
+Addr is written: 00400024
+Data is written: 20060064
+Addr is written: 00400028
+Data is written: 20021000
+Addr is written: 0040002c
+Data is written: 00421400
+Addr is written: 00400030
+Data is written: 20470028
+Addr is written: 00400034
+Data is written: 8c430000
+Addr is written: 00400038
+Data is written: 00c3202a
+Addr is written: 0040003c
+Data is written: 10850002
+Addr is written: 00400040
+Data is written: 00c33022
+Addr is written: 00400044
+Data is written: ac400000
+Addr is written: 00400048
+Data is written: 20420004
+Addr is written: 0040004c
+Data is written: 1447fff9
+Addr is written: 00400050
+Data is written: ace60000
+Addr is written: 10000000
+Data is written: 0000000a
+Addr is written: 10000004
+Data is written: 00000009
+Addr is written: 10000008
+Data is written: 00000008
+Addr is written: 1000000c
+Data is written: 000002bc
+Addr is written: 10000010
+Data is written: 00000005
+Addr is written: 10000014
+Data is written: 00000006
+Addr is written: 10000018
+Data is written: 00000190
+Addr is written: 1000001c
+Data is written: 00000001
+Addr is written: 10000020
+Data is written: 00000002
+Addr is written: 10000024
+Data is written: 00000003
+Addr is checking: 00400020
+Data is checking: 20050001
+Addr is checking: 00400024
+Data is checking: 20060064
+Addr is checking: 00400028
+Data is checking: 20021000
+Addr is checking: 0040002c
+Data is checking: 00421400
+Addr is checking: 00400030
+Data is checking: 20470028
+Addr is checking: 00400034
+Data is checking: 8c430000
+Addr is checking: 00400038
+Data is checking: 00c3202a
+Addr is checking: 0040003c
+Data is checking: 10850002
+Addr is checking: 00400040
+Data is checking: 00c33022
+Addr is checking: 00400044
+Data is checking: ac400000
+Addr is checking: 00400048
+Data is checking: 20420004
+Addr is checking: 0040004c
+Data is checking: 1447fff9
+Addr is checking: 00400050
+Data is checking: ace60000
+Addr is checking: 10000000
+Data is checking: 0000000a
+Addr is checking: 10000004
+Data is checking: 00000009
+Addr is checking: 10000008
+Data is checking: 00000008
+Addr is checking: 1000000c
+Data is checking: 000002bc
+Addr is checking: 10000010
+Data is checking: 00000005
+Addr is checking: 10000014
+Data is checking: 00000006
+Addr is checking: 10000018
+Data is checking: 00000190
+Addr is checking: 1000001c
+Data is checking: 00000001
+Addr is checking: 10000020
+Data is checking: 00000002
+Addr is checking: 10000024
+Data is checking: 00000003
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Writing to dout:          x
+Now initializing sram
+Addr is written: 00400020
+Data is written: 20050001
+Addr is written: 00400024
+Data is written: 20060064
+Addr is written: 00400028
+Data is written: 20021000
+Addr is written: 0040002c
+Data is written: 00421400
+Addr is written: 00400030
+Data is written: 20470028
+Addr is written: 00400034
+Data is written: 8c430000
+Addr is written: 00400038
+Data is written: 00c3202a
+Addr is written: 0040003c
+Data is written: 10850002
+Addr is written: 00400040
+Data is written: 00c33022
+Addr is written: 00400044
+Data is written: ac400000
+Addr is written: 00400048
+Data is written: 20420004
+Addr is written: 0040004c
+Data is written: 1447fff9
+Addr is written: 00400050
+Data is written: ace60000
+Addr is written: 10000000
+Data is written: 0000000a
+Addr is written: 10000004
+Data is written: 00000009
+Addr is written: 10000008
+Data is written: 00000008
+Addr is written: 1000000c
+Data is written: 000002bc
+Addr is written: 10000010
+Data is written: 00000005
+Addr is written: 10000014
+Data is written: 00000006
+Addr is written: 10000018
+Data is written: 00000190
+Addr is written: 1000001c
+Data is written: 00000001
+Addr is written: 10000020
+Data is written: 00000002
+Addr is written: 10000024
+Data is written: 00000003
+Addr is checking: 00400020
+Data is checking: 20050001
+Addr is checking: 00400024
+Data is checking: 20060064
+Addr is checking: 00400028
+Data is checking: 20021000
+Addr is checking: 0040002c
+Data is checking: 00421400
+Addr is checking: 00400030
+Data is checking: 20470028
+Addr is checking: 00400034
+Data is checking: 8c430000
+Addr is checking: 00400038
+Data is checking: 00c3202a
+Addr is checking: 0040003c
+Data is checking: 10850002
+Addr is checking: 00400040
+Data is checking: 00c33022
+Addr is checking: 00400044
+Data is checking: ac400000
+Addr is checking: 00400048
+Data is checking: 20420004
+Addr is checking: 0040004c
+Data is checking: 1447fff9
+Addr is checking: 00400050
+Data is checking: ace60000
+Addr is checking: 10000000
+Data is checking: 0000000a
+Addr is checking: 10000004
+Data is checking: 00000009
+Addr is checking: 10000008
+Data is checking: 00000008
+Addr is checking: 1000000c
+Data is checking: 000002bc
+Addr is checking: 10000010
+Data is checking: 00000005
+Addr is checking: 10000014
+Data is checking: 00000006
+Addr is checking: 10000018
+Data is checking: 00000190
+Addr is checking: 1000001c
+Data is checking: 00000001
+Addr is checking: 10000020
+Data is checking: 00000002
+Addr is checking: 10000024
+Data is checking: 00000003
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Addr is checking: xxxxxxxx
+Data is checking: xxxxxxxx
+Writing to dout:          x
+Writing to dout:          x
+Writing to dout:          x
+READ Addr FOUND!: 00400020
+Writing to dout:  537198593
+Writing to dout:          x
+src is  5 z is          x and i is           0
+src is  5 z is          x and i is           1
+src is  5 z is          x and i is           2
+src is  5 z is          x and i is           3
+src is  5 z is          x and i is           4
+src is  5 z is          x and i is           5
+src is  5 z is          x and i is           6
+src is  5 z is          x and i is           7
+src is  5 z is          x and i is           8
+src is  5 z is          x and i is           9
+src is  5 z is          x and i is          10
+src is  5 z is          x and i is          11
+src is  5 z is          x and i is          12
+src is  5 z is          x and i is          13
+src is  5 z is          x and i is          14
+src is  5 z is          x and i is          15
+src is  5 z is          x and i is          16
+src is  5 z is          x and i is          17
+src is  5 z is          x and i is          18
+src is  5 z is          x and i is          19
+src is  5 z is          x and i is          20
+src is  5 z is          x and i is          21
+src is  5 z is          x and i is          22
+src is  5 z is          x and i is          23
+src is  5 z is          x and i is          24
+src is  5 z is          x and i is          25
+src is  5 z is          x and i is          26
+src is  5 z is          x and i is          27
+src is  5 z is          x and i is          28
+src is  5 z is          x and i is          29
+src is  5 z is          x and i is          30
+src is  5 z is          x and i is          31
+Writing to dout:          x
+Writing to dout:          x
+Writing to dout:          x
+READ Addr FOUND!: 00400024
+Writing to dout:  537264228
+src is  6 z is         32 and i is           0
+src is  6 z is         32 and i is           1
+src is  6 z is         32 and i is           2
+src is  6 z is         32 and i is           3
+src is  6 z is         32 and i is           4
+src is  6 z is         32 and i is           5
+src is  6 z is         32 and i is           6
+src is  6 z is         32 and i is           7
+src is  6 z is         32 and i is           8
+src is  6 z is         32 and i is           9
+src is  6 z is         32 and i is          10
+src is  6 z is         32 and i is          11
+src is  6 z is         32 and i is          12
+src is  6 z is         32 and i is          13
+src is  6 z is         32 and i is          14
+src is  6 z is         32 and i is          15
+src is  6 z is         32 and i is          16
+src is  6 z is         32 and i is          17
+src is  6 z is         32 and i is          18
+src is  6 z is         32 and i is          19
+src is  6 z is         32 and i is          20
+src is  6 z is         32 and i is          21
+src is  6 z is         32 and i is          22
+src is  6 z is         32 and i is          23
+src is  6 z is         32 and i is          24
+src is  6 z is         32 and i is          25
+src is  6 z is         32 and i is          26
+src is  6 z is         32 and i is          27
+src is  6 z is         32 and i is          28
+src is  6 z is         32 and i is          29
+src is  6 z is         32 and i is          30
+src is  6 z is         32 and i is          31
+Writing to dout:          x
+READ Addr FOUND!: 00400028
+Writing to dout:  537006080
+src is  2 z is         64 and i is           0
+src is  2 z is         64 and i is           1
+src is  2 z is         64 and i is           2
+src is  2 z is         64 and i is           3
+src is  2 z is         64 and i is           4
+src is  2 z is         64 and i is           5
+src is  2 z is         64 and i is           6
+src is  2 z is         64 and i is           7
+src is  2 z is         64 and i is           8
+src is  2 z is         64 and i is           9
+src is  2 z is         64 and i is          10
+src is  2 z is         64 and i is          11
+src is  2 z is         64 and i is          12
+src is  2 z is         64 and i is          13
+src is  2 z is         64 and i is          14
+src is  2 z is         64 and i is          15
+src is  2 z is         64 and i is          16
+src is  2 z is         64 and i is          17
+src is  2 z is         64 and i is          18
+src is  2 z is         64 and i is          19
+src is  2 z is         64 and i is          20
+src is  2 z is         64 and i is          21
+src is  2 z is         64 and i is          22
+src is  2 z is         64 and i is          23
+src is  2 z is         64 and i is          24
+src is  2 z is         64 and i is          25
+src is  2 z is         64 and i is          26
+src is  2 z is         64 and i is          27
+src is  2 z is         64 and i is          28
+src is  2 z is         64 and i is          29
+src is  2 z is         64 and i is          30
+src is  2 z is         64 and i is          31
+Writing to dout:          x
+READ Addr FOUND!: 0040002c
+Writing to dout:    4330496
+Writing to dout:          x
+Writing to dout:          x
+Writing to dout:          x
+Writing to dout:          x
+READ Addr FOUND!: 10000000
+Writing to dout:         10
+READ Addr FOUND!: 00400030
+Writing to dout:  541524008
+src is  7 z is          4 and i is           0
+src is  7 z is          4 and i is           1
+src is  7 z is          4 and i is           2
+src is  7 z is          4 and i is           3
+src is  7 z is          4 and i is           4
+src is  7 z is          4 and i is           5
+src is  7 z is          4 and i is           6
+src is  7 z is          4 and i is           7
+src is  7 z is          4 and i is           8
+src is  7 z is          4 and i is           9
+src is  7 z is          4 and i is          10
+src is  7 z is          4 and i is          11
+src is  7 z is          4 and i is          12
+src is  7 z is          4 and i is          13
+src is  7 z is          4 and i is          14
+src is  7 z is          4 and i is          15
+src is  7 z is          4 and i is          16
+src is  7 z is          4 and i is          17
+src is  7 z is          4 and i is          18
+src is  7 z is          4 and i is          19
+src is  7 z is          4 and i is          20
+src is  7 z is          4 and i is          21
+src is  7 z is          4 and i is          22
+src is  7 z is          4 and i is          23
+src is  7 z is          4 and i is          24
+src is  7 z is          4 and i is          25
+src is  7 z is          4 and i is          26
+src is  7 z is          4 and i is          27
+src is  7 z is          4 and i is          28
+src is  7 z is          4 and i is          29
+src is  7 z is          4 and i is          30
+src is  7 z is          4 and i is          31
+Writing to dout:         10
+Writing to dout:         10
+Writing to dout:         10
+Writing to dout:         10
+READ Addr FOUND!: 00400034
+Writing to dout: 2353201152
+src is  3 z is        128 and i is           0
+src is  3 z is        128 and i is           1
+src is  3 z is        128 and i is           2
+src is  3 z is        128 and i is           3
+src is  3 z is        128 and i is           4
+src is  3 z is        128 and i is           5
+src is  3 z is        128 and i is           6
+src is  3 z is        128 and i is           7
+src is  3 z is        128 and i is           8
+src is  3 z is        128 and i is           9
+src is  3 z is        128 and i is          10
+src is  3 z is        128 and i is          11
+src is  3 z is        128 and i is          12
+src is  3 z is        128 and i is          13
+src is  3 z is        128 and i is          14
+src is  3 z is        128 and i is          15
+src is  3 z is        128 and i is          16
+src is  3 z is        128 and i is          17
+src is  3 z is        128 and i is          18
+src is  3 z is        128 and i is          19
+src is  3 z is        128 and i is          20
+src is  3 z is        128 and i is          21
+src is  3 z is        128 and i is          22
+src is  3 z is        128 and i is          23
+src is  3 z is        128 and i is          24
+src is  3 z is        128 and i is          25
+src is  3 z is        128 and i is          26
+src is  3 z is        128 and i is          27
+src is  3 z is        128 and i is          28
+src is  3 z is        128 and i is          29
+src is  3 z is        128 and i is          30
+src is  3 z is        128 and i is          31
+READ Addr FOUND!: 10000000
+Writing to dout:         10
+READ Addr FOUND!: 00400038
+Writing to dout:   12787754
+src is  4 z is          8 and i is           0
+src is  4 z is          8 and i is           1
+src is  4 z is          8 and i is           2
+src is  4 z is          8 and i is           3
+src is  4 z is          8 and i is           4
+src is  4 z is          8 and i is           5
+src is  4 z is          8 and i is           6
+src is  4 z is          8 and i is           7
+src is  4 z is          8 and i is           8
+src is  4 z is          8 and i is           9
+src is  4 z is          8 and i is          10
+src is  4 z is          8 and i is          11
+src is  4 z is          8 and i is          12
+src is  4 z is          8 and i is          13
+src is  4 z is          8 and i is          14
+src is  4 z is          8 and i is          15
+src is  4 z is          8 and i is          16
+src is  4 z is          8 and i is          17
+src is  4 z is          8 and i is          18
+src is  4 z is          8 and i is          19
+src is  4 z is          8 and i is          20
+src is  4 z is          8 and i is          21
+src is  4 z is          8 and i is          22
+src is  4 z is          8 and i is          23
+src is  4 z is          8 and i is          24
+src is  4 z is          8 and i is          25
+src is  4 z is          8 and i is          26
+src is  4 z is          8 and i is          27
+src is  4 z is          8 and i is          28
+src is  4 z is          8 and i is          29
+src is  4 z is          8 and i is          30
+src is  4 z is          8 and i is          31
+Writing to dout:         10
+Writing to dout:         10
+Writing to dout:         10
+READ Addr FOUND!: 0040003c
+Writing to dout:  277151746
+src is  5 z is         16 and i is           0
+src is  5 z is         16 and i is           1
+src is  5 z is         16 and i is           2
+src is  5 z is         16 and i is           3
+src is  5 z is         16 and i is           4
+src is  5 z is         16 and i is           5
+src is  5 z is         16 and i is           6
+src is  5 z is         16 and i is           7
+src is  5 z is         16 and i is           8
+src is  5 z is         16 and i is           9
+src is  5 z is         16 and i is          10
+src is  5 z is         16 and i is          11
+src is  5 z is         16 and i is          12
+src is  5 z is         16 and i is          13
+src is  5 z is         16 and i is          14
+src is  5 z is         16 and i is          15
+src is  5 z is         16 and i is          16
+src is  5 z is         16 and i is          17
+src is  5 z is         16 and i is          18
+src is  5 z is         16 and i is          19
+src is  5 z is         16 and i is          20
+src is  5 z is         16 and i is          21
+src is  5 z is         16 and i is          22
+src is  5 z is         16 and i is          23
+src is  5 z is         16 and i is          24
+src is  5 z is         16 and i is          25
+src is  5 z is         16 and i is          26
+src is  5 z is         16 and i is          27
+src is  5 z is         16 and i is          28
+src is  5 z is         16 and i is          29
+src is  5 z is         16 and i is          30
+src is  5 z is         16 and i is          31
+Writing to dout:         10
+Writing to dout:         10
+Writing to dout:         10
+READ Addr FOUND!: 00400040
+Writing to dout:   12791842
+src is  6 z is         32 and i is           0
+src is  6 z is         32 and i is           1
+src is  6 z is         32 and i is           2
+src is  6 z is         32 and i is           3
+src is  6 z is         32 and i is           4
+src is  6 z is         32 and i is           5
+src is  6 z is         32 and i is           6
+src is  6 z is         32 and i is           7
+src is  6 z is         32 and i is           8
+src is  6 z is         32 and i is           9
+src is  6 z is         32 and i is          10
+src is  6 z is         32 and i is          11
+src is  6 z is         32 and i is          12
+src is  6 z is         32 and i is          13
+src is  6 z is         32 and i is          14
+src is  6 z is         32 and i is          15
+src is  6 z is         32 and i is          16
+src is  6 z is         32 and i is          17
+src is  6 z is         32 and i is          18
+src is  6 z is         32 and i is          19
+src is  6 z is         32 and i is          20
+src is  6 z is         32 and i is          21
+src is  6 z is         32 and i is          22
+src is  6 z is         32 and i is          23
+src is  6 z is         32 and i is          24
+src is  6 z is         32 and i is          25
+src is  6 z is         32 and i is          26
+src is  6 z is         32 and i is          27
+src is  6 z is         32 and i is          28
+src is  6 z is         32 and i is          29
+src is  6 z is         32 and i is          30
+src is  6 z is         32 and i is          31
+Writing to dout:         10
+Writing to dout:         10
+READ Addr FOUND!: 00400044
+Writing to dout: 2889875456
+READ Addr FOUND!: 0000005a
+Writing to dout:         10
+src is  0 z is         64 and i is           0
+src is  0 z is         64 and i is           1
+src is  0 z is         64 and i is           2
+src is  0 z is         64 and i is           3
+src is  0 z is         64 and i is           4
+src is  0 z is         64 and i is           5
+src is  0 z is         64 and i is           6
+src is  0 z is         64 and i is           7
+src is  0 z is         64 and i is           8
+src is  0 z is         64 and i is           9
+src is  0 z is         64 and i is          10
+src is  0 z is         64 and i is          11
+src is  0 z is         64 and i is          12
+src is  0 z is         64 and i is          13
+src is  0 z is         64 and i is          14
+src is  0 z is         64 and i is          15
+src is  0 z is         64 and i is          16
+src is  0 z is         64 and i is          17
+src is  0 z is         64 and i is          18
+src is  0 z is         64 and i is          19
+src is  0 z is         64 and i is          20
+src is  0 z is         64 and i is          21
+src is  0 z is         64 and i is          22
+src is  0 z is         64 and i is          23
+src is  0 z is         64 and i is          24
+src is  0 z is         64 and i is          25
+src is  0 z is         64 and i is          26
+src is  0 z is         64 and i is          27
+src is  0 z is         64 and i is          28
+src is  0 z is         64 and i is          29
+src is  0 z is         64 and i is          30
+src is  0 z is         64 and i is          31
+READ Addr FOUND!: 0000006e
+Writing to dout:         10
+READ Addr FOUND!: 00003086
+Writing to dout:         10
+WRITE Addr FOUND!: 10000000
+Wrote 00000000 to address!
+READ Addr FOUND!: 10000000
+Writing to dout:          0
+READ Addr FOUND!: 00400048
+Writing to dout:  541196292
+READ Addr FOUND!: 10000000
+Writing to dout:          0
+src is  2 z is          1 and i is           0
+src is  2 z is          1 and i is           1
+src is  2 z is          1 and i is           2
+src is  2 z is          1 and i is           3
+src is  2 z is          1 and i is           4
+src is  2 z is          1 and i is           5
+src is  2 z is          1 and i is           6
+src is  2 z is          1 and i is           7
+src is  2 z is          1 and i is           8
+src is  2 z is          1 and i is           9
+src is  2 z is          1 and i is          10
+src is  2 z is          1 and i is          11
+src is  2 z is          1 and i is          12
+src is  2 z is          1 and i is          13
+src is  2 z is          1 and i is          14
+src is  2 z is          1 and i is          15
+src is  2 z is          1 and i is          16
+src is  2 z is          1 and i is          17
+src is  2 z is          1 and i is          18
+src is  2 z is          1 and i is          19
+src is  2 z is          1 and i is          20
+src is  2 z is          1 and i is          21
+src is  2 z is          1 and i is          22
+src is  2 z is          1 and i is          23
+src is  2 z is          1 and i is          24
+src is  2 z is          1 and i is          25
+src is  2 z is          1 and i is          26
+src is  2 z is          1 and i is          27
+src is  2 z is          1 and i is          28
+src is  2 z is          1 and i is          29
+src is  2 z is          1 and i is          30
+src is  2 z is          1 and i is          31
+READ Addr FOUND!: 10000004
+Writing to dout:          9
+READ Addr FOUND!: 0040004c
+Writing to dout:  340262905
+src is  7 z is          4 and i is           0
+src is  7 z is          4 and i is           1
+src is  7 z is          4 and i is           2
+src is  7 z is          4 and i is           3
+src is  7 z is          4 and i is           4
+src is  7 z is          4 and i is           5
+src is  7 z is          4 and i is           6
+src is  7 z is          4 and i is           7
+src is  7 z is          4 and i is           8
+src is  7 z is          4 and i is           9
+src is  7 z is          4 and i is          10
+src is  7 z is          4 and i is          11
+src is  7 z is          4 and i is          12
+src is  7 z is          4 and i is          13
+src is  7 z is          4 and i is          14
+src is  7 z is          4 and i is          15
+src is  7 z is          4 and i is          16
+src is  7 z is          4 and i is          17
+src is  7 z is          4 and i is          18
+src is  7 z is          4 and i is          19
+src is  7 z is          4 and i is          20
+src is  7 z is          4 and i is          21
+src is  7 z is          4 and i is          22
+src is  7 z is          4 and i is          23
+src is  7 z is          4 and i is          24
+src is  7 z is          4 and i is          25
+src is  7 z is          4 and i is          26
+src is  7 z is          4 and i is          27
+src is  7 z is          4 and i is          28
+src is  7 z is          4 and i is          29
+src is  7 z is          4 and i is          30
+src is  7 z is          4 and i is          31
+Writing to dout:          9
+Writing to dout:          9
+Writing to dout:          9
+Writing to dout:          9
+Writing to dout:          9
+READ Addr FOUND!: 00400034
+Writing to dout: 2353201152
+src is  3 z is        128 and i is           0
+src is  3 z is        128 and i is           1
+src is  3 z is        128 and i is           2
+src is  3 z is        128 and i is           3
+src is  3 z is        128 and i is           4
+src is  3 z is        128 and i is           5
+src is  3 z is        128 and i is           6
+src is  3 z is        128 and i is           7
+src is  3 z is        128 and i is           8
+src is  3 z is        128 and i is           9
+src is  3 z is        128 and i is          10
+src is  3 z is        128 and i is          11
+src is  3 z is        128 and i is          12
+src is  3 z is        128 and i is          13
+src is  3 z is        128 and i is          14
+src is  3 z is        128 and i is          15
+src is  3 z is        128 and i is          16
+src is  3 z is        128 and i is          17
+src is  3 z is        128 and i is          18
+src is  3 z is        128 and i is          19
+src is  3 z is        128 and i is          20
+src is  3 z is        128 and i is          21
+src is  3 z is        128 and i is          22
+src is  3 z is        128 and i is          23
+src is  3 z is        128 and i is          24
+src is  3 z is        128 and i is          25
+src is  3 z is        128 and i is          26
+src is  3 z is        128 and i is          27
+src is  3 z is        128 and i is          28
+src is  3 z is        128 and i is          29
+src is  3 z is        128 and i is          30
+src is  3 z is        128 and i is          31
+Writing to dout:          9
+Writing to dout:          9
+Writing to dout:          9
+READ Addr FOUND!: 10000004
+Writing to dout:          9
+READ Addr FOUND!: 00400038
+Writing to dout:   12787754
+src is  4 z is          8 and i is           0
+src is  4 z is          8 and i is           1
+src is  4 z is          8 and i is           2
+src is  4 z is          8 and i is           3
+src is  4 z is          8 and i is           4
+src is  4 z is          8 and i is           5
+src is  4 z is          8 and i is           6
+src is  4 z is          8 and i is           7
+src is  4 z is          8 and i is           8
+src is  4 z is          8 and i is           9
+src is  4 z is          8 and i is          10
+src is  4 z is          8 and i is          11
+src is  4 z is          8 and i is          12
+src is  4 z is          8 and i is          13
+src is  4 z is          8 and i is          14
+src is  4 z is          8 and i is          15
+src is  4 z is          8 and i is          16
+src is  4 z is          8 and i is          17
+src is  4 z is          8 and i is          18
+src is  4 z is          8 and i is          19
+src is  4 z is          8 and i is          20
+src is  4 z is          8 and i is          21
+src is  4 z is          8 and i is          22
+src is  4 z is          8 and i is          23
+src is  4 z is          8 and i is          24
+src is  4 z is          8 and i is          25
+src is  4 z is          8 and i is          26
+src is  4 z is          8 and i is          27
+src is  4 z is          8 and i is          28
+src is  4 z is          8 and i is          29
+src is  4 z is          8 and i is          30
+src is  4 z is          8 and i is          31
+Writing to dout:          9
+Writing to dout:          9
+READ Addr FOUND!: 0040003c
+Writing to dout:  277151746
+src is  5 z is         16 and i is           0
+src is  5 z is         16 and i is           1
+src is  5 z is         16 and i is           2
+src is  5 z is         16 and i is           3
+src is  5 z is         16 and i is           4
+src is  5 z is         16 and i is           5
+src is  5 z is         16 and i is           6
+src is  5 z is         16 and i is           7
+src is  5 z is         16 and i is           8
+src is  5 z is         16 and i is           9
+src is  5 z is         16 and i is          10
+src is  5 z is         16 and i is          11
+src is  5 z is         16 and i is          12
+src is  5 z is         16 and i is          13
+src is  5 z is         16 and i is          14
+src is  5 z is         16 and i is          15
+src is  5 z is         16 and i is          16
+src is  5 z is         16 and i is          17
+src is  5 z is         16 and i is          18
+src is  5 z is         16 and i is          19
+src is  5 z is         16 and i is          20
+src is  5 z is         16 and i is          21
+src is  5 z is         16 and i is          22
+src is  5 z is         16 and i is          23
+src is  5 z is         16 and i is          24
+src is  5 z is         16 and i is          25
+src is  5 z is         16 and i is          26
+src is  5 z is         16 and i is          27
+src is  5 z is         16 and i is          28
+src is  5 z is         16 and i is          29
+src is  5 z is         16 and i is          30
+src is  5 z is         16 and i is          31
+Writing to dout:          9
+Writing to dout:          9
+Writing to dout:          9
+READ Addr FOUND!: 00400040
+Writing to dout:   12791842
+src is  6 z is         32 and i is           0
+src is  6 z is         32 and i is           1
+src is  6 z is         32 and i is           2
+src is  6 z is         32 and i is           3
+src is  6 z is         32 and i is           4
+src is  6 z is         32 and i is           5
+src is  6 z is         32 and i is           6
+src is  6 z is         32 and i is           7
+src is  6 z is         32 and i is           8
+src is  6 z is         32 and i is           9
+src is  6 z is         32 and i is          10
+src is  6 z is         32 and i is          11
+src is  6 z is         32 and i is          12
+src is  6 z is         32 and i is          13
+src is  6 z is         32 and i is          14
+src is  6 z is         32 and i is          15
+src is  6 z is         32 and i is          16
+src is  6 z is         32 and i is          17
+src is  6 z is         32 and i is          18
+src is  6 z is         32 and i is          19
+src is  6 z is         32 and i is          20
+src is  6 z is         32 and i is          21
+src is  6 z is         32 and i is          22
+src is  6 z is         32 and i is          23
+src is  6 z is         32 and i is          24
+src is  6 z is         32 and i is          25
+src is  6 z is         32 and i is          26
+src is  6 z is         32 and i is          27
+src is  6 z is         32 and i is          28
+src is  6 z is         32 and i is          29
+src is  6 z is         32 and i is          30
+src is  6 z is         32 and i is          31
+Writing to dout:          9
+Writing to dout:          9
+READ Addr FOUND!: 00400044
+Writing to dout: 2889875456
+READ Addr FOUND!: 00000051
+Writing to dout:          9
+src is  0 z is         64 and i is           0
+src is  0 z is         64 and i is           1
+src is  0 z is         64 and i is           2
+src is  0 z is         64 and i is           3
+src is  0 z is         64 and i is           4
+src is  0 z is         64 and i is           5
+src is  0 z is         64 and i is           6
+src is  0 z is         64 and i is           7
+src is  0 z is         64 and i is           8
+src is  0 z is         64 and i is           9
+src is  0 z is         64 and i is          10
+src is  0 z is         64 and i is          11
+src is  0 z is         64 and i is          12
+src is  0 z is         64 and i is          13
+src is  0 z is         64 and i is          14
+src is  0 z is         64 and i is          15
+src is  0 z is         64 and i is          16
+src is  0 z is         64 and i is          17
+src is  0 z is         64 and i is          18
+src is  0 z is         64 and i is          19
+src is  0 z is         64 and i is          20
+src is  0 z is         64 and i is          21
+src is  0 z is         64 and i is          22
+src is  0 z is         64 and i is          23
+src is  0 z is         64 and i is          24
+src is  0 z is         64 and i is          25
+src is  0 z is         64 and i is          26
+src is  0 z is         64 and i is          27
+src is  0 z is         64 and i is          28
+src is  0 z is         64 and i is          29
+src is  0 z is         64 and i is          30
+src is  0 z is         64 and i is          31
+READ Addr FOUND!: 00000063
+Writing to dout:          9
+READ Addr FOUND!: 0000307c
+Writing to dout:          9
+WRITE Addr FOUND!: 10000004
+Wrote 00000000 to address!
+READ Addr FOUND!: 10000004
+Writing to dout:          0
+READ Addr FOUND!: 00400048
+Writing to dout:  541196292
+READ Addr FOUND!: 10000004
+Writing to dout:          0
+src is  2 z is          1 and i is           0
+src is  2 z is          1 and i is           1
+src is  2 z is          1 and i is           2
+src is  2 z is          1 and i is           3
+src is  2 z is          1 and i is           4
+src is  2 z is          1 and i is           5
+src is  2 z is          1 and i is           6
+src is  2 z is          1 and i is           7
+src is  2 z is          1 and i is           8
+src is  2 z is          1 and i is           9
+src is  2 z is          1 and i is          10
+src is  2 z is          1 and i is          11
+src is  2 z is          1 and i is          12
+src is  2 z is          1 and i is          13
+src is  2 z is          1 and i is          14
+src is  2 z is          1 and i is          15
+src is  2 z is          1 and i is          16
+src is  2 z is          1 and i is          17
+src is  2 z is          1 and i is          18
+src is  2 z is          1 and i is          19
+src is  2 z is          1 and i is          20
+src is  2 z is          1 and i is          21
+src is  2 z is          1 and i is          22
+src is  2 z is          1 and i is          23
+src is  2 z is          1 and i is          24
+src is  2 z is          1 and i is          25
+src is  2 z is          1 and i is          26
+src is  2 z is          1 and i is          27
+src is  2 z is          1 and i is          28
+src is  2 z is          1 and i is          29
+src is  2 z is          1 and i is          30
+src is  2 z is          1 and i is          31
+READ Addr FOUND!: 10000008
+Writing to dout:          8
+READ Addr FOUND!: 0040004c
+Writing to dout:  340262905
+src is  7 z is          4 and i is           0
+src is  7 z is          4 and i is           1
+src is  7 z is          4 and i is           2
+src is  7 z is          4 and i is           3
+src is  7 z is          4 and i is           4
+src is  7 z is          4 and i is           5
+src is  7 z is          4 and i is           6
+src is  7 z is          4 and i is           7
+src is  7 z is          4 and i is           8
+src is  7 z is          4 and i is           9
+src is  7 z is          4 and i is          10
+src is  7 z is          4 and i is          11
+src is  7 z is          4 and i is          12
+src is  7 z is          4 and i is          13
+src is  7 z is          4 and i is          14
+src is  7 z is          4 and i is          15
+src is  7 z is          4 and i is          16
+src is  7 z is          4 and i is          17
+src is  7 z is          4 and i is          18
+src is  7 z is          4 and i is          19
+src is  7 z is          4 and i is          20
+src is  7 z is          4 and i is          21
+src is  7 z is          4 and i is          22
+src is  7 z is          4 and i is          23
+src is  7 z is          4 and i is          24
+src is  7 z is          4 and i is          25
+src is  7 z is          4 and i is          26
+src is  7 z is          4 and i is          27
+src is  7 z is          4 and i is          28
+src is  7 z is          4 and i is          29
+src is  7 z is          4 and i is          30
+src is  7 z is          4 and i is          31
+READ Addr FOUND!: 10000000
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 00400034
+Writing to dout: 2353201152
+src is  3 z is        128 and i is           0
+src is  3 z is        128 and i is           1
+src is  3 z is        128 and i is           2
+src is  3 z is        128 and i is           3
+src is  3 z is        128 and i is           4
+src is  3 z is        128 and i is           5
+src is  3 z is        128 and i is           6
+src is  3 z is        128 and i is           7
+src is  3 z is        128 and i is           8
+src is  3 z is        128 and i is           9
+src is  3 z is        128 and i is          10
+src is  3 z is        128 and i is          11
+src is  3 z is        128 and i is          12
+src is  3 z is        128 and i is          13
+src is  3 z is        128 and i is          14
+src is  3 z is        128 and i is          15
+src is  3 z is        128 and i is          16
+src is  3 z is        128 and i is          17
+src is  3 z is        128 and i is          18
+src is  3 z is        128 and i is          19
+src is  3 z is        128 and i is          20
+src is  3 z is        128 and i is          21
+src is  3 z is        128 and i is          22
+src is  3 z is        128 and i is          23
+src is  3 z is        128 and i is          24
+src is  3 z is        128 and i is          25
+src is  3 z is        128 and i is          26
+src is  3 z is        128 and i is          27
+src is  3 z is        128 and i is          28
+src is  3 z is        128 and i is          29
+src is  3 z is        128 and i is          30
+src is  3 z is        128 and i is          31
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 10000008
+Writing to dout:          8
+READ Addr FOUND!: 00400038
+Writing to dout:   12787754
+src is  4 z is          8 and i is           0
+src is  4 z is          8 and i is           1
+src is  4 z is          8 and i is           2
+src is  4 z is          8 and i is           3
+src is  4 z is          8 and i is           4
+src is  4 z is          8 and i is           5
+src is  4 z is          8 and i is           6
+src is  4 z is          8 and i is           7
+src is  4 z is          8 and i is           8
+src is  4 z is          8 and i is           9
+src is  4 z is          8 and i is          10
+src is  4 z is          8 and i is          11
+src is  4 z is          8 and i is          12
+src is  4 z is          8 and i is          13
+src is  4 z is          8 and i is          14
+src is  4 z is          8 and i is          15
+src is  4 z is          8 and i is          16
+src is  4 z is          8 and i is          17
+src is  4 z is          8 and i is          18
+src is  4 z is          8 and i is          19
+src is  4 z is          8 and i is          20
+src is  4 z is          8 and i is          21
+src is  4 z is          8 and i is          22
+src is  4 z is          8 and i is          23
+src is  4 z is          8 and i is          24
+src is  4 z is          8 and i is          25
+src is  4 z is          8 and i is          26
+src is  4 z is          8 and i is          27
+src is  4 z is          8 and i is          28
+src is  4 z is          8 and i is          29
+src is  4 z is          8 and i is          30
+src is  4 z is          8 and i is          31
+Writing to dout:          8
+Writing to dout:          8
+READ Addr FOUND!: 0040003c
+Writing to dout:  277151746
+src is  5 z is         16 and i is           0
+src is  5 z is         16 and i is           1
+src is  5 z is         16 and i is           2
+src is  5 z is         16 and i is           3
+src is  5 z is         16 and i is           4
+src is  5 z is         16 and i is           5
+src is  5 z is         16 and i is           6
+src is  5 z is         16 and i is           7
+src is  5 z is         16 and i is           8
+src is  5 z is         16 and i is           9
+src is  5 z is         16 and i is          10
+src is  5 z is         16 and i is          11
+src is  5 z is         16 and i is          12
+src is  5 z is         16 and i is          13
+src is  5 z is         16 and i is          14
+src is  5 z is         16 and i is          15
+src is  5 z is         16 and i is          16
+src is  5 z is         16 and i is          17
+src is  5 z is         16 and i is          18
+src is  5 z is         16 and i is          19
+src is  5 z is         16 and i is          20
+src is  5 z is         16 and i is          21
+src is  5 z is         16 and i is          22
+src is  5 z is         16 and i is          23
+src is  5 z is         16 and i is          24
+src is  5 z is         16 and i is          25
+src is  5 z is         16 and i is          26
+src is  5 z is         16 and i is          27
+src is  5 z is         16 and i is          28
+src is  5 z is         16 and i is          29
+src is  5 z is         16 and i is          30
+src is  5 z is         16 and i is          31
+Writing to dout:          8
+Writing to dout:          8
+Writing to dout:          8
+READ Addr FOUND!: 00400040
+Writing to dout:   12791842
+src is  6 z is         32 and i is           0
+src is  6 z is         32 and i is           1
+src is  6 z is         32 and i is           2
+src is  6 z is         32 and i is           3
+src is  6 z is         32 and i is           4
+src is  6 z is         32 and i is           5
+src is  6 z is         32 and i is           6
+src is  6 z is         32 and i is           7
+src is  6 z is         32 and i is           8
+src is  6 z is         32 and i is           9
+src is  6 z is         32 and i is          10
+src is  6 z is         32 and i is          11
+src is  6 z is         32 and i is          12
+src is  6 z is         32 and i is          13
+src is  6 z is         32 and i is          14
+src is  6 z is         32 and i is          15
+src is  6 z is         32 and i is          16
+src is  6 z is         32 and i is          17
+src is  6 z is         32 and i is          18
+src is  6 z is         32 and i is          19
+src is  6 z is         32 and i is          20
+src is  6 z is         32 and i is          21
+src is  6 z is         32 and i is          22
+src is  6 z is         32 and i is          23
+src is  6 z is         32 and i is          24
+src is  6 z is         32 and i is          25
+src is  6 z is         32 and i is          26
+src is  6 z is         32 and i is          27
+src is  6 z is         32 and i is          28
+src is  6 z is         32 and i is          29
+src is  6 z is         32 and i is          30
+src is  6 z is         32 and i is          31
+Writing to dout:          8
+Writing to dout:          8
+READ Addr FOUND!: 00400044
+Writing to dout: 2889875456
+READ Addr FOUND!: 00000049
+Writing to dout:          8
+src is  0 z is         64 and i is           0
+src is  0 z is         64 and i is           1
+src is  0 z is         64 and i is           2
+src is  0 z is         64 and i is           3
+src is  0 z is         64 and i is           4
+src is  0 z is         64 and i is           5
+src is  0 z is         64 and i is           6
+src is  0 z is         64 and i is           7
+src is  0 z is         64 and i is           8
+src is  0 z is         64 and i is           9
+src is  0 z is         64 and i is          10
+src is  0 z is         64 and i is          11
+src is  0 z is         64 and i is          12
+src is  0 z is         64 and i is          13
+src is  0 z is         64 and i is          14
+src is  0 z is         64 and i is          15
+src is  0 z is         64 and i is          16
+src is  0 z is         64 and i is          17
+src is  0 z is         64 and i is          18
+src is  0 z is         64 and i is          19
+src is  0 z is         64 and i is          20
+src is  0 z is         64 and i is          21
+src is  0 z is         64 and i is          22
+src is  0 z is         64 and i is          23
+src is  0 z is         64 and i is          24
+src is  0 z is         64 and i is          25
+src is  0 z is         64 and i is          26
+src is  0 z is         64 and i is          27
+src is  0 z is         64 and i is          28
+src is  0 z is         64 and i is          29
+src is  0 z is         64 and i is          30
+src is  0 z is         64 and i is          31
+READ Addr FOUND!: 00000059
+Writing to dout:          8
+READ Addr FOUND!: 00003073
+Writing to dout:          8
+WRITE Addr FOUND!: 10000008
+Wrote 00000000 to address!
+READ Addr FOUND!: 10000008
+Writing to dout:          0
+READ Addr FOUND!: 00400048
+Writing to dout:  541196292
+READ Addr FOUND!: 10000008
+Writing to dout:          0
+src is  2 z is          1 and i is           0
+src is  2 z is          1 and i is           1
+src is  2 z is          1 and i is           2
+src is  2 z is          1 and i is           3
+src is  2 z is          1 and i is           4
+src is  2 z is          1 and i is           5
+src is  2 z is          1 and i is           6
+src is  2 z is          1 and i is           7
+src is  2 z is          1 and i is           8
+src is  2 z is          1 and i is           9
+src is  2 z is          1 and i is          10
+src is  2 z is          1 and i is          11
+src is  2 z is          1 and i is          12
+src is  2 z is          1 and i is          13
+src is  2 z is          1 and i is          14
+src is  2 z is          1 and i is          15
+src is  2 z is          1 and i is          16
+src is  2 z is          1 and i is          17
+src is  2 z is          1 and i is          18
+src is  2 z is          1 and i is          19
+src is  2 z is          1 and i is          20
+src is  2 z is          1 and i is          21
+src is  2 z is          1 and i is          22
+src is  2 z is          1 and i is          23
+src is  2 z is          1 and i is          24
+src is  2 z is          1 and i is          25
+src is  2 z is          1 and i is          26
+src is  2 z is          1 and i is          27
+src is  2 z is          1 and i is          28
+src is  2 z is          1 and i is          29
+src is  2 z is          1 and i is          30
+src is  2 z is          1 and i is          31
+READ Addr FOUND!: 1000000c
+Writing to dout:        700
+READ Addr FOUND!: 0040004c
+Writing to dout:  340262905
+src is  7 z is          4 and i is           0
+src is  7 z is          4 and i is           1
+src is  7 z is          4 and i is           2
+src is  7 z is          4 and i is           3
+src is  7 z is          4 and i is           4
+src is  7 z is          4 and i is           5
+src is  7 z is          4 and i is           6
+src is  7 z is          4 and i is           7
+src is  7 z is          4 and i is           8
+src is  7 z is          4 and i is           9
+src is  7 z is          4 and i is          10
+src is  7 z is          4 and i is          11
+src is  7 z is          4 and i is          12
+src is  7 z is          4 and i is          13
+src is  7 z is          4 and i is          14
+src is  7 z is          4 and i is          15
+src is  7 z is          4 and i is          16
+src is  7 z is          4 and i is          17
+src is  7 z is          4 and i is          18
+src is  7 z is          4 and i is          19
+src is  7 z is          4 and i is          20
+src is  7 z is          4 and i is          21
+src is  7 z is          4 and i is          22
+src is  7 z is          4 and i is          23
+src is  7 z is          4 and i is          24
+src is  7 z is          4 and i is          25
+src is  7 z is          4 and i is          26
+src is  7 z is          4 and i is          27
+src is  7 z is          4 and i is          28
+src is  7 z is          4 and i is          29
+src is  7 z is          4 and i is          30
+src is  7 z is          4 and i is          31
+READ Addr FOUND!: 10000004
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 00400034
+Writing to dout: 2353201152
+src is  3 z is        128 and i is           0
+src is  3 z is        128 and i is           1
+src is  3 z is        128 and i is           2
+src is  3 z is        128 and i is           3
+src is  3 z is        128 and i is           4
+src is  3 z is        128 and i is           5
+src is  3 z is        128 and i is           6
+src is  3 z is        128 and i is           7
+src is  3 z is        128 and i is           8
+src is  3 z is        128 and i is           9
+src is  3 z is        128 and i is          10
+src is  3 z is        128 and i is          11
+src is  3 z is        128 and i is          12
+src is  3 z is        128 and i is          13
+src is  3 z is        128 and i is          14
+src is  3 z is        128 and i is          15
+src is  3 z is        128 and i is          16
+src is  3 z is        128 and i is          17
+src is  3 z is        128 and i is          18
+src is  3 z is        128 and i is          19
+src is  3 z is        128 and i is          20
+src is  3 z is        128 and i is          21
+src is  3 z is        128 and i is          22
+src is  3 z is        128 and i is          23
+src is  3 z is        128 and i is          24
+src is  3 z is        128 and i is          25
+src is  3 z is        128 and i is          26
+src is  3 z is        128 and i is          27
+src is  3 z is        128 and i is          28
+src is  3 z is        128 and i is          29
+src is  3 z is        128 and i is          30
+src is  3 z is        128 and i is          31
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 1000000c
+Writing to dout:        700
+READ Addr FOUND!: 00400038
+Writing to dout:   12787754
+src is  4 z is          8 and i is           0
+src is  4 z is          8 and i is           1
+src is  4 z is          8 and i is           2
+src is  4 z is          8 and i is           3
+src is  4 z is          8 and i is           4
+src is  4 z is          8 and i is           5
+src is  4 z is          8 and i is           6
+src is  4 z is          8 and i is           7
+src is  4 z is          8 and i is           8
+src is  4 z is          8 and i is           9
+src is  4 z is          8 and i is          10
+src is  4 z is          8 and i is          11
+src is  4 z is          8 and i is          12
+src is  4 z is          8 and i is          13
+src is  4 z is          8 and i is          14
+src is  4 z is          8 and i is          15
+src is  4 z is          8 and i is          16
+src is  4 z is          8 and i is          17
+src is  4 z is          8 and i is          18
+src is  4 z is          8 and i is          19
+src is  4 z is          8 and i is          20
+src is  4 z is          8 and i is          21
+src is  4 z is          8 and i is          22
+src is  4 z is          8 and i is          23
+src is  4 z is          8 and i is          24
+src is  4 z is          8 and i is          25
+src is  4 z is          8 and i is          26
+src is  4 z is          8 and i is          27
+src is  4 z is          8 and i is          28
+src is  4 z is          8 and i is          29
+src is  4 z is          8 and i is          30
+src is  4 z is          8 and i is          31
+READ Addr FOUND!: 10000004
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 0040003c
+Writing to dout:  277151746
+src is  5 z is         16 and i is           0
+src is  5 z is         16 and i is           1
+src is  5 z is         16 and i is           2
+src is  5 z is         16 and i is           3
+src is  5 z is         16 and i is           4
+src is  5 z is         16 and i is           5
+src is  5 z is         16 and i is           6
+src is  5 z is         16 and i is           7
+src is  5 z is         16 and i is           8
+src is  5 z is         16 and i is           9
+src is  5 z is         16 and i is          10
+src is  5 z is         16 and i is          11
+src is  5 z is         16 and i is          12
+src is  5 z is         16 and i is          13
+src is  5 z is         16 and i is          14
+src is  5 z is         16 and i is          15
+src is  5 z is         16 and i is          16
+src is  5 z is         16 and i is          17
+src is  5 z is         16 and i is          18
+src is  5 z is         16 and i is          19
+src is  5 z is         16 and i is          20
+src is  5 z is         16 and i is          21
+src is  5 z is         16 and i is          22
+src is  5 z is         16 and i is          23
+src is  5 z is         16 and i is          24
+src is  5 z is         16 and i is          25
+src is  5 z is         16 and i is          26
+src is  5 z is         16 and i is          27
+src is  5 z is         16 and i is          28
+src is  5 z is         16 and i is          29
+src is  5 z is         16 and i is          30
+src is  5 z is         16 and i is          31
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 00400048
+Writing to dout:  541196292
+src is  2 z is         32 and i is           0
+src is  2 z is         32 and i is           1
+src is  2 z is         32 and i is           2
+src is  2 z is         32 and i is           3
+src is  2 z is         32 and i is           4
+src is  2 z is         32 and i is           5
+src is  2 z is         32 and i is           6
+src is  2 z is         32 and i is           7
+src is  2 z is         32 and i is           8
+src is  2 z is         32 and i is           9
+src is  2 z is         32 and i is          10
+src is  2 z is         32 and i is          11
+src is  2 z is         32 and i is          12
+src is  2 z is         32 and i is          13
+src is  2 z is         32 and i is          14
+src is  2 z is         32 and i is          15
+src is  2 z is         32 and i is          16
+src is  2 z is         32 and i is          17
+src is  2 z is         32 and i is          18
+src is  2 z is         32 and i is          19
+src is  2 z is         32 and i is          20
+src is  2 z is         32 and i is          21
+src is  2 z is         32 and i is          22
+src is  2 z is         32 and i is          23
+src is  2 z is         32 and i is          24
+src is  2 z is         32 and i is          25
+src is  2 z is         32 and i is          26
+src is  2 z is         32 and i is          27
+src is  2 z is         32 and i is          28
+src is  2 z is         32 and i is          29
+src is  2 z is         32 and i is          30
+src is  2 z is         32 and i is          31
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 10000010
+Writing to dout:          5
+READ Addr FOUND!: 0040004c
+Writing to dout:  340262905
+src is  7 z is          4 and i is           0
+src is  7 z is          4 and i is           1
+src is  7 z is          4 and i is           2
+src is  7 z is          4 and i is           3
+src is  7 z is          4 and i is           4
+src is  7 z is          4 and i is           5
+src is  7 z is          4 and i is           6
+src is  7 z is          4 and i is           7
+src is  7 z is          4 and i is           8
+src is  7 z is          4 and i is           9
+src is  7 z is          4 and i is          10
+src is  7 z is          4 and i is          11
+src is  7 z is          4 and i is          12
+src is  7 z is          4 and i is          13
+src is  7 z is          4 and i is          14
+src is  7 z is          4 and i is          15
+src is  7 z is          4 and i is          16
+src is  7 z is          4 and i is          17
+src is  7 z is          4 and i is          18
+src is  7 z is          4 and i is          19
+src is  7 z is          4 and i is          20
+src is  7 z is          4 and i is          21
+src is  7 z is          4 and i is          22
+src is  7 z is          4 and i is          23
+src is  7 z is          4 and i is          24
+src is  7 z is          4 and i is          25
+src is  7 z is          4 and i is          26
+src is  7 z is          4 and i is          27
+src is  7 z is          4 and i is          28
+src is  7 z is          4 and i is          29
+src is  7 z is          4 and i is          30
+src is  7 z is          4 and i is          31
+READ Addr FOUND!: 10000008
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 00400034
+Writing to dout: 2353201152
+src is  3 z is        128 and i is           0
+src is  3 z is        128 and i is           1
+src is  3 z is        128 and i is           2
+src is  3 z is        128 and i is           3
+src is  3 z is        128 and i is           4
+src is  3 z is        128 and i is           5
+src is  3 z is        128 and i is           6
+src is  3 z is        128 and i is           7
+src is  3 z is        128 and i is           8
+src is  3 z is        128 and i is           9
+src is  3 z is        128 and i is          10
+src is  3 z is        128 and i is          11
+src is  3 z is        128 and i is          12
+src is  3 z is        128 and i is          13
+src is  3 z is        128 and i is          14
+src is  3 z is        128 and i is          15
+src is  3 z is        128 and i is          16
+src is  3 z is        128 and i is          17
+src is  3 z is        128 and i is          18
+src is  3 z is        128 and i is          19
+src is  3 z is        128 and i is          20
+src is  3 z is        128 and i is          21
+src is  3 z is        128 and i is          22
+src is  3 z is        128 and i is          23
+src is  3 z is        128 and i is          24
+src is  3 z is        128 and i is          25
+src is  3 z is        128 and i is          26
+src is  3 z is        128 and i is          27
+src is  3 z is        128 and i is          28
+src is  3 z is        128 and i is          29
+src is  3 z is        128 and i is          30
+src is  3 z is        128 and i is          31
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 10000010
+Writing to dout:          5
+READ Addr FOUND!: 00400038
+Writing to dout:   12787754
+src is  4 z is          8 and i is           0
+src is  4 z is          8 and i is           1
+src is  4 z is          8 and i is           2
+src is  4 z is          8 and i is           3
+src is  4 z is          8 and i is           4
+src is  4 z is          8 and i is           5
+src is  4 z is          8 and i is           6
+src is  4 z is          8 and i is           7
+src is  4 z is          8 and i is           8
+src is  4 z is          8 and i is           9
+src is  4 z is          8 and i is          10
+src is  4 z is          8 and i is          11
+src is  4 z is          8 and i is          12
+src is  4 z is          8 and i is          13
+src is  4 z is          8 and i is          14
+src is  4 z is          8 and i is          15
+src is  4 z is          8 and i is          16
+src is  4 z is          8 and i is          17
+src is  4 z is          8 and i is          18
+src is  4 z is          8 and i is          19
+src is  4 z is          8 and i is          20
+src is  4 z is          8 and i is          21
+src is  4 z is          8 and i is          22
+src is  4 z is          8 and i is          23
+src is  4 z is          8 and i is          24
+src is  4 z is          8 and i is          25
+src is  4 z is          8 and i is          26
+src is  4 z is          8 and i is          27
+src is  4 z is          8 and i is          28
+src is  4 z is          8 and i is          29
+src is  4 z is          8 and i is          30
+src is  4 z is          8 and i is          31
+Writing to dout:          5
+Writing to dout:          5
+Writing to dout:          5
+Writing to dout:          5
+READ Addr FOUND!: 0040003c
+Writing to dout:  277151746
+src is  5 z is         16 and i is           0
+src is  5 z is         16 and i is           1
+src is  5 z is         16 and i is           2
+src is  5 z is         16 and i is           3
+src is  5 z is         16 and i is           4
+src is  5 z is         16 and i is           5
+src is  5 z is         16 and i is           6
+src is  5 z is         16 and i is           7
+src is  5 z is         16 and i is           8
+src is  5 z is         16 and i is           9
+src is  5 z is         16 and i is          10
+src is  5 z is         16 and i is          11
+src is  5 z is         16 and i is          12
+src is  5 z is         16 and i is          13
+src is  5 z is         16 and i is          14
+src is  5 z is         16 and i is          15
+src is  5 z is         16 and i is          16
+src is  5 z is         16 and i is          17
+src is  5 z is         16 and i is          18
+src is  5 z is         16 and i is          19
+src is  5 z is         16 and i is          20
+src is  5 z is         16 and i is          21
+src is  5 z is         16 and i is          22
+src is  5 z is         16 and i is          23
+src is  5 z is         16 and i is          24
+src is  5 z is         16 and i is          25
+src is  5 z is         16 and i is          26
+src is  5 z is         16 and i is          27
+src is  5 z is         16 and i is          28
+src is  5 z is         16 and i is          29
+src is  5 z is         16 and i is          30
+src is  5 z is         16 and i is          31
+Writing to dout:          5
+Writing to dout:          5
+Writing to dout:          5
+READ Addr FOUND!: 00400040
+Writing to dout:   12791842
+src is  6 z is         32 and i is           0
+src is  6 z is         32 and i is           1
+src is  6 z is         32 and i is           2
+src is  6 z is         32 and i is           3
+src is  6 z is         32 and i is           4
+src is  6 z is         32 and i is           5
+src is  6 z is         32 and i is           6
+src is  6 z is         32 and i is           7
+src is  6 z is         32 and i is           8
+src is  6 z is         32 and i is           9
+src is  6 z is         32 and i is          10
+src is  6 z is         32 and i is          11
+src is  6 z is         32 and i is          12
+src is  6 z is         32 and i is          13
+src is  6 z is         32 and i is          14
+src is  6 z is         32 and i is          15
+src is  6 z is         32 and i is          16
+src is  6 z is         32 and i is          17
+src is  6 z is         32 and i is          18
+src is  6 z is         32 and i is          19
+src is  6 z is         32 and i is          20
+src is  6 z is         32 and i is          21
+src is  6 z is         32 and i is          22
+src is  6 z is         32 and i is          23
+src is  6 z is         32 and i is          24
+src is  6 z is         32 and i is          25
+src is  6 z is         32 and i is          26
+src is  6 z is         32 and i is          27
+src is  6 z is         32 and i is          28
+src is  6 z is         32 and i is          29
+src is  6 z is         32 and i is          30
+src is  6 z is         32 and i is          31
+Writing to dout:          5
+Writing to dout:          5
+READ Addr FOUND!: 00400044
+Writing to dout: 2889875456
+READ Addr FOUND!: 00000044
+Writing to dout:          5
+src is  0 z is         64 and i is           0
+src is  0 z is         64 and i is           1
+src is  0 z is         64 and i is           2
+src is  0 z is         64 and i is           3
+src is  0 z is         64 and i is           4
+src is  0 z is         64 and i is           5
+src is  0 z is         64 and i is           6
+src is  0 z is         64 and i is           7
+src is  0 z is         64 and i is           8
+src is  0 z is         64 and i is           9
+src is  0 z is         64 and i is          10
+src is  0 z is         64 and i is          11
+src is  0 z is         64 and i is          12
+src is  0 z is         64 and i is          13
+src is  0 z is         64 and i is          14
+src is  0 z is         64 and i is          15
+src is  0 z is         64 and i is          16
+src is  0 z is         64 and i is          17
+src is  0 z is         64 and i is          18
+src is  0 z is         64 and i is          19
+src is  0 z is         64 and i is          20
+src is  0 z is         64 and i is          21
+src is  0 z is         64 and i is          22
+src is  0 z is         64 and i is          23
+src is  0 z is         64 and i is          24
+src is  0 z is         64 and i is          25
+src is  0 z is         64 and i is          26
+src is  0 z is         64 and i is          27
+src is  0 z is         64 and i is          28
+src is  0 z is         64 and i is          29
+src is  0 z is         64 and i is          30
+src is  0 z is         64 and i is          31
+READ Addr FOUND!: 0000004e
+Writing to dout:          5
+READ Addr FOUND!: 0000306b
+Writing to dout:          5
+WRITE Addr FOUND!: 10000010
+Wrote 00000000 to address!
+READ Addr FOUND!: 10000010
+Writing to dout:          0
+READ Addr FOUND!: 00400048
+Writing to dout:  541196292
+READ Addr FOUND!: 10000010
+Writing to dout:          0
+src is  2 z is          1 and i is           0
+src is  2 z is          1 and i is           1
+src is  2 z is          1 and i is           2
+src is  2 z is          1 and i is           3
+src is  2 z is          1 and i is           4
+src is  2 z is          1 and i is           5
+src is  2 z is          1 and i is           6
+src is  2 z is          1 and i is           7
+src is  2 z is          1 and i is           8
+src is  2 z is          1 and i is           9
+src is  2 z is          1 and i is          10
+src is  2 z is          1 and i is          11
+src is  2 z is          1 and i is          12
+src is  2 z is          1 and i is          13
+src is  2 z is          1 and i is          14
+src is  2 z is          1 and i is          15
+src is  2 z is          1 and i is          16
+src is  2 z is          1 and i is          17
+src is  2 z is          1 and i is          18
+src is  2 z is          1 and i is          19
+src is  2 z is          1 and i is          20
+src is  2 z is          1 and i is          21
+src is  2 z is          1 and i is          22
+src is  2 z is          1 and i is          23
+src is  2 z is          1 and i is          24
+src is  2 z is          1 and i is          25
+src is  2 z is          1 and i is          26
+src is  2 z is          1 and i is          27
+src is  2 z is          1 and i is          28
+src is  2 z is          1 and i is          29
+src is  2 z is          1 and i is          30
+src is  2 z is          1 and i is          31
+READ Addr FOUND!: 10000014
+Writing to dout:          6
+READ Addr FOUND!: 0040004c
+Writing to dout:  340262905
+src is  7 z is          4 and i is           0
+src is  7 z is          4 and i is           1
+src is  7 z is          4 and i is           2
+src is  7 z is          4 and i is           3
+src is  7 z is          4 and i is           4
+src is  7 z is          4 and i is           5
+src is  7 z is          4 and i is           6
+src is  7 z is          4 and i is           7
+src is  7 z is          4 and i is           8
+src is  7 z is          4 and i is           9
+src is  7 z is          4 and i is          10
+src is  7 z is          4 and i is          11
+src is  7 z is          4 and i is          12
+src is  7 z is          4 and i is          13
+src is  7 z is          4 and i is          14
+src is  7 z is          4 and i is          15
+src is  7 z is          4 and i is          16
+src is  7 z is          4 and i is          17
+src is  7 z is          4 and i is          18
+src is  7 z is          4 and i is          19
+src is  7 z is          4 and i is          20
+src is  7 z is          4 and i is          21
+src is  7 z is          4 and i is          22
+src is  7 z is          4 and i is          23
+src is  7 z is          4 and i is          24
+src is  7 z is          4 and i is          25
+src is  7 z is          4 and i is          26
+src is  7 z is          4 and i is          27
+src is  7 z is          4 and i is          28
+src is  7 z is          4 and i is          29
+src is  7 z is          4 and i is          30
+src is  7 z is          4 and i is          31
+READ Addr FOUND!: 1000000c
+Writing to dout:        700
+Writing to dout:        700
+Writing to dout:        700
+Writing to dout:        700
+Writing to dout:        700
+READ Addr FOUND!: 00400034
+Writing to dout: 2353201152
+src is  3 z is        128 and i is           0
+src is  3 z is        128 and i is           1
+src is  3 z is        128 and i is           2
+src is  3 z is        128 and i is           3
+src is  3 z is        128 and i is           4
+src is  3 z is        128 and i is           5
+src is  3 z is        128 and i is           6
+src is  3 z is        128 and i is           7
+src is  3 z is        128 and i is           8
+src is  3 z is        128 and i is           9
+src is  3 z is        128 and i is          10
+src is  3 z is        128 and i is          11
+src is  3 z is        128 and i is          12
+src is  3 z is        128 and i is          13
+src is  3 z is        128 and i is          14
+src is  3 z is        128 and i is          15
+src is  3 z is        128 and i is          16
+src is  3 z is        128 and i is          17
+src is  3 z is        128 and i is          18
+src is  3 z is        128 and i is          19
+src is  3 z is        128 and i is          20
+src is  3 z is        128 and i is          21
+src is  3 z is        128 and i is          22
+src is  3 z is        128 and i is          23
+src is  3 z is        128 and i is          24
+src is  3 z is        128 and i is          25
+src is  3 z is        128 and i is          26
+src is  3 z is        128 and i is          27
+src is  3 z is        128 and i is          28
+src is  3 z is        128 and i is          29
+src is  3 z is        128 and i is          30
+src is  3 z is        128 and i is          31
+Writing to dout:        700
+Writing to dout:        700
+Writing to dout:        700
+READ Addr FOUND!: 10000014
+Writing to dout:          6
+READ Addr FOUND!: 00400038
+Writing to dout:   12787754
+src is  4 z is          8 and i is           0
+src is  4 z is          8 and i is           1
+src is  4 z is          8 and i is           2
+src is  4 z is          8 and i is           3
+src is  4 z is          8 and i is           4
+src is  4 z is          8 and i is           5
+src is  4 z is          8 and i is           6
+src is  4 z is          8 and i is           7
+src is  4 z is          8 and i is           8
+src is  4 z is          8 and i is           9
+src is  4 z is          8 and i is          10
+src is  4 z is          8 and i is          11
+src is  4 z is          8 and i is          12
+src is  4 z is          8 and i is          13
+src is  4 z is          8 and i is          14
+src is  4 z is          8 and i is          15
+src is  4 z is          8 and i is          16
+src is  4 z is          8 and i is          17
+src is  4 z is          8 and i is          18
+src is  4 z is          8 and i is          19
+src is  4 z is          8 and i is          20
+src is  4 z is          8 and i is          21
+src is  4 z is          8 and i is          22
+src is  4 z is          8 and i is          23
+src is  4 z is          8 and i is          24
+src is  4 z is          8 and i is          25
+src is  4 z is          8 and i is          26
+src is  4 z is          8 and i is          27
+src is  4 z is          8 and i is          28
+src is  4 z is          8 and i is          29
+src is  4 z is          8 and i is          30
+src is  4 z is          8 and i is          31
+Writing to dout:          6
+Writing to dout:          6
+READ Addr FOUND!: 0040003c
+Writing to dout:  277151746
+src is  5 z is         16 and i is           0
+src is  5 z is         16 and i is           1
+src is  5 z is         16 and i is           2
+src is  5 z is         16 and i is           3
+src is  5 z is         16 and i is           4
+src is  5 z is         16 and i is           5
+src is  5 z is         16 and i is           6
+src is  5 z is         16 and i is           7
+src is  5 z is         16 and i is           8
+src is  5 z is         16 and i is           9
+src is  5 z is         16 and i is          10
+src is  5 z is         16 and i is          11
+src is  5 z is         16 and i is          12
+src is  5 z is         16 and i is          13
+src is  5 z is         16 and i is          14
+src is  5 z is         16 and i is          15
+src is  5 z is         16 and i is          16
+src is  5 z is         16 and i is          17
+src is  5 z is         16 and i is          18
+src is  5 z is         16 and i is          19
+src is  5 z is         16 and i is          20
+src is  5 z is         16 and i is          21
+src is  5 z is         16 and i is          22
+src is  5 z is         16 and i is          23
+src is  5 z is         16 and i is          24
+src is  5 z is         16 and i is          25
+src is  5 z is         16 and i is          26
+src is  5 z is         16 and i is          27
+src is  5 z is         16 and i is          28
+src is  5 z is         16 and i is          29
+src is  5 z is         16 and i is          30
+src is  5 z is         16 and i is          31
+Writing to dout:          6
+Writing to dout:          6
+Writing to dout:          6
+READ Addr FOUND!: 00400040
+Writing to dout:   12791842
+src is  6 z is         32 and i is           0
+src is  6 z is         32 and i is           1
+src is  6 z is         32 and i is           2
+src is  6 z is         32 and i is           3
+src is  6 z is         32 and i is           4
+src is  6 z is         32 and i is           5
+src is  6 z is         32 and i is           6
+src is  6 z is         32 and i is           7
+src is  6 z is         32 and i is           8
+src is  6 z is         32 and i is           9
+src is  6 z is         32 and i is          10
+src is  6 z is         32 and i is          11
+src is  6 z is         32 and i is          12
+src is  6 z is         32 and i is          13
+src is  6 z is         32 and i is          14
+src is  6 z is         32 and i is          15
+src is  6 z is         32 and i is          16
+src is  6 z is         32 and i is          17
+src is  6 z is         32 and i is          18
+src is  6 z is         32 and i is          19
+src is  6 z is         32 and i is          20
+src is  6 z is         32 and i is          21
+src is  6 z is         32 and i is          22
+src is  6 z is         32 and i is          23
+src is  6 z is         32 and i is          24
+src is  6 z is         32 and i is          25
+src is  6 z is         32 and i is          26
+src is  6 z is         32 and i is          27
+src is  6 z is         32 and i is          28
+src is  6 z is         32 and i is          29
+src is  6 z is         32 and i is          30
+src is  6 z is         32 and i is          31
+Writing to dout:          6
+Writing to dout:          6
+READ Addr FOUND!: 00400044
+Writing to dout: 2889875456
+READ Addr FOUND!: 0000003e
+Writing to dout:          6
+src is  0 z is         64 and i is           0
+src is  0 z is         64 and i is           1
+src is  0 z is         64 and i is           2
+src is  0 z is         64 and i is           3
+src is  0 z is         64 and i is           4
+src is  0 z is         64 and i is           5
+src is  0 z is         64 and i is           6
+src is  0 z is         64 and i is           7
+src is  0 z is         64 and i is           8
+src is  0 z is         64 and i is           9
+src is  0 z is         64 and i is          10
+src is  0 z is         64 and i is          11
+src is  0 z is         64 and i is          12
+src is  0 z is         64 and i is          13
+src is  0 z is         64 and i is          14
+src is  0 z is         64 and i is          15
+src is  0 z is         64 and i is          16
+src is  0 z is         64 and i is          17
+src is  0 z is         64 and i is          18
+src is  0 z is         64 and i is          19
+src is  0 z is         64 and i is          20
+src is  0 z is         64 and i is          21
+src is  0 z is         64 and i is          22
+src is  0 z is         64 and i is          23
+src is  0 z is         64 and i is          24
+src is  0 z is         64 and i is          25
+src is  0 z is         64 and i is          26
+src is  0 z is         64 and i is          27
+src is  0 z is         64 and i is          28
+src is  0 z is         64 and i is          29
+src is  0 z is         64 and i is          30
+src is  0 z is         64 and i is          31
+READ Addr FOUND!: 0000004a
+Writing to dout:          6
+READ Addr FOUND!: 00003066
+Writing to dout:          6
+WRITE Addr FOUND!: 10000014
+Wrote 00000000 to address!
+READ Addr FOUND!: 10000014
+Writing to dout:          0
+READ Addr FOUND!: 00400048
+Writing to dout:  541196292
+READ Addr FOUND!: 10000014
+Writing to dout:          0
+src is  2 z is          1 and i is           0
+src is  2 z is          1 and i is           1
+src is  2 z is          1 and i is           2
+src is  2 z is          1 and i is           3
+src is  2 z is          1 and i is           4
+src is  2 z is          1 and i is           5
+src is  2 z is          1 and i is           6
+src is  2 z is          1 and i is           7
+src is  2 z is          1 and i is           8
+src is  2 z is          1 and i is           9
+src is  2 z is          1 and i is          10
+src is  2 z is          1 and i is          11
+src is  2 z is          1 and i is          12
+src is  2 z is          1 and i is          13
+src is  2 z is          1 and i is          14
+src is  2 z is          1 and i is          15
+src is  2 z is          1 and i is          16
+src is  2 z is          1 and i is          17
+src is  2 z is          1 and i is          18
+src is  2 z is          1 and i is          19
+src is  2 z is          1 and i is          20
+src is  2 z is          1 and i is          21
+src is  2 z is          1 and i is          22
+src is  2 z is          1 and i is          23
+src is  2 z is          1 and i is          24
+src is  2 z is          1 and i is          25
+src is  2 z is          1 and i is          26
+src is  2 z is          1 and i is          27
+src is  2 z is          1 and i is          28
+src is  2 z is          1 and i is          29
+src is  2 z is          1 and i is          30
+src is  2 z is          1 and i is          31
+READ Addr FOUND!: 10000018
+Writing to dout:        400
+READ Addr FOUND!: 0040004c
+Writing to dout:  340262905
+src is  7 z is          4 and i is           0
+src is  7 z is          4 and i is           1
+src is  7 z is          4 and i is           2
+src is  7 z is          4 and i is           3
+src is  7 z is          4 and i is           4
+src is  7 z is          4 and i is           5
+src is  7 z is          4 and i is           6
+src is  7 z is          4 and i is           7
+src is  7 z is          4 and i is           8
+src is  7 z is          4 and i is           9
+src is  7 z is          4 and i is          10
+src is  7 z is          4 and i is          11
+src is  7 z is          4 and i is          12
+src is  7 z is          4 and i is          13
+src is  7 z is          4 and i is          14
+src is  7 z is          4 and i is          15
+src is  7 z is          4 and i is          16
+src is  7 z is          4 and i is          17
+src is  7 z is          4 and i is          18
+src is  7 z is          4 and i is          19
+src is  7 z is          4 and i is          20
+src is  7 z is          4 and i is          21
+src is  7 z is          4 and i is          22
+src is  7 z is          4 and i is          23
+src is  7 z is          4 and i is          24
+src is  7 z is          4 and i is          25
+src is  7 z is          4 and i is          26
+src is  7 z is          4 and i is          27
+src is  7 z is          4 and i is          28
+src is  7 z is          4 and i is          29
+src is  7 z is          4 and i is          30
+src is  7 z is          4 and i is          31
+READ Addr FOUND!: 10000010
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 00400034
+Writing to dout: 2353201152
+src is  3 z is        128 and i is           0
+src is  3 z is        128 and i is           1
+src is  3 z is        128 and i is           2
+src is  3 z is        128 and i is           3
+src is  3 z is        128 and i is           4
+src is  3 z is        128 and i is           5
+src is  3 z is        128 and i is           6
+src is  3 z is        128 and i is           7
+src is  3 z is        128 and i is           8
+src is  3 z is        128 and i is           9
+src is  3 z is        128 and i is          10
+src is  3 z is        128 and i is          11
+src is  3 z is        128 and i is          12
+src is  3 z is        128 and i is          13
+src is  3 z is        128 and i is          14
+src is  3 z is        128 and i is          15
+src is  3 z is        128 and i is          16
+src is  3 z is        128 and i is          17
+src is  3 z is        128 and i is          18
+src is  3 z is        128 and i is          19
+src is  3 z is        128 and i is          20
+src is  3 z is        128 and i is          21
+src is  3 z is        128 and i is          22
+src is  3 z is        128 and i is          23
+src is  3 z is        128 and i is          24
+src is  3 z is        128 and i is          25
+src is  3 z is        128 and i is          26
+src is  3 z is        128 and i is          27
+src is  3 z is        128 and i is          28
+src is  3 z is        128 and i is          29
+src is  3 z is        128 and i is          30
+src is  3 z is        128 and i is          31
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 10000018
+Writing to dout:        400
+READ Addr FOUND!: 00400038
+Writing to dout:   12787754
+src is  4 z is          8 and i is           0
+src is  4 z is          8 and i is           1
+src is  4 z is          8 and i is           2
+src is  4 z is          8 and i is           3
+src is  4 z is          8 and i is           4
+src is  4 z is          8 and i is           5
+src is  4 z is          8 and i is           6
+src is  4 z is          8 and i is           7
+src is  4 z is          8 and i is           8
+src is  4 z is          8 and i is           9
+src is  4 z is          8 and i is          10
+src is  4 z is          8 and i is          11
+src is  4 z is          8 and i is          12
+src is  4 z is          8 and i is          13
+src is  4 z is          8 and i is          14
+src is  4 z is          8 and i is          15
+src is  4 z is          8 and i is          16
+src is  4 z is          8 and i is          17
+src is  4 z is          8 and i is          18
+src is  4 z is          8 and i is          19
+src is  4 z is          8 and i is          20
+src is  4 z is          8 and i is          21
+src is  4 z is          8 and i is          22
+src is  4 z is          8 and i is          23
+src is  4 z is          8 and i is          24
+src is  4 z is          8 and i is          25
+src is  4 z is          8 and i is          26
+src is  4 z is          8 and i is          27
+src is  4 z is          8 and i is          28
+src is  4 z is          8 and i is          29
+src is  4 z is          8 and i is          30
+src is  4 z is          8 and i is          31
+Writing to dout:        400
+Writing to dout:        400
+Writing to dout:        400
+READ Addr FOUND!: 0040003c
+Writing to dout:  277151746
+src is  5 z is         16 and i is           0
+src is  5 z is         16 and i is           1
+src is  5 z is         16 and i is           2
+src is  5 z is         16 and i is           3
+src is  5 z is         16 and i is           4
+src is  5 z is         16 and i is           5
+src is  5 z is         16 and i is           6
+src is  5 z is         16 and i is           7
+src is  5 z is         16 and i is           8
+src is  5 z is         16 and i is           9
+src is  5 z is         16 and i is          10
+src is  5 z is         16 and i is          11
+src is  5 z is         16 and i is          12
+src is  5 z is         16 and i is          13
+src is  5 z is         16 and i is          14
+src is  5 z is         16 and i is          15
+src is  5 z is         16 and i is          16
+src is  5 z is         16 and i is          17
+src is  5 z is         16 and i is          18
+src is  5 z is         16 and i is          19
+src is  5 z is         16 and i is          20
+src is  5 z is         16 and i is          21
+src is  5 z is         16 and i is          22
+src is  5 z is         16 and i is          23
+src is  5 z is         16 and i is          24
+src is  5 z is         16 and i is          25
+src is  5 z is         16 and i is          26
+src is  5 z is         16 and i is          27
+src is  5 z is         16 and i is          28
+src is  5 z is         16 and i is          29
+src is  5 z is         16 and i is          30
+src is  5 z is         16 and i is          31
+Writing to dout:        400
+Writing to dout:        400
+Writing to dout:        400
+READ Addr FOUND!: 00400048
+Writing to dout:  541196292
+src is  2 z is         32 and i is           0
+src is  2 z is         32 and i is           1
+src is  2 z is         32 and i is           2
+src is  2 z is         32 and i is           3
+src is  2 z is         32 and i is           4
+src is  2 z is         32 and i is           5
+src is  2 z is         32 and i is           6
+src is  2 z is         32 and i is           7
+src is  2 z is         32 and i is           8
+src is  2 z is         32 and i is           9
+src is  2 z is         32 and i is          10
+src is  2 z is         32 and i is          11
+src is  2 z is         32 and i is          12
+src is  2 z is         32 and i is          13
+src is  2 z is         32 and i is          14
+src is  2 z is         32 and i is          15
+src is  2 z is         32 and i is          16
+src is  2 z is         32 and i is          17
+src is  2 z is         32 and i is          18
+src is  2 z is         32 and i is          19
+src is  2 z is         32 and i is          20
+src is  2 z is         32 and i is          21
+src is  2 z is         32 and i is          22
+src is  2 z is         32 and i is          23
+src is  2 z is         32 and i is          24
+src is  2 z is         32 and i is          25
+src is  2 z is         32 and i is          26
+src is  2 z is         32 and i is          27
+src is  2 z is         32 and i is          28
+src is  2 z is         32 and i is          29
+src is  2 z is         32 and i is          30
+src is  2 z is         32 and i is          31
+Writing to dout:        400
+Writing to dout:        400
+Writing to dout:        400
+Writing to dout:        400
+READ Addr FOUND!: 1000001c
+Writing to dout:          1
+READ Addr FOUND!: 0040004c
+Writing to dout:  340262905
+src is  7 z is          4 and i is           0
+src is  7 z is          4 and i is           1
+src is  7 z is          4 and i is           2
+src is  7 z is          4 and i is           3
+src is  7 z is          4 and i is           4
+src is  7 z is          4 and i is           5
+src is  7 z is          4 and i is           6
+src is  7 z is          4 and i is           7
+src is  7 z is          4 and i is           8
+src is  7 z is          4 and i is           9
+src is  7 z is          4 and i is          10
+src is  7 z is          4 and i is          11
+src is  7 z is          4 and i is          12
+src is  7 z is          4 and i is          13
+src is  7 z is          4 and i is          14
+src is  7 z is          4 and i is          15
+src is  7 z is          4 and i is          16
+src is  7 z is          4 and i is          17
+src is  7 z is          4 and i is          18
+src is  7 z is          4 and i is          19
+src is  7 z is          4 and i is          20
+src is  7 z is          4 and i is          21
+src is  7 z is          4 and i is          22
+src is  7 z is          4 and i is          23
+src is  7 z is          4 and i is          24
+src is  7 z is          4 and i is          25
+src is  7 z is          4 and i is          26
+src is  7 z is          4 and i is          27
+src is  7 z is          4 and i is          28
+src is  7 z is          4 and i is          29
+src is  7 z is          4 and i is          30
+src is  7 z is          4 and i is          31
+READ Addr FOUND!: 10000014
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 00400034
+Writing to dout: 2353201152
+src is  3 z is        128 and i is           0
+src is  3 z is        128 and i is           1
+src is  3 z is        128 and i is           2
+src is  3 z is        128 and i is           3
+src is  3 z is        128 and i is           4
+src is  3 z is        128 and i is           5
+src is  3 z is        128 and i is           6
+src is  3 z is        128 and i is           7
+src is  3 z is        128 and i is           8
+src is  3 z is        128 and i is           9
+src is  3 z is        128 and i is          10
+src is  3 z is        128 and i is          11
+src is  3 z is        128 and i is          12
+src is  3 z is        128 and i is          13
+src is  3 z is        128 and i is          14
+src is  3 z is        128 and i is          15
+src is  3 z is        128 and i is          16
+src is  3 z is        128 and i is          17
+src is  3 z is        128 and i is          18
+src is  3 z is        128 and i is          19
+src is  3 z is        128 and i is          20
+src is  3 z is        128 and i is          21
+src is  3 z is        128 and i is          22
+src is  3 z is        128 and i is          23
+src is  3 z is        128 and i is          24
+src is  3 z is        128 and i is          25
+src is  3 z is        128 and i is          26
+src is  3 z is        128 and i is          27
+src is  3 z is        128 and i is          28
+src is  3 z is        128 and i is          29
+src is  3 z is        128 and i is          30
+src is  3 z is        128 and i is          31
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 1000001c
+Writing to dout:          1
+READ Addr FOUND!: 00400038
+Writing to dout:   12787754
+src is  4 z is          8 and i is           0
+src is  4 z is          8 and i is           1
+src is  4 z is          8 and i is           2
+src is  4 z is          8 and i is           3
+src is  4 z is          8 and i is           4
+src is  4 z is          8 and i is           5
+src is  4 z is          8 and i is           6
+src is  4 z is          8 and i is           7
+src is  4 z is          8 and i is           8
+src is  4 z is          8 and i is           9
+src is  4 z is          8 and i is          10
+src is  4 z is          8 and i is          11
+src is  4 z is          8 and i is          12
+src is  4 z is          8 and i is          13
+src is  4 z is          8 and i is          14
+src is  4 z is          8 and i is          15
+src is  4 z is          8 and i is          16
+src is  4 z is          8 and i is          17
+src is  4 z is          8 and i is          18
+src is  4 z is          8 and i is          19
+src is  4 z is          8 and i is          20
+src is  4 z is          8 and i is          21
+src is  4 z is          8 and i is          22
+src is  4 z is          8 and i is          23
+src is  4 z is          8 and i is          24
+src is  4 z is          8 and i is          25
+src is  4 z is          8 and i is          26
+src is  4 z is          8 and i is          27
+src is  4 z is          8 and i is          28
+src is  4 z is          8 and i is          29
+src is  4 z is          8 and i is          30
+src is  4 z is          8 and i is          31
+Writing to dout:          1
+Writing to dout:          1
+Writing to dout:          1
+Writing to dout:          1
+READ Addr FOUND!: 0040003c
+Writing to dout:  277151746
+src is  5 z is         16 and i is           0
+src is  5 z is         16 and i is           1
+src is  5 z is         16 and i is           2
+src is  5 z is         16 and i is           3
+src is  5 z is         16 and i is           4
+src is  5 z is         16 and i is           5
+src is  5 z is         16 and i is           6
+src is  5 z is         16 and i is           7
+src is  5 z is         16 and i is           8
+src is  5 z is         16 and i is           9
+src is  5 z is         16 and i is          10
+src is  5 z is         16 and i is          11
+src is  5 z is         16 and i is          12
+src is  5 z is         16 and i is          13
+src is  5 z is         16 and i is          14
+src is  5 z is         16 and i is          15
+src is  5 z is         16 and i is          16
+src is  5 z is         16 and i is          17
+src is  5 z is         16 and i is          18
+src is  5 z is         16 and i is          19
+src is  5 z is         16 and i is          20
+src is  5 z is         16 and i is          21
+src is  5 z is         16 and i is          22
+src is  5 z is         16 and i is          23
+src is  5 z is         16 and i is          24
+src is  5 z is         16 and i is          25
+src is  5 z is         16 and i is          26
+src is  5 z is         16 and i is          27
+src is  5 z is         16 and i is          28
+src is  5 z is         16 and i is          29
+src is  5 z is         16 and i is          30
+src is  5 z is         16 and i is          31
+Writing to dout:          1
+Writing to dout:          1
+Writing to dout:          1
+READ Addr FOUND!: 00400040
+Writing to dout:   12791842
+src is  6 z is         32 and i is           0
+src is  6 z is         32 and i is           1
+src is  6 z is         32 and i is           2
+src is  6 z is         32 and i is           3
+src is  6 z is         32 and i is           4
+src is  6 z is         32 and i is           5
+src is  6 z is         32 and i is           6
+src is  6 z is         32 and i is           7
+src is  6 z is         32 and i is           8
+src is  6 z is         32 and i is           9
+src is  6 z is         32 and i is          10
+src is  6 z is         32 and i is          11
+src is  6 z is         32 and i is          12
+src is  6 z is         32 and i is          13
+src is  6 z is         32 and i is          14
+src is  6 z is         32 and i is          15
+src is  6 z is         32 and i is          16
+src is  6 z is         32 and i is          17
+src is  6 z is         32 and i is          18
+src is  6 z is         32 and i is          19
+src is  6 z is         32 and i is          20
+src is  6 z is         32 and i is          21
+src is  6 z is         32 and i is          22
+src is  6 z is         32 and i is          23
+src is  6 z is         32 and i is          24
+src is  6 z is         32 and i is          25
+src is  6 z is         32 and i is          26
+src is  6 z is         32 and i is          27
+src is  6 z is         32 and i is          28
+src is  6 z is         32 and i is          29
+src is  6 z is         32 and i is          30
+src is  6 z is         32 and i is          31
+Writing to dout:          1
+Writing to dout:          1
+READ Addr FOUND!: 00400044
+Writing to dout: 2889875456
+READ Addr FOUND!: 0000003d
+Writing to dout:          1
+src is  0 z is         64 and i is           0
+src is  0 z is         64 and i is           1
+src is  0 z is         64 and i is           2
+src is  0 z is         64 and i is           3
+src is  0 z is         64 and i is           4
+src is  0 z is         64 and i is           5
+src is  0 z is         64 and i is           6
+src is  0 z is         64 and i is           7
+src is  0 z is         64 and i is           8
+src is  0 z is         64 and i is           9
+src is  0 z is         64 and i is          10
+src is  0 z is         64 and i is          11
+src is  0 z is         64 and i is          12
+src is  0 z is         64 and i is          13
+src is  0 z is         64 and i is          14
+src is  0 z is         64 and i is          15
+src is  0 z is         64 and i is          16
+src is  0 z is         64 and i is          17
+src is  0 z is         64 and i is          18
+src is  0 z is         64 and i is          19
+src is  0 z is         64 and i is          20
+src is  0 z is         64 and i is          21
+src is  0 z is         64 and i is          22
+src is  0 z is         64 and i is          23
+src is  0 z is         64 and i is          24
+src is  0 z is         64 and i is          25
+src is  0 z is         64 and i is          26
+src is  0 z is         64 and i is          27
+src is  0 z is         64 and i is          28
+src is  0 z is         64 and i is          29
+src is  0 z is         64 and i is          30
+src is  0 z is         64 and i is          31
+READ Addr FOUND!: 0000003f
+Writing to dout:          1
+READ Addr FOUND!: 00003060
+Writing to dout:          1
+WRITE Addr FOUND!: 1000001c
+Wrote 00000000 to address!
+READ Addr FOUND!: 1000001c
+Writing to dout:          0
+READ Addr FOUND!: 00400048
+Writing to dout:  541196292
+READ Addr FOUND!: 1000001c
+Writing to dout:          0
+src is  2 z is          1 and i is           0
+src is  2 z is          1 and i is           1
+src is  2 z is          1 and i is           2
+src is  2 z is          1 and i is           3
+src is  2 z is          1 and i is           4
+src is  2 z is          1 and i is           5
+src is  2 z is          1 and i is           6
+src is  2 z is          1 and i is           7
+src is  2 z is          1 and i is           8
+src is  2 z is          1 and i is           9
+src is  2 z is          1 and i is          10
+src is  2 z is          1 and i is          11
+src is  2 z is          1 and i is          12
+src is  2 z is          1 and i is          13
+src is  2 z is          1 and i is          14
+src is  2 z is          1 and i is          15
+src is  2 z is          1 and i is          16
+src is  2 z is          1 and i is          17
+src is  2 z is          1 and i is          18
+src is  2 z is          1 and i is          19
+src is  2 z is          1 and i is          20
+src is  2 z is          1 and i is          21
+src is  2 z is          1 and i is          22
+src is  2 z is          1 and i is          23
+src is  2 z is          1 and i is          24
+src is  2 z is          1 and i is          25
+src is  2 z is          1 and i is          26
+src is  2 z is          1 and i is          27
+src is  2 z is          1 and i is          28
+src is  2 z is          1 and i is          29
+src is  2 z is          1 and i is          30
+src is  2 z is          1 and i is          31
+READ Addr FOUND!: 10000020
+Writing to dout:          2
+READ Addr FOUND!: 0040004c
+Writing to dout:  340262905
+src is  7 z is          4 and i is           0
+src is  7 z is          4 and i is           1
+src is  7 z is          4 and i is           2
+src is  7 z is          4 and i is           3
+src is  7 z is          4 and i is           4
+src is  7 z is          4 and i is           5
+src is  7 z is          4 and i is           6
+src is  7 z is          4 and i is           7
+src is  7 z is          4 and i is           8
+src is  7 z is          4 and i is           9
+src is  7 z is          4 and i is          10
+src is  7 z is          4 and i is          11
+src is  7 z is          4 and i is          12
+src is  7 z is          4 and i is          13
+src is  7 z is          4 and i is          14
+src is  7 z is          4 and i is          15
+src is  7 z is          4 and i is          16
+src is  7 z is          4 and i is          17
+src is  7 z is          4 and i is          18
+src is  7 z is          4 and i is          19
+src is  7 z is          4 and i is          20
+src is  7 z is          4 and i is          21
+src is  7 z is          4 and i is          22
+src is  7 z is          4 and i is          23
+src is  7 z is          4 and i is          24
+src is  7 z is          4 and i is          25
+src is  7 z is          4 and i is          26
+src is  7 z is          4 and i is          27
+src is  7 z is          4 and i is          28
+src is  7 z is          4 and i is          29
+src is  7 z is          4 and i is          30
+src is  7 z is          4 and i is          31
+READ Addr FOUND!: 10000018
+Writing to dout:        400
+Writing to dout:        400
+Writing to dout:        400
+Writing to dout:        400
+Writing to dout:        400
+READ Addr FOUND!: 00400034
+Writing to dout: 2353201152
+src is  3 z is        128 and i is           0
+src is  3 z is        128 and i is           1
+src is  3 z is        128 and i is           2
+src is  3 z is        128 and i is           3
+src is  3 z is        128 and i is           4
+src is  3 z is        128 and i is           5
+src is  3 z is        128 and i is           6
+src is  3 z is        128 and i is           7
+src is  3 z is        128 and i is           8
+src is  3 z is        128 and i is           9
+src is  3 z is        128 and i is          10
+src is  3 z is        128 and i is          11
+src is  3 z is        128 and i is          12
+src is  3 z is        128 and i is          13
+src is  3 z is        128 and i is          14
+src is  3 z is        128 and i is          15
+src is  3 z is        128 and i is          16
+src is  3 z is        128 and i is          17
+src is  3 z is        128 and i is          18
+src is  3 z is        128 and i is          19
+src is  3 z is        128 and i is          20
+src is  3 z is        128 and i is          21
+src is  3 z is        128 and i is          22
+src is  3 z is        128 and i is          23
+src is  3 z is        128 and i is          24
+src is  3 z is        128 and i is          25
+src is  3 z is        128 and i is          26
+src is  3 z is        128 and i is          27
+src is  3 z is        128 and i is          28
+src is  3 z is        128 and i is          29
+src is  3 z is        128 and i is          30
+src is  3 z is        128 and i is          31
+Writing to dout:        400
+Writing to dout:        400
+Writing to dout:        400
+READ Addr FOUND!: 10000020
+Writing to dout:          2
+READ Addr FOUND!: 00400038
+Writing to dout:   12787754
+src is  4 z is          8 and i is           0
+src is  4 z is          8 and i is           1
+src is  4 z is          8 and i is           2
+src is  4 z is          8 and i is           3
+src is  4 z is          8 and i is           4
+src is  4 z is          8 and i is           5
+src is  4 z is          8 and i is           6
+src is  4 z is          8 and i is           7
+src is  4 z is          8 and i is           8
+src is  4 z is          8 and i is           9
+src is  4 z is          8 and i is          10
+src is  4 z is          8 and i is          11
+src is  4 z is          8 and i is          12
+src is  4 z is          8 and i is          13
+src is  4 z is          8 and i is          14
+src is  4 z is          8 and i is          15
+src is  4 z is          8 and i is          16
+src is  4 z is          8 and i is          17
+src is  4 z is          8 and i is          18
+src is  4 z is          8 and i is          19
+src is  4 z is          8 and i is          20
+src is  4 z is          8 and i is          21
+src is  4 z is          8 and i is          22
+src is  4 z is          8 and i is          23
+src is  4 z is          8 and i is          24
+src is  4 z is          8 and i is          25
+src is  4 z is          8 and i is          26
+src is  4 z is          8 and i is          27
+src is  4 z is          8 and i is          28
+src is  4 z is          8 and i is          29
+src is  4 z is          8 and i is          30
+src is  4 z is          8 and i is          31
+Writing to dout:          2
+Writing to dout:          2
+READ Addr FOUND!: 0040003c
+Writing to dout:  277151746
+src is  5 z is         16 and i is           0
+src is  5 z is         16 and i is           1
+src is  5 z is         16 and i is           2
+src is  5 z is         16 and i is           3
+src is  5 z is         16 and i is           4
+src is  5 z is         16 and i is           5
+src is  5 z is         16 and i is           6
+src is  5 z is         16 and i is           7
+src is  5 z is         16 and i is           8
+src is  5 z is         16 and i is           9
+src is  5 z is         16 and i is          10
+src is  5 z is         16 and i is          11
+src is  5 z is         16 and i is          12
+src is  5 z is         16 and i is          13
+src is  5 z is         16 and i is          14
+src is  5 z is         16 and i is          15
+src is  5 z is         16 and i is          16
+src is  5 z is         16 and i is          17
+src is  5 z is         16 and i is          18
+src is  5 z is         16 and i is          19
+src is  5 z is         16 and i is          20
+src is  5 z is         16 and i is          21
+src is  5 z is         16 and i is          22
+src is  5 z is         16 and i is          23
+src is  5 z is         16 and i is          24
+src is  5 z is         16 and i is          25
+src is  5 z is         16 and i is          26
+src is  5 z is         16 and i is          27
+src is  5 z is         16 and i is          28
+src is  5 z is         16 and i is          29
+src is  5 z is         16 and i is          30
+src is  5 z is         16 and i is          31
+Writing to dout:          2
+Writing to dout:          2
+Writing to dout:          2
+READ Addr FOUND!: 00400040
+Writing to dout:   12791842
+src is  6 z is         32 and i is           0
+src is  6 z is         32 and i is           1
+src is  6 z is         32 and i is           2
+src is  6 z is         32 and i is           3
+src is  6 z is         32 and i is           4
+src is  6 z is         32 and i is           5
+src is  6 z is         32 and i is           6
+src is  6 z is         32 and i is           7
+src is  6 z is         32 and i is           8
+src is  6 z is         32 and i is           9
+src is  6 z is         32 and i is          10
+src is  6 z is         32 and i is          11
+src is  6 z is         32 and i is          12
+src is  6 z is         32 and i is          13
+src is  6 z is         32 and i is          14
+src is  6 z is         32 and i is          15
+src is  6 z is         32 and i is          16
+src is  6 z is         32 and i is          17
+src is  6 z is         32 and i is          18
+src is  6 z is         32 and i is          19
+src is  6 z is         32 and i is          20
+src is  6 z is         32 and i is          21
+src is  6 z is         32 and i is          22
+src is  6 z is         32 and i is          23
+src is  6 z is         32 and i is          24
+src is  6 z is         32 and i is          25
+src is  6 z is         32 and i is          26
+src is  6 z is         32 and i is          27
+src is  6 z is         32 and i is          28
+src is  6 z is         32 and i is          29
+src is  6 z is         32 and i is          30
+src is  6 z is         32 and i is          31
+Writing to dout:          2
+Writing to dout:          2
+READ Addr FOUND!: 00400044
+Writing to dout: 2889875456
+READ Addr FOUND!: 0000003b
+Writing to dout:          2
+src is  0 z is         64 and i is           0
+src is  0 z is         64 and i is           1
+src is  0 z is         64 and i is           2
+src is  0 z is         64 and i is           3
+src is  0 z is         64 and i is           4
+src is  0 z is         64 and i is           5
+src is  0 z is         64 and i is           6
+src is  0 z is         64 and i is           7
+src is  0 z is         64 and i is           8
+src is  0 z is         64 and i is           9
+src is  0 z is         64 and i is          10
+src is  0 z is         64 and i is          11
+src is  0 z is         64 and i is          12
+src is  0 z is         64 and i is          13
+src is  0 z is         64 and i is          14
+src is  0 z is         64 and i is          15
+src is  0 z is         64 and i is          16
+src is  0 z is         64 and i is          17
+src is  0 z is         64 and i is          18
+src is  0 z is         64 and i is          19
+src is  0 z is         64 and i is          20
+src is  0 z is         64 and i is          21
+src is  0 z is         64 and i is          22
+src is  0 z is         64 and i is          23
+src is  0 z is         64 and i is          24
+src is  0 z is         64 and i is          25
+src is  0 z is         64 and i is          26
+src is  0 z is         64 and i is          27
+src is  0 z is         64 and i is          28
+src is  0 z is         64 and i is          29
+src is  0 z is         64 and i is          30
+src is  0 z is         64 and i is          31
+WRITE Addr FOUND!: 0000003f
+Wrote 00000002 to address!
+READ Addr FOUND!: 0000003f
+Writing to dout:          2
+READ Addr FOUND!: 0000305f
+Writing to dout:          2
+WRITE Addr FOUND!: 10000020
+Wrote 00000000 to address!
+READ Addr FOUND!: 10000020
+Writing to dout:          0
+READ Addr FOUND!: 00400048
+Writing to dout:  541196292
+READ Addr FOUND!: 10000020
+Writing to dout:          0
+src is  2 z is          1 and i is           0
+src is  2 z is          1 and i is           1
+src is  2 z is          1 and i is           2
+src is  2 z is          1 and i is           3
+src is  2 z is          1 and i is           4
+src is  2 z is          1 and i is           5
+src is  2 z is          1 and i is           6
+src is  2 z is          1 and i is           7
+src is  2 z is          1 and i is           8
+src is  2 z is          1 and i is           9
+src is  2 z is          1 and i is          10
+src is  2 z is          1 and i is          11
+src is  2 z is          1 and i is          12
+src is  2 z is          1 and i is          13
+src is  2 z is          1 and i is          14
+src is  2 z is          1 and i is          15
+src is  2 z is          1 and i is          16
+src is  2 z is          1 and i is          17
+src is  2 z is          1 and i is          18
+src is  2 z is          1 and i is          19
+src is  2 z is          1 and i is          20
+src is  2 z is          1 and i is          21
+src is  2 z is          1 and i is          22
+src is  2 z is          1 and i is          23
+src is  2 z is          1 and i is          24
+src is  2 z is          1 and i is          25
+src is  2 z is          1 and i is          26
+src is  2 z is          1 and i is          27
+src is  2 z is          1 and i is          28
+src is  2 z is          1 and i is          29
+src is  2 z is          1 and i is          30
+src is  2 z is          1 and i is          31
+READ Addr FOUND!: 10000024
+Writing to dout:          3
+READ Addr FOUND!: 0040004c
+Writing to dout:  340262905
+src is  7 z is          4 and i is           0
+src is  7 z is          4 and i is           1
+src is  7 z is          4 and i is           2
+src is  7 z is          4 and i is           3
+src is  7 z is          4 and i is           4
+src is  7 z is          4 and i is           5
+src is  7 z is          4 and i is           6
+src is  7 z is          4 and i is           7
+src is  7 z is          4 and i is           8
+src is  7 z is          4 and i is           9
+src is  7 z is          4 and i is          10
+src is  7 z is          4 and i is          11
+src is  7 z is          4 and i is          12
+src is  7 z is          4 and i is          13
+src is  7 z is          4 and i is          14
+src is  7 z is          4 and i is          15
+src is  7 z is          4 and i is          16
+src is  7 z is          4 and i is          17
+src is  7 z is          4 and i is          18
+src is  7 z is          4 and i is          19
+src is  7 z is          4 and i is          20
+src is  7 z is          4 and i is          21
+src is  7 z is          4 and i is          22
+src is  7 z is          4 and i is          23
+src is  7 z is          4 and i is          24
+src is  7 z is          4 and i is          25
+src is  7 z is          4 and i is          26
+src is  7 z is          4 and i is          27
+src is  7 z is          4 and i is          28
+src is  7 z is          4 and i is          29
+src is  7 z is          4 and i is          30
+src is  7 z is          4 and i is          31
+READ Addr FOUND!: 1000001c
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 00400034
+Writing to dout: 2353201152
+src is  3 z is        128 and i is           0
+src is  3 z is        128 and i is           1
+src is  3 z is        128 and i is           2
+src is  3 z is        128 and i is           3
+src is  3 z is        128 and i is           4
+src is  3 z is        128 and i is           5
+src is  3 z is        128 and i is           6
+src is  3 z is        128 and i is           7
+src is  3 z is        128 and i is           8
+src is  3 z is        128 and i is           9
+src is  3 z is        128 and i is          10
+src is  3 z is        128 and i is          11
+src is  3 z is        128 and i is          12
+src is  3 z is        128 and i is          13
+src is  3 z is        128 and i is          14
+src is  3 z is        128 and i is          15
+src is  3 z is        128 and i is          16
+src is  3 z is        128 and i is          17
+src is  3 z is        128 and i is          18
+src is  3 z is        128 and i is          19
+src is  3 z is        128 and i is          20
+src is  3 z is        128 and i is          21
+src is  3 z is        128 and i is          22
+src is  3 z is        128 and i is          23
+src is  3 z is        128 and i is          24
+src is  3 z is        128 and i is          25
+src is  3 z is        128 and i is          26
+src is  3 z is        128 and i is          27
+src is  3 z is        128 and i is          28
+src is  3 z is        128 and i is          29
+src is  3 z is        128 and i is          30
+src is  3 z is        128 and i is          31
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 10000024
+Writing to dout:          3
+READ Addr FOUND!: 00400038
+Writing to dout:   12787754
+src is  4 z is          8 and i is           0
+src is  4 z is          8 and i is           1
+src is  4 z is          8 and i is           2
+src is  4 z is          8 and i is           3
+src is  4 z is          8 and i is           4
+src is  4 z is          8 and i is           5
+src is  4 z is          8 and i is           6
+src is  4 z is          8 and i is           7
+src is  4 z is          8 and i is           8
+src is  4 z is          8 and i is           9
+src is  4 z is          8 and i is          10
+src is  4 z is          8 and i is          11
+src is  4 z is          8 and i is          12
+src is  4 z is          8 and i is          13
+src is  4 z is          8 and i is          14
+src is  4 z is          8 and i is          15
+src is  4 z is          8 and i is          16
+src is  4 z is          8 and i is          17
+src is  4 z is          8 and i is          18
+src is  4 z is          8 and i is          19
+src is  4 z is          8 and i is          20
+src is  4 z is          8 and i is          21
+src is  4 z is          8 and i is          22
+src is  4 z is          8 and i is          23
+src is  4 z is          8 and i is          24
+src is  4 z is          8 and i is          25
+src is  4 z is          8 and i is          26
+src is  4 z is          8 and i is          27
+src is  4 z is          8 and i is          28
+src is  4 z is          8 and i is          29
+src is  4 z is          8 and i is          30
+src is  4 z is          8 and i is          31
+Writing to dout:          3
+Writing to dout:          3
+READ Addr FOUND!: 0040003c
+Writing to dout:  277151746
+src is  5 z is         16 and i is           0
+src is  5 z is         16 and i is           1
+src is  5 z is         16 and i is           2
+src is  5 z is         16 and i is           3
+src is  5 z is         16 and i is           4
+src is  5 z is         16 and i is           5
+src is  5 z is         16 and i is           6
+src is  5 z is         16 and i is           7
+src is  5 z is         16 and i is           8
+src is  5 z is         16 and i is           9
+src is  5 z is         16 and i is          10
+src is  5 z is         16 and i is          11
+src is  5 z is         16 and i is          12
+src is  5 z is         16 and i is          13
+src is  5 z is         16 and i is          14
+src is  5 z is         16 and i is          15
+src is  5 z is         16 and i is          16
+src is  5 z is         16 and i is          17
+src is  5 z is         16 and i is          18
+src is  5 z is         16 and i is          19
+src is  5 z is         16 and i is          20
+src is  5 z is         16 and i is          21
+src is  5 z is         16 and i is          22
+src is  5 z is         16 and i is          23
+src is  5 z is         16 and i is          24
+src is  5 z is         16 and i is          25
+src is  5 z is         16 and i is          26
+src is  5 z is         16 and i is          27
+src is  5 z is         16 and i is          28
+src is  5 z is         16 and i is          29
+src is  5 z is         16 and i is          30
+src is  5 z is         16 and i is          31
+Writing to dout:          3
+Writing to dout:          3
+Writing to dout:          3
+READ Addr FOUND!: 00400040
+Writing to dout:   12791842
+src is  6 z is         32 and i is           0
+src is  6 z is         32 and i is           1
+src is  6 z is         32 and i is           2
+src is  6 z is         32 and i is           3
+src is  6 z is         32 and i is           4
+src is  6 z is         32 and i is           5
+src is  6 z is         32 and i is           6
+src is  6 z is         32 and i is           7
+src is  6 z is         32 and i is           8
+src is  6 z is         32 and i is           9
+src is  6 z is         32 and i is          10
+src is  6 z is         32 and i is          11
+src is  6 z is         32 and i is          12
+src is  6 z is         32 and i is          13
+src is  6 z is         32 and i is          14
+src is  6 z is         32 and i is          15
+src is  6 z is         32 and i is          16
+src is  6 z is         32 and i is          17
+src is  6 z is         32 and i is          18
+src is  6 z is         32 and i is          19
+src is  6 z is         32 and i is          20
+src is  6 z is         32 and i is          21
+src is  6 z is         32 and i is          22
+src is  6 z is         32 and i is          23
+src is  6 z is         32 and i is          24
+src is  6 z is         32 and i is          25
+src is  6 z is         32 and i is          26
+src is  6 z is         32 and i is          27
+src is  6 z is         32 and i is          28
+src is  6 z is         32 and i is          29
+src is  6 z is         32 and i is          30
+src is  6 z is         32 and i is          31
+Writing to dout:          3
+Writing to dout:          3
+READ Addr FOUND!: 00400044
+Writing to dout: 2889875456
+READ Addr FOUND!: 00000038
+Writing to dout:          3
+src is  0 z is         64 and i is           0
+src is  0 z is         64 and i is           1
+src is  0 z is         64 and i is           2
+src is  0 z is         64 and i is           3
+src is  0 z is         64 and i is           4
+src is  0 z is         64 and i is           5
+src is  0 z is         64 and i is           6
+src is  0 z is         64 and i is           7
+src is  0 z is         64 and i is           8
+src is  0 z is         64 and i is           9
+src is  0 z is         64 and i is          10
+src is  0 z is         64 and i is          11
+src is  0 z is         64 and i is          12
+src is  0 z is         64 and i is          13
+src is  0 z is         64 and i is          14
+src is  0 z is         64 and i is          15
+src is  0 z is         64 and i is          16
+src is  0 z is         64 and i is          17
+src is  0 z is         64 and i is          18
+src is  0 z is         64 and i is          19
+src is  0 z is         64 and i is          20
+src is  0 z is         64 and i is          21
+src is  0 z is         64 and i is          22
+src is  0 z is         64 and i is          23
+src is  0 z is         64 and i is          24
+src is  0 z is         64 and i is          25
+src is  0 z is         64 and i is          26
+src is  0 z is         64 and i is          27
+src is  0 z is         64 and i is          28
+src is  0 z is         64 and i is          29
+src is  0 z is         64 and i is          30
+src is  0 z is         64 and i is          31
+WRITE Addr FOUND!: 0000003e
+Wrote 00000003 to address!
+READ Addr FOUND!: 0000003e
+Writing to dout:          3
+READ Addr FOUND!: 0000305d
+Writing to dout:          3
+WRITE Addr FOUND!: 10000024
+Wrote 00000000 to address!
+READ Addr FOUND!: 10000024
+Writing to dout:          0
+READ Addr FOUND!: 00400048
+Writing to dout:  541196292
+READ Addr FOUND!: 10000024
+Writing to dout:          0
+src is  2 z is          1 and i is           0
+src is  2 z is          1 and i is           1
+src is  2 z is          1 and i is           2
+src is  2 z is          1 and i is           3
+src is  2 z is          1 and i is           4
+src is  2 z is          1 and i is           5
+src is  2 z is          1 and i is           6
+src is  2 z is          1 and i is           7
+src is  2 z is          1 and i is           8
+src is  2 z is          1 and i is           9
+src is  2 z is          1 and i is          10
+src is  2 z is          1 and i is          11
+src is  2 z is          1 and i is          12
+src is  2 z is          1 and i is          13
+src is  2 z is          1 and i is          14
+src is  2 z is          1 and i is          15
+src is  2 z is          1 and i is          16
+src is  2 z is          1 and i is          17
+src is  2 z is          1 and i is          18
+src is  2 z is          1 and i is          19
+src is  2 z is          1 and i is          20
+src is  2 z is          1 and i is          21
+src is  2 z is          1 and i is          22
+src is  2 z is          1 and i is          23
+src is  2 z is          1 and i is          24
+src is  2 z is          1 and i is          25
+src is  2 z is          1 and i is          26
+src is  2 z is          1 and i is          27
+src is  2 z is          1 and i is          28
+src is  2 z is          1 and i is          29
+src is  2 z is          1 and i is          30
+src is  2 z is          1 and i is          31
+Writing to dout:          0
+READ Addr FOUND!: 0040004c
+Writing to dout:  340262905
+src is  7 z is          4 and i is           0
+src is  7 z is          4 and i is           1
+src is  7 z is          4 and i is           2
+src is  7 z is          4 and i is           3
+src is  7 z is          4 and i is           4
+src is  7 z is          4 and i is           5
+src is  7 z is          4 and i is           6
+src is  7 z is          4 and i is           7
+src is  7 z is          4 and i is           8
+src is  7 z is          4 and i is           9
+src is  7 z is          4 and i is          10
+src is  7 z is          4 and i is          11
+src is  7 z is          4 and i is          12
+src is  7 z is          4 and i is          13
+src is  7 z is          4 and i is          14
+src is  7 z is          4 and i is          15
+src is  7 z is          4 and i is          16
+src is  7 z is          4 and i is          17
+src is  7 z is          4 and i is          18
+src is  7 z is          4 and i is          19
+src is  7 z is          4 and i is          20
+src is  7 z is          4 and i is          21
+src is  7 z is          4 and i is          22
+src is  7 z is          4 and i is          23
+src is  7 z is          4 and i is          24
+src is  7 z is          4 and i is          25
+src is  7 z is          4 and i is          26
+src is  7 z is          4 and i is          27
+src is  7 z is          4 and i is          28
+src is  7 z is          4 and i is          29
+src is  7 z is          4 and i is          30
+src is  7 z is          4 and i is          31
+READ Addr FOUND!: 10000020
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+Writing to dout:          0
+READ Addr FOUND!: 00400050
+Writing to dout: 2900754432
+READ Addr FOUND!: 00000000
+Writing to dout:  268435496
+src is  6 z is        128 and i is           0
+src is  6 z is        128 and i is           1
+src is  6 z is        128 and i is           2
+src is  6 z is        128 and i is           3
+src is  6 z is        128 and i is           4
+src is  6 z is        128 and i is           5
+src is  6 z is        128 and i is           6
+src is  6 z is        128 and i is           7
+src is  6 z is        128 and i is           8
+src is  6 z is        128 and i is           9
+src is  6 z is        128 and i is          10
+src is  6 z is        128 and i is          11
+src is  6 z is        128 and i is          12
+src is  6 z is        128 and i is          13
+src is  6 z is        128 and i is          14
+src is  6 z is        128 and i is          15
+src is  6 z is        128 and i is          16
+src is  6 z is        128 and i is          17
+src is  6 z is        128 and i is          18
+src is  6 z is        128 and i is          19
+src is  6 z is        128 and i is          20
+src is  6 z is        128 and i is          21
+src is  6 z is        128 and i is          22
+src is  6 z is        128 and i is          23
+src is  6 z is        128 and i is          24
+src is  6 z is        128 and i is          25
+src is  6 z is        128 and i is          26
+src is  6 z is        128 and i is          27
+src is  6 z is        128 and i is          28
+src is  6 z is        128 and i is          29
+src is  6 z is        128 and i is          30
+src is  6 z is        128 and i is          31
+READ Addr FOUND!: 20000050
+Writing to dout:  268435496
+READ Addr FOUND!: 10010021
+Writing to dout:  268435496
+READ Addr FOUND!: 10000021
+Writing to dout:  268435496
+WRITE Addr FOUND!: 00000038
+Wrote 00000038 to address!
+READ Addr FOUND!: 00000038
+Writing to dout:         56
+Writing to dout:         56
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Writing to dout: 2900754432
+Simulation stopped via $stop(1) at time 3870 NS + 0
+xcelium> 
