@@ -9,67 +9,64 @@
 // `include "ece361_alu_verilog/ALU.v"
 // `include "ece361_alu_verilog/ALUCU.v"
 
-module alu_subpipeline( clk, 
-                        pc_in, 
-                        pc_out, 
-                        A_in, 
-                        A_out, 
-                        B_in, 
-                        B_out, 
-                        instr_in, 
-                        instr_out,
-                        ExtOp_in, 
-                        ALUSrc_in, 
-                        ALUOp_in, 
-                        RegDst_in, 
-                        MemWr_in, 
-                        Br_in, 
-                        MemtoReg_in, 
-                        RegWr_in, 
-                        ExtOp_out, 
-                        ALUSrc_out, 
-                        ALUOp_out, 
-                        RegDst_out, 
-                        MemWr_out, 
-                        Br_out, 
-                        MemtoReg_out, 
-                        RegWr_out,
+module alu_subpipeline( clk, clockthing,
+                        IDpc, 
+                        //srcA,
+                        //srcB,
+                        regbusA,  
+                        regbusB, 
+                        IDinstruction, 
+                        ExtOp, 
+                        ALUSrc, 
+                        ALUOp, 
+                        RegDst, 
+                        MemWrite, 
+                        Branch, 
+                        MemtoReg, 
+                        RegWrite,
 
-                        BusW,
-                        MEMpc,
-                        branch_ctrl,
-                        regmuxout);
+                        //srcA,
+                        //srcB,        
+                        BusW,        //data to be written back into reg file
+                        MEMpc,       //PC to be used as input to branch mux (src1)
+                        branch_ctrl, //result from AND gate of branch bit and zero bit. Use this as the sel bit for branch mux.
+                        regmuxout); //Rw
     
 
 //Contains ID_EX_reg, EX stage, EX_MEM_reg (which pretty much acts as EX_WB_reg), WB stage, Branch and gate usually in MEM stage
 
 // Inputs:
 /*
-    .clk(clk), 
-    .pc_in(IDpc), 
-    .pc_out(EXpc), 
-    .A_in(regbusA), 
-    .A_out(execbusA), 
-    .B_in(regbusB), 
-    .B_out(execbusB), 
-    .instr_in(IDinstruction), 
-    .instr_out(EXinstruction),
-    .ExtOp_in(ExtOp), 
-    .ALUSrc_in(ALUSrc), 
-    .ALUOp_in(ALUOp), 
-    .RegDst_in(RegDst), 
-    .MemWr_in(MemWrite), 
-    .Br_in(Branch), 
-    .MemtoReg_in(MemtoReg), 
-    .RegWr_in(RegWrite), 
-    .ExtOp_out(EXExtOp), 
-    .ALUSrc_out(EXALUSrc), 
-    .ALUOp_out(EXALUOp), 
-    .RegDst_out(EXRegDst), 
-    .MemWr_out(EXMemWr), 
-    .Br_out(EXBranch), 
-    .MemtoReg_out(EXMemtoReg), 
-    .RegWr_out(EXRegWr));
+    clk, pc_ld, pc_data, clockthing
+    pc_in, 
+    pc_out, 
+    A_in, 
+    A_out, 
+    B_in, 
+    B_out, 
+    instr_in, 
+    instr_out,
+    ExtOp_in, 
+    ALUSrc_in, 
+    ALUOp_in, 
+    RegDst_in, 
+    MemWr_in, 
+    Br_in, 
+    MemtoReg_in, 
+    RegWr_in, 
+    ExtOp_out, 
+    ALUSrc_out, 
+    ALUOp_out, 
+    RegDst_out, 
+    MemWr_out, 
+    Br_out, 
+    MemtoReg_out, 
+    RegWr_out,
+
+    BusW,
+    MEMpc,
+    branch_ctrl,
+    regmuxout
     */
 
 //Outputs:
@@ -81,26 +78,17 @@ module alu_subpipeline( clk,
 
     // Inputs
     parameter data_file = "data/bills_branch.dat";
-    input pc_ld;
     input clk, clockthing;
-    input [31:0] pc_data;
 
     // Wires
 
-    //Ifetch stage
-    wire [31:0] nextpc;
-    wire [31:0] currpc;
-    wire [31:0] IFpc, IFpctemp;
-    wire [31:0] IFinstruction, IFinstructiontemp;
-    wire [31:0] pin1, pin2, pin3, pin1a, pin2a, pin3a;
-    wire stall0, stall00, stall1, stall2, stall3, stalled, stalled2, invertedstall;
     // Control (happens during reg/dec stage)
-    wire RegDst, ALUSrc, MemtoReg, RegWrite, MemWrite, ExtOp;
-    wire [1:0] Branch;
-    wire [2:0] ALUOp;
+    input RegDst, ALUSrc, MemtoReg, RegWrite, MemWrite, ExtOp;
+    input [1:0] Branch;
+    input [2:0] ALUOp;
     // Reg/Dec Stage
-    wire [31:0] IDpc, IDinstruction;
-    wire [31:0] regbusA, regbusB;
+    input [31:0] IDpc, IDinstruction;
+    input [31:0] regbusA, regbusB;
     // Rs
     wire [4:0] temp_Rs; 
     // Rt

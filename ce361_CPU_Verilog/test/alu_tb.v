@@ -1,4 +1,5 @@
 //`include "ece361_alu_verilog/ALU.v"
+`timescale 1ns/10ps
 module alu_tb;
 
   reg [2:0] t_ctrl;
