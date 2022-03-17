@@ -27,7 +27,7 @@ module alu_subpipeline( clk, clockthing,
 
                         //srcA,
                         //srcB,        
-                        BusW,        //data to be written back into reg file
+                        busW,        //data to be written back into reg file
                         MEMpc,       //PC to be used as input to branch mux (src1)
                         branch_ctrl, //result from AND gate of branch bit and zero bit. Use this as the sel bit for branch mux.
                         regmuxout); //Rw
@@ -101,7 +101,7 @@ module alu_subpipeline( clk, clockthing,
     wire EXRegWr, EXExtOp, EXALUSrc, EXRegDst, EXMemWr, EXMemtoReg;
     wire [2:0] EXALUOp;
     wire [1:0] EXBranch;
-    wire EXzero;
+    input EXzero;
     wire [31:0] EXRegAddr;
 
     // Mem Stage
