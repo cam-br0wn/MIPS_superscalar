@@ -1,1 +1,0 @@
-s1(16Mar2022:19:05:09):  xrun -64bit -gui -access r ./test/sram_3_tb.v ./extralib/sram_3.v 
