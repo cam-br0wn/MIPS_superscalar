@@ -3,6 +3,9 @@
 // CE361: Single-Cycle Processor Project
 // Testbench for register file
 
+
+// i still need to add more testbench cases, but the register file and this testbench do compile and i think they're correct
+
 module reg_file_tb;
   
     reg t_RegWr1;
