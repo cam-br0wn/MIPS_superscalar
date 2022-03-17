@@ -1,4 +1,0 @@
-s1(12Mar2022:15:19:01):  xrun -64bit -gui -access r test/icc_tb.v icc.v 
-s2(12Mar2022:15:19:19):  xrun -64bit -gui -access r test/icc_tb.v icc.v 
-s3(12Mar2022:15:21:35):  xrun -64bit -gui -access r test/icc_tb.v icc.v 
-s4(12Mar2022:15:21:57):  xrun -64bit -gui -access r test/icc_tb.v icc.v 
