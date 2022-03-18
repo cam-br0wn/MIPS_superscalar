@@ -1,6 +1,8 @@
+// A module to detect inter-pipeline hazards and dependencies, as well as to decode instructions and send them to their respective pipelines
+// Cam Brown
 `timescale 1ns/10ps
 
-module SS_HazDet (
+module hazard_detect_decode (
     alpha_inst, alpha_seq_num, alpha_pc_in,
     beta_inst, beta_seq_num, beta_pc_in,
     gamma_inst, gamma_seq_num, gamma_pc_in,
@@ -47,6 +49,11 @@ module SS_HazDet (
     integer inst2_stall;
     integer inst3_stall;
 
+    // flag for if pipelines have been occupied by an instruction this cycle
+    integer A_busy;
+    integer B_busy;
+    integer C_busy;
+
     // registers to hold sorted instructions by sequence number
     reg [31:0] first_inst;
     reg [31:0] second_inst;
@@ -59,28 +66,28 @@ module SS_HazDet (
 
     // corresponding pipeline wires
     // Pipeline A -- ALU 1
-    output wire [5:0] pipeA_op_in;
-    output wire [4:0] pipeA_dest_in;
-    output wire [4:0] pipeA_src1_in;
-    output wire [4:0] pipeA_src2_in;
-    output wire [5:0] pipeA_func_in;
-    output wire [4:0] pipeA_shamt_in;
-    output wire [15:0] pipeA_imm_in;
+    output reg [5:0] pipeA_op_in;
+    output reg [4:0] pipeA_dest_in;
+    output reg [4:0] pipeA_src1_in;
+    output reg [4:0] pipeA_src2_in;
+    output reg [5:0] pipeA_func_in;
+    output reg [4:0] pipeA_shamt_in;
+    output reg [15:0] pipeA_imm_in;
 
     // Pipeline B -- ALU 2
-    output wire [6:0] pipeB_op_in;
-    output wire [4:0] pipeB_dest_in;
-    output wire [4:0] pipeB_src1_in;
-    output wire [4:0] pipeB_src2_in;
-    output wire [5:0] pipeB_func_in;
-    output wire [4:0] pipeB_shamt_in;
-    output wire [15:0] pipeB_imm_in;
+    output reg [6:0] pipeB_op_in;
+    output reg [4:0] pipeB_dest_in;
+    output reg [4:0] pipeB_src1_in;
+    output reg [4:0] pipeB_src2_in;
+    output reg [5:0] pipeB_func_in;
+    output reg [4:0] pipeB_shamt_in;
+    output reg [15:0] pipeB_imm_in;
 
     // Pipeline C -- Memory Ops
-    output wire [5:0] pipeC_op_in;
-    output wire [4:0] pipeC_dest_in;
-    output wire [4:0] pipeC_src1_in;
-    output wire [15:0] pipeC_imm_in;
+    output reg [5:0] pipeC_op_in;
+    output reg [4:0] pipeC_dest_in;
+    output reg [4:0] pipeC_src1_in;
+    output reg [15:0] pipeC_imm_in;
 
     // program counter output of each instruction after ordering (to be passed to pipelines/instruction fetch)
     output reg [31:0] inst1_pc_out;
@@ -864,10 +871,6 @@ module SS_HazDet (
         end
         // Hallelujah, we have established who is stalling and all that crap
 
-        // flag for if pipelines have been occupied by an instruction this cycle
-        integer A_busy;
-        integer B_busy;
-        integer C_busy;
         A_busy = 0;
         B_busy = 0;
         C_busy = 0;
@@ -964,7 +967,7 @@ module SS_HazDet (
                     pipeB_src2_in = 5'b00000;
                     pipeB_func_in = 6'b000000;
                     pipeB_shamt_in = 5'b00000;
-                    pipeB_imm_in = 6'h0000;
+                    pipeB_imm_in = 16'h0000;
 
 
                 end
@@ -1036,7 +1039,7 @@ module SS_HazDet (
                                 pipeB_src2_in = 5'b00000;
                                 pipeB_func_in = 6'b000000;
                                 pipeB_shamt_in = 5'b00000;
-                                pipeB_imm_in = 6'h0000;
+                                pipeB_imm_in = 16'h0000;
                             end
                             else if (B_busy) begin
                                 inst3_pc_out = third_pc;
@@ -1066,7 +1069,7 @@ module SS_HazDet (
             // output stall signals for:
             // all 3 PCs
             // all 3 inst outputs
-            inst1_pc_out = first_pc
+            inst1_pc_out = first_pc;
             inst2_pc_out = second_pc;
             inst3_pc_out = third_pc;
 
@@ -1086,7 +1089,7 @@ module SS_HazDet (
             pipeB_src2_in = 5'b00000;
             pipeB_func_in = 6'b000000;
             pipeB_shamt_in = 5'b00000;
-            pipeB_imm_in = 6'h0000;
+            pipeB_imm_in = 16'h0000;
 
             // Pipeline C -- Memory Ops
             pipeC_op_in = 6'b000000;
