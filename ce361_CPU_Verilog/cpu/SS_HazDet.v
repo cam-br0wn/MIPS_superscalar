@@ -12,7 +12,7 @@ module SS_HazDet (
     inst3_inst_out, inst3_pc_out
     );
 
-    // alpha, beta and gamma are labels from instructions being fed into hazard detection
+    // alpha, beta && gamma are labels from instructions being fed into hazard detection
     input [31:0] alpha_inst;
     input [15:0] alpha_seq_num;
     input [31:0] alpha_pc_in;
@@ -50,14 +50,14 @@ module SS_HazDet (
     reg [31:0] third_inst;
 
     // instruction output of each instruction after ordering
-    output [31:0] inst1_inst_out;
-    output [31:0] inst2_inst_out;
-    output [31:0] inst3_inst_out;
+    output reg [31:0] inst1_inst_out;
+    output reg [31:0] inst2_inst_out;
+    output reg [31:0] inst3_inst_out;
 
     // program counter output of each instruction after ordering (to be passed to pipelines/instruction fetch)
-    output [31:0] inst1_pc_out;
-    output [31:0] inst2_pc_out;
-    output [31:0] inst3_pc_out;
+    output reg [31:0] inst1_pc_out;
+    output reg [31:0] inst2_pc_out;
+    output reg [31:0] inst3_pc_out;
 
     // registers to store the program counter of the instructions after ordering (necessary for stalling)
     reg [31:0] first_pc;
@@ -109,25 +109,25 @@ module SS_HazDet (
     // 32'h00000000 is issued to x_pc_out, which is passing a null value to the instruction fetch module, telling it that it can increment PC safely
 
     // In the event that the instruction fetcher passes less than 3 instructions at once (because it has been notified by a pipeline of completion of an instruction):
-    // The other instruction(s) and data will all be null values, and as such can be ignored
+    // The other instruction(s) && data will all be null values, && as such can be ignored
     // should probably issue 16'h7FFF for sequence numbers of null passes, so the comparisons don't get wonky
 
     // We want to act anytime a new instruction comes into the hazard detector
-    always @ ((alpha_inst) or (beta_inst) or (gamma_inst)) begin
+    always @ ((alpha_inst) || (beta_inst) || (gamma_inst)) begin
         
         // default to not stalling any instructions
         inst1_stall = 0;
         inst2_stall = 0;
         inst3_stall = 0;
-        // in order to proceed by sequence number, let's just assign the instructions to 1st, 2nd and 3rd vars based on seq num
+        // in order to proceed by sequence number, let's just assign the instructions to 1st, 2nd && 3rd vars based on seq num
         // START Execution order determination logic:
-        // Note the use of <= and >= so that null entries will order properly
-        if ((alpha_seq_num >= beta_seq_num) and (alpha_seq_num >= gamma_seq_num)) begin
+        // Note the use of <= && >= so that null entries will order properly
+        if ((alpha_seq_num >= beta_seq_num) && (alpha_seq_num >= gamma_seq_num)) begin
             
             third_inst = alpha_inst;
 
             // B <= G <= A
-            if (beta_seq_num <= gamma_seq_num) begin
+            if ((beta_seq_num) <= (gamma_seq_num)) begin
                 second_inst = gamma_inst;
                 first_inst = beta_inst;
 
@@ -146,7 +146,7 @@ module SS_HazDet (
             end
 
         end
-        else if ((alpha_seq_num <= beta_seq_num) and (alpha_seq_num <= gamma_seq_num)) begin
+        else if ((alpha_seq_num <= beta_seq_num) && (alpha_seq_num <= gamma_seq_num)) begin
             
             first_inst = alpha_inst;
             // A <= B <= G 
@@ -204,7 +204,7 @@ module SS_HazDet (
             if (inst1_func != 6'b000000) begin
                 inst1_dest = first_inst[15:11];
                 inst1_src1 = first_inst[25:21];
-                isnt1_src2 = first_inst[20:16];
+                inst1_src2 = first_inst[20:16];
             end
             // SLL/NOP case
             else begin
@@ -229,7 +229,7 @@ module SS_HazDet (
             if (inst2_func != 6'b000000) begin
                 inst2_dest = second_inst[15:11];
                 inst2_src1 = second_inst[25:21];
-                isnt2_src2 = second_inst[20:16];
+                inst2_src2 = second_inst[20:16];
             end
             // SLL/NOP case
             else begin
@@ -254,7 +254,7 @@ module SS_HazDet (
             if (inst3_func != 6'b000000) begin
                 inst3_dest = third_inst[15:11];
                 inst3_src1 = third_inst[25:21];
-                isnt3_src2 = third_inst[20:16];
+                inst3_src2 = third_inst[20:16];
             end
             // SLL case
             else begin
@@ -273,13 +273,13 @@ module SS_HazDet (
 
         // Now that each is decoded, we can start to check dependencies in pipelines
         // Check the first instruction for dependencies on what's currently running in pipelines
-        // Step 1: if it's a SW, LW, BEQ, BNE or ADDI, check dest and src against dest of pipelines
+        // Step 1: if it's a SW, LW, BEQ, BNE || ADDI, check dest && src against dest of pipelines
         // Check instruction 1 dependencies:
         // if inst1 is a memory op
-        if ((inst1_op == 6'b101011) or (inst1_op == 6'b100011) or (inst1_op == 6'b000100) or (inst1_op == 6'b000101) or (inst1_op == 6'b001000)) begin
+        if ((inst1_op == 6'b101011) || (inst1_op == 6'b100011) || (inst1_op == 6'b000100) || (inst1_op == 6'b000101) || (inst1_op == 6'b001000)) begin
 
-            // if there's a dependency in any of the 3 pipelines and both dest and src are not zero reg
-            if ( (((inst1_dest == pipeA_dest) or (inst1_dest == pipeB_dest) or (inst1_dest == pipeC_dest)) and (inst1_dest != 5'b00000)) or (((inst1_src1 == pipeA_dest) or (inst1_src1 == pipeB_dest) or (inst1_src1 == pipeC_dest)) and (inst1_src1 != 5'b00000))) begin
+            // if there's a dependency in any of the 3 pipelines && both dest && src are not zero reg
+            if ( (((inst1_dest == pipeA_dest) || (inst1_dest == pipeB_dest) || (inst1_dest == pipeC_dest)) && (inst1_dest != 5'b00000)) || (((inst1_src1 == pipeA_dest) || (inst1_src1 == pipeB_dest) || (inst1_src1 == pipeC_dest)) && (inst1_src1 != 5'b00000))) begin
                 
                 // outcome: stall all instructions
                 inst1_stall = 1;
@@ -311,8 +311,8 @@ module SS_HazDet (
         // if inst1 is an ALU op
         else begin
             
-            // if there's a dependency in any of the 3 pipelines and both dest and src are not zero reg
-            if ( (((inst1_dest == pipeA_dest) or (inst1_dest == pipeB_dest) or (inst1_dest == pipeC_dest)) and (inst1_dest != 5'b00000)) or (((inst1_src1 == pipeA_dest) or (inst1_src1 == pipeB_dest) or (inst1_src1 == pipeC_dest)) and (inst1_src1 != 5'b00000)) or (((inst1_src2 == pipeA_dest) or (inst1_src2 == pipeB_dest) or (inst1_src2 == pipeC_dest)) and (inst1_src2 != 5'b00000))) begin
+            // if there's a dependency in any of the 3 pipelines && both dest && src are not zero reg
+            if ( (((inst1_dest == pipeA_dest) || (inst1_dest == pipeB_dest) || (inst1_dest == pipeC_dest)) && (inst1_dest != 5'b00000)) || (((inst1_src1 == pipeA_dest) || (inst1_src1 == pipeB_dest) || (inst1_src1 == pipeC_dest)) && (inst1_src1 != 5'b00000)) || (((inst1_src2 == pipeA_dest) || (inst1_src2 == pipeB_dest) || (inst1_src2 == pipeC_dest)) && (inst1_src2 != 5'b00000))) begin
                 
                 // outcome: stall all instructions
                 inst1_stall = 1;
@@ -350,23 +350,23 @@ module SS_HazDet (
 
         // Check instruction 2 dependencies:
         // if inst2 is a memory op
-        if ((inst2_op == 6'b101011) or (inst2_op == 6'b100011) or (inst2_op == 6'b000100) or (inst2_op == 6'b000101) or (inst2_op == 6'b001000)) begin
+        if ((inst2_op == 6'b101011) || (inst2_op == 6'b100011) || (inst2_op == 6'b000100) || (inst2_op == 6'b000101) || (inst2_op == 6'b001000)) begin
         
-            // if there's a dependency in any of the 3 pipelines, on the 1st instruction, and not zero regs
+            // if there's a dependency in any of the 3 pipelines, on the 1st instruction, && not zero regs
             // need to check if inst1 is a memory op, because then it will only have dest, src1
-            if ((inst1_op == 6'b101011) or (inst1_op == 6'b100011) or (inst1_op == 6'b000100) or (inst1_op == 6'b000101) or (inst1_op == 6'b001000)) begin
+            if ((inst1_op == 6'b101011) || (inst1_op == 6'b100011) || (inst1_op == 6'b000100) || (inst1_op == 6'b000101) || (inst1_op == 6'b001000)) begin
                 
                 // inst1: memory op
                 // inst2: memory op
 
-                // from here, compare to pipelines, dest and src1 of inst1 and make sure inst1 is not stalling
-                if (   (((inst2_dest == pipeA_dest) or (inst2_dest == pipeB_dest) or (inst2_dest == pipeC_dest)) and (inst2_dest != 5'b00000))  // dest to pipes
-                    or (((inst2_src1 == pipeA_dest) or (inst2_src1 == pipeB_dest) or (inst2_src1 == pipeC_dest)) and (inst2_src1 != 5'b00000)) // src1 to pipes
-                    or (((inst2_dest == inst1_dest) or (inst2_dest == inst1_src1)) and (inst2_dest != 5'b00000)) // dest to inst1
-                    or (((inst2_src1 == inst1_dest)) and (inst2_src1 != 5'b00000)) // src1 to inst1
-                    or (inst1_stall == 1)) begin
+                // from here, compare to pipelines, dest && src1 of inst1 && make sure inst1 is not stalling
+                if (   (((inst2_dest == pipeA_dest) || (inst2_dest == pipeB_dest) || (inst2_dest == pipeC_dest)) && (inst2_dest != 5'b00000))  // dest to pipes
+                    || (((inst2_src1 == pipeA_dest) || (inst2_src1 == pipeB_dest) || (inst2_src1 == pipeC_dest)) && (inst2_src1 != 5'b00000)) // src1 to pipes
+                    || (((inst2_dest == inst1_dest) || (inst2_dest == inst1_src1)) && (inst2_dest != 5'b00000)) // dest to inst1
+                    || (((inst2_src1 == inst1_dest)) && (inst2_src1 != 5'b00000)) // src1 to inst1
+                    || (inst1_stall == 1)) begin
                 
-                    // outcome: stall instructions 2 and 3
+                    // outcome: stall instructions 2 && 3
                     inst2_stall = 1;
                     inst3_stall = 1;
 
@@ -394,13 +394,13 @@ module SS_HazDet (
                 // inst1: ALU OP
                 // inst2: memory OP
 
-                if (   (((inst2_dest == pipeA_dest) or (inst2_dest == pipeB_dest) or (inst2_dest == pipeC_dest)) and (inst2_dest != 5'b00000))  // dest to pipes
-                    or (((inst2_src1 == pipeA_dest) or (inst2_src1 == pipeB_dest) or (inst2_src1 == pipeC_dest)) and (inst2_src1 != 5'b00000)) // src1 to pipes
-                    or (((inst2_dest == inst1_dest) or (inst2_dest == inst1_src1) or (inst2_dest == inst1_src2)) and (inst2_dest != 5'b00000)) // dest to inst1
-                    or (((inst2_src1 == inst1_dest)) and (inst2_src1 != 5'b00000)) // src1 to inst1
-                    or (inst1_stall == 1)) begin
+                if (   (((inst2_dest == pipeA_dest) || (inst2_dest == pipeB_dest) || (inst2_dest == pipeC_dest)) && (inst2_dest != 5'b00000))  // dest to pipes
+                    || (((inst2_src1 == pipeA_dest) || (inst2_src1 == pipeB_dest) || (inst2_src1 == pipeC_dest)) && (inst2_src1 != 5'b00000)) // src1 to pipes
+                    || (((inst2_dest == inst1_dest) || (inst2_dest == inst1_src1) || (inst2_dest == inst1_src2)) && (inst2_dest != 5'b00000)) // dest to inst1
+                    || (((inst2_src1 == inst1_dest)) && (inst2_src1 != 5'b00000)) // src1 to inst1
+                    || (inst1_stall == 1)) begin
 
-                    // outcome: stall instructions 2 and 3
+                    // outcome: stall instructions 2 && 3
                     inst2_stall = 1;
                     inst3_stall = 1;
 
@@ -427,23 +427,23 @@ module SS_HazDet (
         // if inst2 is an ALU op
         else begin
 
-            // if there's a dependency in any of the 3 pipelines, on the 1st instruction, and not zero regs
+            // if there's a dependency in any of the 3 pipelines, on the 1st instruction, && not zero regs
             // need to check if inst1 is a memory op, because then it will only have dest, src1
-            if ((inst1_op == 6'b101011) or (inst1_op == 6'b100011) or (inst1_op == 6'b000100) or (inst1_op == 6'b000101) or (inst1_op == 6'b001000)) begin
+            if ((inst1_op == 6'b101011) || (inst1_op == 6'b100011) || (inst1_op == 6'b000100) || (inst1_op == 6'b000101) || (inst1_op == 6'b001000)) begin
                 
                 // inst1: memory op
                 // inst2: ALU op
 
-                // from here, compare to pipelines, dest and src1 of inst1 and make sure inst1 is not stalling
-                if (   (((inst2_dest == pipeA_dest) or (inst2_dest == pipeB_dest) or (inst2_dest == pipeC_dest)) and (inst2_dest != 5'b00000))  // dest to pipes
-                    or (((inst2_src1 == pipeA_dest) or (inst2_src1 == pipeB_dest) or (inst2_src1 == pipeC_dest)) and (inst2_src1 != 5'b00000)) // src1 to pipes
-                    or (((inst2_src2 == pipeA_dest) or (inst2_src2 == pipeB_dest) or (inst2_src2 == pipeC_dest)) and (inst2_src2 != 5'b00000)) // src2 to pipes
-                    or (((inst2_dest == inst1_dest) or (inst2_dest == inst1_src1)) and (inst2_dest != 5'b00000)) // dest to inst1
-                    or (((inst2_src1 == inst1_dest)) and (inst2_src1 != 5'b00000)) // src1 to inst1
-                    or (((inst2_src2 == inst1_dest)) and (inst2_src2 != 5'b00000)) // src2 to inst1
-                    or (inst1_stall == 1)) begin
+                // from here, compare to pipelines, dest && src1 of inst1 && make sure inst1 is not stalling
+                if (   (((inst2_dest == pipeA_dest) || (inst2_dest == pipeB_dest) || (inst2_dest == pipeC_dest)) && (inst2_dest != 5'b00000))  // dest to pipes
+                    || (((inst2_src1 == pipeA_dest) || (inst2_src1 == pipeB_dest) || (inst2_src1 == pipeC_dest)) && (inst2_src1 != 5'b00000)) // src1 to pipes
+                    || (((inst2_src2 == pipeA_dest) || (inst2_src2 == pipeB_dest) || (inst2_src2 == pipeC_dest)) && (inst2_src2 != 5'b00000)) // src2 to pipes
+                    || (((inst2_dest == inst1_dest) || (inst2_dest == inst1_src1)) && (inst2_dest != 5'b00000)) // dest to inst1
+                    || (((inst2_src1 == inst1_dest)) && (inst2_src1 != 5'b00000)) // src1 to inst1
+                    || (((inst2_src2 == inst1_dest)) && (inst2_src2 != 5'b00000)) // src2 to inst1
+                    || (inst1_stall == 1)) begin
                 
-                    // outcome: stall instructions 2 and 3
+                    // outcome: stall instructions 2 && 3
                     inst2_stall = 1;
                     inst3_stall = 1;
 
@@ -471,15 +471,15 @@ module SS_HazDet (
                 // inst1: ALU OP
                 // inst2: ALU OP
 
-                if (   (((inst2_dest == pipeA_dest) or (inst2_dest == pipeB_dest) or (inst2_dest == pipeC_dest)) and (inst2_dest != 5'b00000))  // dest to pipes
-                    or (((inst2_src1 == pipeA_dest) or (inst2_src1 == pipeB_dest) or (inst2_src1 == pipeC_dest)) and (inst2_src1 != 5'b00000)) // src1 to pipes
-                    or (((inst2_src2 == pipeA_dest) or (inst2_src2 == pipeB_dest) or (inst2_src2 == pipeC_dest)) and (inst2_src2 != 5'b00000)) // src2 to pipes
-                    or (((inst2_dest == inst1_dest) or (inst2_dest == inst1_src1) or (inst2_dest == inst1_src2)) and (inst2_dest != 5'b00000)) // dest to inst1
-                    or (((inst2_src1 == inst1_dest)) and (inst2_src1 != 5'b00000)) // src1 to inst1
-                    or (((inst2_src2 == inst1_dest)) and (inst2_src2 != 5'b00000)) // src2 to inst1
-                    or (inst1_stall == 1)) begin
+                if (   (((inst2_dest == pipeA_dest) || (inst2_dest == pipeB_dest) || (inst2_dest == pipeC_dest)) && (inst2_dest != 5'b00000))  // dest to pipes
+                    || (((inst2_src1 == pipeA_dest) || (inst2_src1 == pipeB_dest) || (inst2_src1 == pipeC_dest)) && (inst2_src1 != 5'b00000)) // src1 to pipes
+                    || (((inst2_src2 == pipeA_dest) || (inst2_src2 == pipeB_dest) || (inst2_src2 == pipeC_dest)) && (inst2_src2 != 5'b00000)) // src2 to pipes
+                    || (((inst2_dest == inst1_dest) || (inst2_dest == inst1_src1) || (inst2_dest == inst1_src2)) && (inst2_dest != 5'b00000)) // dest to inst1
+                    || (((inst2_src1 == inst1_dest)) && (inst2_src1 != 5'b00000)) // src1 to inst1
+                    || (((inst2_src2 == inst1_dest)) && (inst2_src2 != 5'b00000)) // src2 to inst1
+                    || (inst1_stall == 1)) begin
 
-                    // outcome: stall instructions 2 and 3
+                    // outcome: stall instructions 2 && 3
                     inst2_stall = 1;
                     inst3_stall = 1;
 
@@ -508,27 +508,27 @@ module SS_HazDet (
 
         // Check instruction 3 dependencies:
         // if inst3 is a memory op
-        if ((inst2_op == 6'b101011) or (inst2_op == 6'b100011) or (inst2_op == 6'b000100) or (inst2_op == 6'b000101) or (inst2_op == 6'b001000)) begin
+        if ((inst2_op == 6'b101011) || (inst2_op == 6'b100011) || (inst2_op == 6'b000100) || (inst2_op == 6'b000101) || (inst2_op == 6'b001000)) begin
             
             // if inst2 is a memory op
-            if ((inst2_op == 6'b101011) or (inst2_op == 6'b100011) or (inst2_op == 6'b000100) or (inst2_op == 6'b000101) or (inst2_op == 6'b001000)) begin
+            if ((inst2_op == 6'b101011) || (inst2_op == 6'b100011) || (inst2_op == 6'b000100) || (inst2_op == 6'b000101) || (inst2_op == 6'b001000)) begin
 
                 // if inst1 is a memory op
-                if ((inst1_op == 6'b101011) or (inst1_op == 6'b100011) or (inst1_op == 6'b000100) or (inst1_op == 6'b000101) or (inst1_op == 6'b001000)) begin
+                if ((inst1_op == 6'b101011) || (inst1_op == 6'b100011) || (inst1_op == 6'b000100) || (inst1_op == 6'b000101) || (inst1_op == 6'b001000)) begin
 
                     // inst1: memory op
                     // inst2: memory op
                     // inst3: memory op
-                    if (   (((inst3_dest == pipeA_dest) or (inst3_dest == pipeB_dest) or (inst3_dest == pipeC_dest)) and (inst3_dest != 5'b00000))  // dest to pipes
-                        or (((inst3_src1 == pipeA_dest) or (inst3_src1 == pipeB_dest) or (inst3_src1 == pipeC_dest)) and (inst3_src1 != 5'b00000)) // src1 to pipes
+                    if (   (((inst3_dest == pipeA_dest) || (inst3_dest == pipeB_dest) || (inst3_dest == pipeC_dest)) && (inst3_dest != 5'b00000))  // dest to pipes
+                        || (((inst3_src1 == pipeA_dest) || (inst3_src1 == pipeB_dest) || (inst3_src1 == pipeC_dest)) && (inst3_src1 != 5'b00000)) // src1 to pipes
                         // inst1
-                        or (((inst3_dest == inst1_dest) or (inst3_dest == inst1_src1)) and (inst3_dest != 5'b00000)) // dest to inst1
-                        or (((inst3_src1 == inst1_dest)) and (inst3_src1 != 5'b00000)) // src1 to inst1
+                        || (((inst3_dest == inst1_dest) || (inst3_dest == inst1_src1)) && (inst3_dest != 5'b00000)) // dest to inst1
+                        || (((inst3_src1 == inst1_dest)) && (inst3_src1 != 5'b00000)) // src1 to inst1
                         // inst2
-                        or (((inst3_dest == inst2_dest) or (inst3_dest == inst2_src1)) and (inst3_dest != 5'b00000)) // dest to inst2
-                        or (((inst3_src1 == inst2_src1)) and (inst3_src1 != 5'b00000)) // src1 to inst2
+                        || (((inst3_dest == inst2_dest) || (inst3_dest == inst2_src1)) && (inst3_dest != 5'b00000)) // dest to inst2
+                        || (((inst3_src1 == inst2_src1)) && (inst3_src1 != 5'b00000)) // src1 to inst2
                         // previous stalls
-                        or (inst1_stall == 1) or (inst2_stall == 1)) begin
+                        || (inst1_stall == 1) || (inst2_stall == 1)) begin
 
                         // outcome: stall instruction 3
                         inst3_stall = 1;
@@ -556,13 +556,13 @@ module SS_HazDet (
                     // inst1: ALU op
                     // inst2: memory op
                     // inst3: memory op
-                    if (   (((inst3_dest == pipeA_dest) or (inst3_dest == pipeB_dest) or (inst3_dest == pipeC_dest)) and (inst3_dest != 5'b00000))  // dest to pipes
-                        or (((inst3_src1 == pipeA_dest) or (inst3_src1 == pipeB_dest) or (inst3_src1 == pipeC_dest)) and (inst3_src1 != 5'b00000)) // src1 to pipes
-                        or (((inst3_dest == inst1_dest) or (inst3_dest == inst1_src1) or (inst3_dest == inst1_src2)) and (inst3_dest != 5'b00000)) // dest to inst1
-                        or (((inst3_src1 == inst1_dest)) and (inst3_src1 != 5'b00000)) // src1 to inst1
-                        or (((inst3_dest == inst2_dest) or (inst3_dest == inst2_src1)) and (inst3_dest != 5'b00000)) // dest to inst2
-                        or (((inst3_src1 == inst2_src1)) and (inst3_src1 != 5'b00000)) // src1 to inst2
-                        or (inst1_stall == 1) or (inst2_stall == 1)) begin
+                    if (   (((inst3_dest == pipeA_dest) || (inst3_dest == pipeB_dest) || (inst3_dest == pipeC_dest)) && (inst3_dest != 5'b00000))  // dest to pipes
+                        || (((inst3_src1 == pipeA_dest) || (inst3_src1 == pipeB_dest) || (inst3_src1 == pipeC_dest)) && (inst3_src1 != 5'b00000)) // src1 to pipes
+                        || (((inst3_dest == inst1_dest) || (inst3_dest == inst1_src1) || (inst3_dest == inst1_src2)) && (inst3_dest != 5'b00000)) // dest to inst1
+                        || (((inst3_src1 == inst1_dest)) && (inst3_src1 != 5'b00000)) // src1 to inst1
+                        || (((inst3_dest == inst2_dest) || (inst3_dest == inst2_src1)) && (inst3_dest != 5'b00000)) // dest to inst2
+                        || (((inst3_src1 == inst2_src1)) && (inst3_src1 != 5'b00000)) // src1 to inst2
+                        || (inst1_stall == 1) || (inst2_stall == 1)) begin
 
                         // outcome: stall instruction 3
                         inst3_stall = 1;
@@ -590,18 +590,18 @@ module SS_HazDet (
             else begin
 
                 // if inst1 is a memory op
-                if ((inst1_op == 6'b101011) or (inst1_op == 6'b100011) or (inst1_op == 6'b000100) or (inst1_op == 6'b000101) or (inst1_op == 6'b001000)) begin
+                if ((inst1_op == 6'b101011) || (inst1_op == 6'b100011) || (inst1_op == 6'b000100) || (inst1_op == 6'b000101) || (inst1_op == 6'b001000)) begin
 
                     // inst1: memory op
                     // inst2: ALU op
                     // inst3: memory op
-                    if (   (((inst3_dest == pipeA_dest) or (inst3_dest == pipeB_dest) or (inst3_dest == pipeC_dest)) and (inst3_dest != 5'b00000))  // dest to pipes
-                        or (((inst3_src1 == pipeA_dest) or (inst3_src1 == pipeB_dest) or (inst3_src1 == pipeC_dest)) and (inst3_src1 != 5'b00000)) // src1 to pipes
-                        or (((inst3_dest == inst1_dest) or (inst3_dest == inst1_src1)) and (inst3_dest != 5'b00000)) // dest to inst1
-                        or (((inst3_src1 == inst1_dest)) and (inst3_src1 != 5'b00000)) // src1 to inst1
-                        or (((inst3_dest == inst2_dest) or (inst3_dest == inst2_src1) or (inst3_dest == inst2_src2)) and (inst3_dest != 5'b00000)) // dest to inst2
-                        or (((inst3_src1 == inst2_src1)) and (inst3_src1 != 5'b00000)) // src1 to inst2
-                        or (inst1_stall == 1) or (inst2_stall == 1)) begin
+                    if (   (((inst3_dest == pipeA_dest) || (inst3_dest == pipeB_dest) || (inst3_dest == pipeC_dest)) && (inst3_dest != 5'b00000))  // dest to pipes
+                        || (((inst3_src1 == pipeA_dest) || (inst3_src1 == pipeB_dest) || (inst3_src1 == pipeC_dest)) && (inst3_src1 != 5'b00000)) // src1 to pipes
+                        || (((inst3_dest == inst1_dest) || (inst3_dest == inst1_src1)) && (inst3_dest != 5'b00000)) // dest to inst1
+                        || (((inst3_src1 == inst1_dest)) && (inst3_src1 != 5'b00000)) // src1 to inst1
+                        || (((inst3_dest == inst2_dest) || (inst3_dest == inst2_src1) || (inst3_dest == inst2_src2)) && (inst3_dest != 5'b00000)) // dest to inst2
+                        || (((inst3_src1 == inst2_src1)) && (inst3_src1 != 5'b00000)) // src1 to inst2
+                        || (inst1_stall == 1) || (inst2_stall == 1)) begin
 
                         // outcome: stall instruction 3
                         inst3_stall = 1;
@@ -629,13 +629,13 @@ module SS_HazDet (
                     // inst1: ALU op
                     // inst2: ALU op
                     // inst3: memory op
-                    if (   (((inst3_dest == pipeA_dest) or (inst3_dest == pipeB_dest) or (inst3_dest == pipeC_dest)) and (inst3_dest != 5'b00000))  // dest to pipes
-                        or (((inst3_src1 == pipeA_dest) or (inst3_src1 == pipeB_dest) or (inst3_src1 == pipeC_dest)) and (inst3_src1 != 5'b00000)) // src1 to pipes
-                        or (((inst3_dest == inst1_dest) or (inst3_dest == inst1_src1) or (inst3_dest == inst1_src2)) and (inst3_dest != 5'b00000)) // dest to inst1
-                        or (((inst3_src1 == inst1_dest)) and (inst3_src1 != 5'b00000)) // src1 to inst1
-                        or (((inst3_dest == inst2_dest) or (inst3_dest == inst2_src1) or (inst3_dest == inst2_src2)) and (inst3_dest != 5'b00000)) // dest to inst2
-                        or (((inst3_src1 == inst2_src1)) and (inst3_src1 != 5'b00000)) // src1 to inst2
-                        or (inst1_stall == 1) or (inst2_stall == 1)) begin
+                    if (   (((inst3_dest == pipeA_dest) || (inst3_dest == pipeB_dest) || (inst3_dest == pipeC_dest)) && (inst3_dest != 5'b00000))  // dest to pipes
+                        || (((inst3_src1 == pipeA_dest) || (inst3_src1 == pipeB_dest) || (inst3_src1 == pipeC_dest)) && (inst3_src1 != 5'b00000)) // src1 to pipes
+                        || (((inst3_dest == inst1_dest) || (inst3_dest == inst1_src1) || (inst3_dest == inst1_src2)) && (inst3_dest != 5'b00000)) // dest to inst1
+                        || (((inst3_src1 == inst1_dest)) && (inst3_src1 != 5'b00000)) // src1 to inst1
+                        || (((inst3_dest == inst2_dest) || (inst3_dest == inst2_src1) || (inst3_dest == inst2_src2)) && (inst3_dest != 5'b00000)) // dest to inst2
+                        || (((inst3_src1 == inst2_src1)) && (inst3_src1 != 5'b00000)) // src1 to inst2
+                        || (inst1_stall == 1) || (inst2_stall == 1)) begin
 
                         // outcome: stall instruction 3
                         inst3_stall = 1;
@@ -665,27 +665,27 @@ module SS_HazDet (
         // if inst3 is an ALU op
         else begin
             // if inst2 is a memory op
-            if ((inst2_op == 6'b101011) or (inst2_op == 6'b100011) or (inst2_op == 6'b000100) or (inst2_op == 6'b000101) or (inst2_op == 6'b001000)) begin
+            if ((inst2_op == 6'b101011) || (inst2_op == 6'b100011) || (inst2_op == 6'b000100) || (inst2_op == 6'b000101) || (inst2_op == 6'b001000)) begin
                 
                 // if inst1 is a memory op
-                if ((inst1_op == 6'b101011) or (inst1_op == 6'b100011) or (inst1_op == 6'b000100) or (inst1_op == 6'b000101) or (inst1_op == 6'b001000)) begin
+                if ((inst1_op == 6'b101011) || (inst1_op == 6'b100011) || (inst1_op == 6'b000100) || (inst1_op == 6'b000101) || (inst1_op == 6'b001000)) begin
 
                     // inst1: memory op
                     // inst2: memory op
                     // inst3: ALU op
-                    if (   (((inst3_dest == pipeA_dest) or (inst3_dest == pipeB_dest) or (inst3_dest == pipeC_dest)) and (inst3_dest != 5'b00000))  // dest to pipes
-                        or (((inst3_src1 == pipeA_dest) or (inst3_src1 == pipeB_dest) or (inst3_src1 == pipeC_dest)) and (inst3_src1 != 5'b00000)) // src1 to pipes
-                        or (((inst3_src2 == pipeA_dest) or (inst3_src2 == pipeB_dest) or (inst3_src2 == pipeC_dest)) and (inst3_src2 != 5'b00000)) // src2 to pipes
+                    if (   (((inst3_dest == pipeA_dest) || (inst3_dest == pipeB_dest) || (inst3_dest == pipeC_dest)) && (inst3_dest != 5'b00000))  // dest to pipes
+                        || (((inst3_src1 == pipeA_dest) || (inst3_src1 == pipeB_dest) || (inst3_src1 == pipeC_dest)) && (inst3_src1 != 5'b00000)) // src1 to pipes
+                        || (((inst3_src2 == pipeA_dest) || (inst3_src2 == pipeB_dest) || (inst3_src2 == pipeC_dest)) && (inst3_src2 != 5'b00000)) // src2 to pipes
                         // inst1
-                        or (((inst3_dest == inst1_dest) or (inst3_dest == inst1_src1)) and (inst3_dest != 5'b00000)) // dest to inst1
-                        or (((inst3_src1 == inst1_dest)) and (inst3_src1 != 5'b00000)) // src1 to inst1
-                        or (((inst3_src2 == inst1_dest)) and (inst3_src2 != 5'b00000)) // src2 to inst1
+                        || (((inst3_dest == inst1_dest) || (inst3_dest == inst1_src1)) && (inst3_dest != 5'b00000)) // dest to inst1
+                        || (((inst3_src1 == inst1_dest)) && (inst3_src1 != 5'b00000)) // src1 to inst1
+                        || (((inst3_src2 == inst1_dest)) && (inst3_src2 != 5'b00000)) // src2 to inst1
                         // inst2
-                        or (((inst3_dest == inst2_dest) or (inst3_dest == inst2_src1)) and (inst3_dest != 5'b00000)) // dest to inst2
-                        or (((inst3_src1 == inst2_src1)) and (inst3_src1 != 5'b00000)) // src1 to inst2
-                        or (((inst3_src2 == inst2_dest)) and (inst3_src2 != 5'b00000)) // src2 to inst2
+                        || (((inst3_dest == inst2_dest) || (inst3_dest == inst2_src1)) && (inst3_dest != 5'b00000)) // dest to inst2
+                        || (((inst3_src1 == inst2_src1)) && (inst3_src1 != 5'b00000)) // src1 to inst2
+                        || (((inst3_src2 == inst2_dest)) && (inst3_src2 != 5'b00000)) // src2 to inst2
                         // stall
-                        or (inst1_stall == 1) or (inst2_stall == 1)) begin
+                        || (inst1_stall == 1) || (inst2_stall == 1)) begin
 
                         // outcome: stall instruction 3
                         inst3_stall = 1;
@@ -713,19 +713,19 @@ module SS_HazDet (
                     // inst1: ALU op
                     // inst2: memory op
                     // inst3: ALU op
-                    if (   (((inst3_dest == pipeA_dest) or (inst3_dest == pipeB_dest) or (inst3_dest == pipeC_dest)) and (inst3_dest != 5'b00000))  // dest to pipes
-                        or (((inst3_src1 == pipeA_dest) or (inst3_src1 == pipeB_dest) or (inst3_src1 == pipeC_dest)) and (inst3_src1 != 5'b00000)) // src1 to pipes
-                        or (((inst3_src2 == pipeA_dest) or (inst3_src2 == pipeB_dest) or (inst3_src2 == pipeC_dest)) and (inst3_src2 != 5'b00000)) // src2 to pipes
+                    if (   (((inst3_dest == pipeA_dest) || (inst3_dest == pipeB_dest) || (inst3_dest == pipeC_dest)) && (inst3_dest != 5'b00000))  // dest to pipes
+                        || (((inst3_src1 == pipeA_dest) || (inst3_src1 == pipeB_dest) || (inst3_src1 == pipeC_dest)) && (inst3_src1 != 5'b00000)) // src1 to pipes
+                        || (((inst3_src2 == pipeA_dest) || (inst3_src2 == pipeB_dest) || (inst3_src2 == pipeC_dest)) && (inst3_src2 != 5'b00000)) // src2 to pipes
                         // inst1
-                        or (((inst3_dest == inst1_dest) or (inst3_dest == inst1_src1) or (inst3_dest == inst1_src2)) and (inst3_dest != 5'b00000)) // dest to inst1
-                        or (((inst3_src1 == inst1_dest)) and (inst3_src1 != 5'b00000)) // src1 to inst1
-                        or (((inst3_src2 == inst1_dest)) and (inst3_src2 != 5'b00000)) // src2 to inst1
+                        || (((inst3_dest == inst1_dest) || (inst3_dest == inst1_src1) || (inst3_dest == inst1_src2)) && (inst3_dest != 5'b00000)) // dest to inst1
+                        || (((inst3_src1 == inst1_dest)) && (inst3_src1 != 5'b00000)) // src1 to inst1
+                        || (((inst3_src2 == inst1_dest)) && (inst3_src2 != 5'b00000)) // src2 to inst1
                         // inst2
-                        or (((inst3_dest == inst2_dest) or (inst3_dest == inst2_src1)) and (inst3_dest != 5'b00000)) // dest to inst2
-                        or (((inst3_src1 == inst2_src1)) and (inst3_src1 != 5'b00000)) // src1 to inst2
-                        or (((inst3_src2 == inst2_dest)) and (inst3_src2 != 5'b00000)) // src2 to inst2
+                        || (((inst3_dest == inst2_dest) || (inst3_dest == inst2_src1)) && (inst3_dest != 5'b00000)) // dest to inst2
+                        || (((inst3_src1 == inst2_src1)) && (inst3_src1 != 5'b00000)) // src1 to inst2
+                        || (((inst3_src2 == inst2_dest)) && (inst3_src2 != 5'b00000)) // src2 to inst2
                         // stall
-                        or (inst1_stall == 1) or (inst2_stall == 1)) begin
+                        || (inst1_stall == 1) || (inst2_stall == 1)) begin
 
                         // outcome: stall instruction 3
                         inst3_stall = 1;
@@ -752,24 +752,24 @@ module SS_HazDet (
             else begin
 
                 // if inst1 is a memory op
-                if ((inst1_op == 6'b101011) or (inst1_op == 6'b100011) or (inst1_op == 6'b000100) or (inst1_op == 6'b000101) or (inst1_op == 6'b001000)) begin
+                if ((inst1_op == 6'b101011) || (inst1_op == 6'b100011) || (inst1_op == 6'b000100) || (inst1_op == 6'b000101) || (inst1_op == 6'b001000)) begin
 
                     // inst1: memory op
                     // inst2: ALU op
                     // inst3: ALU op
-                    if (   (((inst3_dest == pipeA_dest) or (inst3_dest == pipeB_dest) or (inst3_dest == pipeC_dest)) and (inst3_dest != 5'b00000))  // dest to pipes
-                        or (((inst3_src1 == pipeA_dest) or (inst3_src1 == pipeB_dest) or (inst3_src1 == pipeC_dest)) and (inst3_src1 != 5'b00000)) // src1 to pipes
-                        or (((inst3_src2 == pipeA_dest) or (inst3_src2 == pipeB_dest) or (inst3_src2 == pipeC_dest)) and (inst3_src2 != 5'b00000)) // src2 to pipes
+                    if (   (((inst3_dest == pipeA_dest) || (inst3_dest == pipeB_dest) || (inst3_dest == pipeC_dest)) && (inst3_dest != 5'b00000))  // dest to pipes
+                        || (((inst3_src1 == pipeA_dest) || (inst3_src1 == pipeB_dest) || (inst3_src1 == pipeC_dest)) && (inst3_src1 != 5'b00000)) // src1 to pipes
+                        || (((inst3_src2 == pipeA_dest) || (inst3_src2 == pipeB_dest) || (inst3_src2 == pipeC_dest)) && (inst3_src2 != 5'b00000)) // src2 to pipes
                         // inst1
-                        or (((inst3_dest == inst1_dest) or (inst3_dest == inst1_src1)) and (inst3_dest != 5'b00000)) // dest to inst1
-                        or (((inst3_src1 == inst1_dest)) and (inst3_src1 != 5'b00000)) // src1 to inst1
-                        or (((inst3_src2 == inst1_dest)) and (inst3_src2 != 5'b00000)) // src2 to inst1
+                        || (((inst3_dest == inst1_dest) || (inst3_dest == inst1_src1)) && (inst3_dest != 5'b00000)) // dest to inst1
+                        || (((inst3_src1 == inst1_dest)) && (inst3_src1 != 5'b00000)) // src1 to inst1
+                        || (((inst3_src2 == inst1_dest)) && (inst3_src2 != 5'b00000)) // src2 to inst1
                         // inst2
-                        or (((inst3_dest == inst2_dest) or (inst3_dest == inst2_src1) or (inst3_dest == inst2_src2)) and (inst3_dest != 5'b00000)) // dest to inst2
-                        or (((inst3_src1 == inst2_src1)) and (inst3_src1 != 5'b00000)) // src1 to inst2
-                        or (((inst3_src2 == inst2_dest)) and (inst3_src2 != 5'b00000)) // src2 to inst2
+                        || (((inst3_dest == inst2_dest) || (inst3_dest == inst2_src1) || (inst3_dest == inst2_src2)) && (inst3_dest != 5'b00000)) // dest to inst2
+                        || (((inst3_src1 == inst2_src1)) && (inst3_src1 != 5'b00000)) // src1 to inst2
+                        || (((inst3_src2 == inst2_dest)) && (inst3_src2 != 5'b00000)) // src2 to inst2
                         // stall
-                        or (inst1_stall == 1) or (inst2_stall == 1)) begin
+                        || (inst1_stall == 1) || (inst2_stall == 1)) begin
 
                         // outcome: stall instruction 3
                         inst3_stall = 1;
@@ -797,19 +797,19 @@ module SS_HazDet (
                     // inst1: ALU op
                     // inst2: ALU op
                     // inst3: ALU op
-                    if (   (((inst3_dest == pipeA_dest) or (inst3_dest == pipeB_dest) or (inst3_dest == pipeC_dest)) and (inst3_dest != 5'b00000))  // dest to pipes
-                        or (((inst3_src1 == pipeA_dest) or (inst3_src1 == pipeB_dest) or (inst3_src1 == pipeC_dest)) and (inst3_src1 != 5'b00000)) // src1 to pipes
-                        or (((inst3_src2 == pipeA_dest) or (inst3_src2 == pipeB_dest) or (inst3_src2 == pipeC_dest)) and (inst3_src2 != 5'b00000)) // src2 to pipes
+                    if (   (((inst3_dest == pipeA_dest) || (inst3_dest == pipeB_dest) || (inst3_dest == pipeC_dest)) && (inst3_dest != 5'b00000))  // dest to pipes
+                        || (((inst3_src1 == pipeA_dest) || (inst3_src1 == pipeB_dest) || (inst3_src1 == pipeC_dest)) && (inst3_src1 != 5'b00000)) // src1 to pipes
+                        || (((inst3_src2 == pipeA_dest) || (inst3_src2 == pipeB_dest) || (inst3_src2 == pipeC_dest)) && (inst3_src2 != 5'b00000)) // src2 to pipes
                         // inst1
-                        or (((inst3_dest == inst1_dest) or (inst3_dest == inst1_src1) or (inst3_dest == inst1_src2)) and (inst3_dest != 5'b00000)) // dest to inst1
-                        or (((inst3_src1 == inst1_dest)) and (inst3_src1 != 5'b00000)) // src1 to inst1
-                        or (((inst3_src2 == inst1_dest)) and (inst3_src2 != 5'b00000)) // src2 to inst1
+                        || (((inst3_dest == inst1_dest) || (inst3_dest == inst1_src1) || (inst3_dest == inst1_src2)) && (inst3_dest != 5'b00000)) // dest to inst1
+                        || (((inst3_src1 == inst1_dest)) && (inst3_src1 != 5'b00000)) // src1 to inst1
+                        || (((inst3_src2 == inst1_dest)) && (inst3_src2 != 5'b00000)) // src2 to inst1
                         // inst2
-                        or (((inst3_dest == inst2_dest) or (inst3_dest == inst2_src1) or (inst3_dest == inst2_src2)) and (inst3_dest != 5'b00000)) // dest to inst2
-                        or (((inst3_src1 == inst2_src1)) and (inst3_src1 != 5'b00000)) // src1 to inst2
-                        or (((inst3_src2 == inst2_dest)) and (inst3_src2 != 5'b00000)) // src2 to inst2
+                        || (((inst3_dest == inst2_dest) || (inst3_dest == inst2_src1) || (inst3_dest == inst2_src2)) && (inst3_dest != 5'b00000)) // dest to inst2
+                        || (((inst3_src1 == inst2_src1)) && (inst3_src1 != 5'b00000)) // src1 to inst2
+                        || (((inst3_src2 == inst2_dest)) && (inst3_src2 != 5'b00000)) // src2 to inst2
                         // stall
-                        or (inst1_stall == 1) or (inst2_stall == 1)) begin
+                        || (inst1_stall == 1) || (inst2_stall == 1)) begin
 
                         // outcome: stall instruction 3
                         inst3_stall = 1;
@@ -835,7 +835,11 @@ module SS_HazDet (
             end
         end
 
-        
+
+
+        // && that should be all she wrote
         
 
     end
+
+endmodule
