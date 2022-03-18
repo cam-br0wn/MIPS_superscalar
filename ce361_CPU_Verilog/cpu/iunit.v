@@ -4,18 +4,20 @@
 // `include "cpu/IF_ID_reg.v"
 // `include "extralib/mux_n2.v"
 
-module iunit (clk, curr_pc0, curr_pc1, curr_pc2, instr0, instr1, instr2, pc_plus_4);
+module iunit (clk, curr_pc0, curr_pc1, curr_pc2, instr0, instr1, instr2, pc_plus_4A, pc_plus_4B, pc_plus_4C);
     parameter dat_file = "data/bills_branch.dat";
     input [31:0] curr_pc0;
     input [31:0] curr_pc1;
     input [31:0] curr_pc2;
     //input [31:0] target;
-    output [31:0] pc_plus_4;
+    output [31:0] pc_plus_4A;
+    output [31:0] pc_plus_4B;
+    output [31:0] pc_plus_4C;
+
     output [31:0] instr0;
     output [31:0] instr1;
     output [31:0] instr2;
     input clk;
-
 
 
     // program counter (already in CPU)
@@ -28,7 +30,29 @@ module iunit (clk, curr_pc0, curr_pc1, curr_pc2, instr0, instr1, instr2, pc_plus
     defparam instr_mem.mem_file = dat_file;
 
     // adds "1" to PC
-    adder_32 pc_adder(.a(curr_pc), .b(32'b00000000000000000000000000000100), .z(pc_plus_4));
+    //adder_32 pc_adder(.a(curr_pc), .b(32'b00000000000000000000000000000100), .z(pc_plus_4));
+
+    always@ (curr_pc0 || curr_pc1 || curr_pc2) begin
+        
+        if (!curr_pc2)begin // if just instruction 3 stalled
+            adder_32 pc_adder0(.a(curr_pc0), .b(32'b00000000000000000000000000000100), .z(pc_plus_4A)); // inc 1
+            adder_32 pc_adder1(.a(curr_pc1), .b(32'b00000000000000000000000000000100), .z(pc_plus_4B)); // inc 2
+        end
+
+        else if (!curr_pc2 && !curr_pc1)begin // if 2 + 3 stalled
+            adder_32 pc_adder2(.a(curr_pc0), .b(32'b00000000000000000000000000000100), .z(pc_plus_4A)); // inc 1
+        end
+
+        else if (!curr_pc2 && !curr_pc1 && !curr_pc0)begin // if all stalled
+            //adder_32 pc_adder2(.a(curr_pc2), .b(32'b00000000000000000000000000000100), .z(pc_plus_4));
+        end
+
+        else begin // if none stalled
+            adder_32 pc_adder3(.a(curr_pc0), .b(32'b00000000000000000000000000000100), .z(pc_plus_4A)); // inc 1
+            adder_32 pc_adder4(.a(curr_pc1), .b(32'b00000000000000000000000000000100), .z(pc_plus_4B)); // inc 2
+            adder_32 pc_adder5(.a(curr_pc2), .b(32'b00000000000000000000000000000100), .z(pc_plus_4C)); // inc 3
+        end
+    end
 
     // mux to determine next instruction (0: PC +=4, 1: PC = jump to next instr) already in CPU
     //mux_n next_instr_mux(.sel(branch_ctrl), .src0(pc4_wire), .src1(target), .z(next_pc));
